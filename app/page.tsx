@@ -164,22 +164,7 @@ export default function Home() {
   };
 
   return (
-    <main className="h-fit md:h-full w-[100dvw] flex flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center p-2 overflow-y-scroll lg:overflow-hidden">
-      <div className="w-full min-w-[300px] lg:w-[45%] lg:h-[100dvh] flex flex-row gap-2 lg:overflow-y-scroll no-scrollbar">
-        <div className=" columns-1 sm:columns-2 lg:columns-1 xl:columns-2 space-y-2 h-fit w-full gap-2 pt-2 overflow-y-scroll no-scrollbar">
-          {projects.map((project, key) => (
-            <ProjectCard
-              image_url={project.image_url}
-              to={project.to}
-              tags={project.tags}
-              title={project.title}
-              type={project.type}
-              key={key}
-              alt={project.title}
-            />
-          ))}
-        </div>
-      </div>
+    <main className="h-fit md:h-full w-[100dvw] flex flex-col lg:flex-row-reverse gap-8 lg:gap-0 items-center p-2 overflow-y-scroll lg:overflow-hidden">
       <div className="h-fit w-full xl:w-[55%] lg:h-[100dvh] flex flex-col items-center gap-16 lg:overflow-y-scroll  lg:py-24 no-scrollbar pt-16">
         <h1 className="text-4xl max-w-[700px] w-4/5">
           Marcelo Chaman Mallqui
@@ -196,6 +181,21 @@ export default function Home() {
               date={item.date}
               description={item.description}
               key={key}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="w-full min-w-[300px] lg:w-[45%] lg:h-[100dvh] flex flex-row gap-2 lg:overflow-y-scroll no-scrollbar">
+        <div className=" columns-1 sm:columns-2 lg:columns-1 xl:columns-2 space-y-2 h-fit w-full gap-2 pt-2 overflow-y-scroll no-scrollbar">
+          {projects.map((project, key) => (
+            <ProjectCard
+              image_url={project.image_url}
+              to={project.to}
+              tags={project.tags}
+              title={project.title}
+              type={project.type}
+              key={key}
+              alt={project.title}
             />
           ))}
         </div>
