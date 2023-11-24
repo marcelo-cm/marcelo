@@ -86,18 +86,40 @@ export default function Home() {
       to: "https://qmind.ca/",
     },
     {
+      title: "Attention! Is All That Matters",
+      tags: ["Writing"],
+      type: "Article",
+      image_url: "/attention-cover.webp",
+      to: "https://medium.com/@marcelochaman/attention-is-all-that-matters-51d141844dec",
+    },
+    {
       title: "Easy Recipe",
       tags: ["UX", "UI"],
-      type: "Website",
+      type: "Case Study",
       image_url: "/EasyRecipe-mobile1.gif",
       to: "https://medium.com/@marcelochaman/easy-recipe-ux-ui-case-study-124a7992597e",
     },
     {
+      title: "Memoria",
+      tags: ["Product"],
+      type: "Capsule",
+      image_url: "/MEMORIA-COVER.png",
+      to: "/projects/memoria",
+    },
+
+    {
       title: "EchoDMs",
-      tags: ["Backend"],
+      tags: ["Backend", "Slack App"],
       type: "Website",
-      image_url: "/EasyRecipe-mobile1.gif",
-      to: "https://medium.com/@marcelochaman/easy-recipe-ux-ui-case-study-124a7992597e",
+      image_url: "/echodms-cover.png",
+      to: "https://echo-dms.vercel.app/",
+    },
+    {
+      title: "LockedIn",
+      tags: ["Hackathon", "Product Design"],
+      type: "Project",
+      image_url: "/lockedin-cover.png",
+      to: "/projects/lockedin",
     },
   ];
 
@@ -115,7 +137,7 @@ export default function Home() {
     description: string;
   }) => {
     return (
-      <div className="flex flex-col w-full font-light">
+      <div className="flex flex-col w-full font-light h-fit">
         <div className="flex flex-col sm:flex-row w-full items-left sm:items-center mb-[2px]">
           <div className="text-normal flex flex-col sm:flex-row">
             <div className="w-full sm:w-fit flex flex-row whitespace-nowrap items-center">
@@ -158,14 +180,14 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className="h-fit w-full xl:w-[55%] lg:h-[100dvh] flex flex-col items-center gap-16 lg:overflow-y-scroll py-16 lg:py-24 no-scrollbar">
+      <div className="h-fit w-full xl:w-[55%] lg:h-[100dvh] flex flex-col items-center gap-16 lg:overflow-y-scroll  lg:py-24 no-scrollbar pt-16">
         <h1 className="text-4xl max-w-[700px] w-4/5">
           Marcelo Chaman Mallqui
           <p className="text-[#A0A0A0] inline font-light">
             –Product Designer, Software Engineer & Founder
           </p>
         </h1>
-        <div className="max-w-[700px] w-4/5 flex flex-col gap-4">
+        <div className="h-fit max-w-[700px] w-4/5 flex flex-col gap-4">
           {resume.map((item, key) => (
             <ResumeSection
               title={item.title}

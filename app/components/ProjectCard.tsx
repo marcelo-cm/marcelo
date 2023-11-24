@@ -19,7 +19,7 @@ const ProjectCard = ({
   const Tag = ({ tag }: { tag: string }) => {
     return (
       <div className="flex items-center justify-center py-[6px] px-[12px] bg-white/10 rounded-full select-none text-[80%]">
-        <p className="font-semibold [text-shadow:_0_0_5px_rgb(255_255_255_/_100%)] whitespace-nowrap">
+        <p className="font-semibold [text-shadow:_0_0_5px_rgb(255_255_255_/_50%)] whitespace-nowrap">
           {tag}
         </p>
       </div>

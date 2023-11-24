@@ -1,10 +1,13 @@
 import Image from "next/image";
 import PhotoCard from "../components/PhotoCard";
 import CustomLink from "../components/CustomLink";
+import React from "react";
 import { Fragment } from "react";
 
 export default function Home() {
-  const resume = [
+  // const { fashionPhotos, artPhotos } = useLoaderData();
+
+  const about = [
     {
       title: "WHO I AM",
       description:
@@ -36,33 +39,28 @@ export default function Home() {
     },
   ];
 
+  let artListFormat: string[] = [];
+
+  for (let x = 1; x <= 70; x++) {
+    artListFormat.push(`/about-images/art/art_${x}.jpg`);
+  }
+
+  let fashionListFormat: string[] = ["/about-images/fashion/fashion_100.gif"];
+
+  for (let x = 1; x <= 13; x++) {
+    fashionListFormat.push(`/about-images/fashion/fashion_${x}.png`);
+  }
+
   const photos = [
     {
       title: "Fashion",
       description: "What sparked by interest in design.",
-      photos: [
-        { image_url: "/QMINDWEB.gif", alt: "" },
-        { image_url: "/QMINDWEB.gif", alt: "" },
-        { image_url: "/QMINDWEB.gif", alt: "" },
-      ],
+      photos: fashionListFormat,
     },
     {
       title: "Photography & Art",
       description: "What I would do if I could never write code again.",
-      photos: [
-        { image_url: "/QMINDWEB.gif", alt: "" },
-        { image_url: "/QMINDWEB.gif", alt: "" },
-        { image_url: "/QMINDWEB.gif", alt: "" },
-      ],
-    },
-    {
-      title: "Family & Friends",
-      description: "Who I spend my time with.",
-      photos: [
-        { image_url: "/QMINDWEB.gif", alt: "" },
-        { image_url: "/QMINDWEB.gif", alt: "" },
-        { image_url: "/QMINDWEB.gif", alt: "" },
-      ],
+      photos: artListFormat,
     },
   ];
 
@@ -94,8 +92,8 @@ export default function Home() {
   };
 
   return (
-    <main className="h-fit xl:h-full w-[100dvw] flex flex-col xl:flex-row gap-4 xl:gap-0 items-center xl:overflow-hidden no-scrollbar">
-      <div className="h-fit w-full xl:w-[50dvw] xl:h-[100dvh] flex flex-col items-center gap-16 overflow-visible xl:overflow-y-scroll py-20 no-scrollbar">
+    <main className="h-fit xl:h-full w-[100dvw] flex flex-col xl:flex-row gap-4 xl:gap-0 items-center overflow-y-scroll xl:overflow-hidden no-scrollbar">
+      <div className="h-fit w-full xl:w-[50dvw] xl:h-[100dvh] flex flex-col items-center gap-16 xl:overflow-y-scroll py-20 no-scrollbar">
         <h1 className="text-4xl max-w-[700px] w-4/5">
           Marcelo Chaman Mallqui
           <p className="text-[#A0A0A0] inline font-light">
@@ -103,7 +101,7 @@ export default function Home() {
           </p>
         </h1>
         <div className="max-w-[700px] w-4/5 flex flex-col gap-6 h-fit">
-          {resume.map((item, key) => (
+          {about.map((item, key) => (
             <AboutSection
               title={item.title}
               description={item.description}
@@ -112,7 +110,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className="h-fit xl:h-full w-full xl:w-[50dvw] xl:h-[100dvh] flex flex-col gap-2 overflow-y-scroll xl:pt-24 no-scrollbar">
+      <div className="h-fit xl:h-full w-full xl:w-[50dvw] xl:h-[100dvh] flex flex-col gap-2 xl:overflow-y-scroll xl:pt-24 no-scrollbar">
         <div className="h-fit w-full flex flex-col gap-8 no-scrollbar ">
           {photos.map((category, key) => (
             <div key={key}>
@@ -126,13 +124,13 @@ export default function Home() {
               </div>
               {/* Photos */}
               <div className="h-full relative">
-                <div className="flex flex-row w-full xl:w-[50dvw] overflow-x-scroll gap-2 no-scrollbar px-4 static">
+                <div className="flex flex-row w-full xl:w-[50dvw] h-[300px] overflow-x-scroll gap-2 no-scrollbar px-4 static">
                   <div className="bg-gradient-to-r from-[#161616] to-[#161616]/0 absolute left-0 h-full w-4 z-40" />
                   {category.photos.map((photo, key) => (
-                    <PhotoCard
-                      image_url={photo.image_url}
-                      alt={photo.alt}
-                      key={key}
+                    <img
+                      src={photo}
+                      alt=""
+                      className="w-full h-full border-[2px] border-[#2e2e2e] flex bg-[#1C1C1C] rounded-lg "
                     />
                   ))}
                 </div>

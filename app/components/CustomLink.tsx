@@ -3,8 +3,8 @@ import React, { ReactNode } from "react";
 
 interface CustomLinkProps {
   to: string;
-  icon: boolean;
-  underline: boolean;
+  icon?: boolean;
+  underline?: boolean;
   children: ReactNode;
 }
 
