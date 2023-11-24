@@ -45,6 +45,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  font-size: 15px;
   background: linear-gradient(
       to bottom,
       transparent,

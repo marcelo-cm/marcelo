@@ -28,7 +28,7 @@ const ProjectCard = ({
 
   return (
     <a
-      className="break-inside-avoid border-[1px] border-[#2e2e2e] xl:w-[calc(50%-0.5rem)] lg:w-full md:w-[calc(50%-0.5rem)] w-full h-fit bg-[#1C1C1C] rounded-xl p-2 flex flex-col gap-2 cursor-pointer"
+      className="break-inside-avoid border-[1px] border-[#2e2e2e] w-full h-fit bg-[#1C1C1C] rounded-xl p-2 flex flex-col gap-2 cursor-pointer"
       href={to}
       target="_blank"
     >

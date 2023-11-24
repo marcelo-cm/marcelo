@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="h-[100dvh] w-[100dvw] lg:overflow-hidden flex flex-col lg:flex-row">
+      <body className="h-[100dvh] w-[100dvw] xl:overflow-hidden flex flex-col lg:flex-row no-scrollbar">
         {children}
       </body>
     </html>

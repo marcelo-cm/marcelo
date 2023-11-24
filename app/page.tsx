@@ -99,34 +99,6 @@ export default function Home() {
       image_url: "/EasyRecipe-mobile1.gif",
       to: "https://medium.com/@marcelochaman/easy-recipe-ux-ui-case-study-124a7992597e",
     },
-    {
-      title: "EchoDMs",
-      tags: ["Backend"],
-      type: "Website",
-      image_url: "/EasyRecipe-mobile1.gif",
-      to: "https://medium.com/@marcelochaman/easy-recipe-ux-ui-case-study-124a7992597e",
-    },
-    {
-      title: "EchoDMs",
-      tags: ["Backend"],
-      type: "Website",
-      image_url: "/EasyRecipe-mobile1.gif",
-      to: "https://medium.com/@marcelochaman/easy-recipe-ux-ui-case-study-124a7992597e",
-    },
-    {
-      title: "EchoDMs",
-      tags: ["Backend"],
-      type: "Website",
-      image_url: "/EasyRecipe-mobile1.gif",
-      to: "https://medium.com/@marcelochaman/easy-recipe-ux-ui-case-study-124a7992597e",
-    },
-    {
-      title: "EchoDMs",
-      tags: ["Backend"],
-      type: "Website",
-      image_url: "/EasyRecipe-mobile1.gif",
-      to: "https://medium.com/@marcelochaman/easy-recipe-ux-ui-case-study-124a7992597e",
-    },
   ];
 
   const ResumeSection = ({
@@ -171,8 +143,8 @@ export default function Home() {
 
   return (
     <main className="h-fit md:h-full w-[100dvw] flex flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center p-2 overflow-y-scroll lg:overflow-hidden">
-      <div className="w-full min-w-[300px] lg:w-[45%] h-fit flex flex-row gap-2 lg:overflow-y-scroll no-scrollbar">
-        <div className="flex flex-row h-fit lg:h-[100dvh] w-full flex-wrap gap-2 pt-2">
+      <div className="w-full min-w-[300px] lg:w-[45%] lg:h-[100dvh] flex flex-row gap-2 lg:overflow-y-scroll no-scrollbar">
+        <div className=" columns-1 sm:columns-2 lg:columns-1 xl:columns-2 space-y-2 h-fit w-full gap-2 pt-2 overflow-y-scroll no-scrollbar">
           {projects.map((project, key) => (
             <ProjectCard
               image_url={project.image_url}
@@ -186,7 +158,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className="h-fit w-full xl:w-[55%] lg:h-[100dvh] flex flex-col items-center gap-16 lg:overflow-y-scroll py-16 lg:py-24">
+      <div className="h-fit w-full xl:w-[55%] lg:h-[100dvh] flex flex-col items-center gap-16 lg:overflow-y-scroll py-16 lg:py-24 no-scrollbar">
         <h1 className="text-4xl max-w-[700px] w-4/5">
           Marcelo Chaman Mallqui
           <p className="text-[#A0A0A0] inline font-light">

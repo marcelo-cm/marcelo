@@ -1,0 +1,146 @@
+import Image from "next/image";
+import PhotoCard from "../components/PhotoCard";
+import CustomLink from "../components/CustomLink";
+import { Fragment } from "react";
+
+export default function Home() {
+  const resume = [
+    {
+      title: "WHO I AM",
+      description:
+        "I am a 19 year old product designer & software engineer born in Lima, Peru, raised in Toronto leading Canada’s largest undergraduate organization on AI, and organizing the Canadian Undergraduate Conference on AI. I’m a 3x founder having worked in fashion at 13, to marketing & design studio at 16, and then scaled a 50k+ community at 18. Today I’m serial-building product with friends. \
+         \n \n \
+        I grew up immersed by a energetic Peruvian culture, with amazing food, and a mother who always pushed me to try things I’m bad at... and sent me to engineer summer camps against my will. My brother introduced me to the world of technology when the iPhone 3GS released, and my greatest influence.\
+         \n \n \
+        I love art, tech, community, and learning new things. I love making new friends. I love everything I do.",
+    },
+    {
+      title: "WHO I USED TO BE",
+      description:
+        "As a kid I spent most of my time on the basketball court, until the day I touched a camera. Quickly, I became obsessed with art in it’s many forms – from fashion, to photography and eventually user experience & product design. At 17, I joined QMIND, where I was introduced to AI, and the story is still writing itself until today.",
+    },
+    {
+      title: "WHO I WILL TO BE",
+      description:
+        "Founder, builder, artist, and someone who gives back to underprivileged youth in Peru.\
+        \n \n \
+        My two goals in life are to design one of everything, and to provide the resources and opportunities to kids in my home country that didn’t have the luck I had to be brought to Canada by my parents.",
+    },
+    {
+      title: "MY WHY",
+      website: "https://instagram.com/inqubate.ai",
+      organization: "inQUbate",
+      date: "2023",
+      description:
+        "Coming from a country with many underprivileged and impoverished families, I am determined to make the most out of the all the sources I have so that one day I can give back to those who enabled me to get where I am, and to the kids of Peru whom I see myself in.",
+    },
+  ];
+
+  const photos = [
+    {
+      title: "Fashion",
+      description: "What sparked by interest in design.",
+      photos: [
+        { image_url: "/QMINDWEB.gif", alt: "" },
+        { image_url: "/QMINDWEB.gif", alt: "" },
+        { image_url: "/QMINDWEB.gif", alt: "" },
+      ],
+    },
+    {
+      title: "Photography & Art",
+      description: "What I would do if I could never write code again.",
+      photos: [
+        { image_url: "/QMINDWEB.gif", alt: "" },
+        { image_url: "/QMINDWEB.gif", alt: "" },
+        { image_url: "/QMINDWEB.gif", alt: "" },
+      ],
+    },
+    {
+      title: "Family & Friends",
+      description: "Who I spend my time with.",
+      photos: [
+        { image_url: "/QMINDWEB.gif", alt: "" },
+        { image_url: "/QMINDWEB.gif", alt: "" },
+        { image_url: "/QMINDWEB.gif", alt: "" },
+      ],
+    },
+  ];
+
+  const AboutSection = ({
+    title,
+    description,
+  }: {
+    title: string;
+    description: string;
+  }) => {
+    const descriptionLines = description.split("\n");
+
+    return (
+      <div className="flex flex-col gap-[4px] w-full font-light">
+        <div className="flex flex-row w-full items-center mb-[2px] text-[#A0A0A0] font-normal text-xs">
+          {title} <hr className="h-px mx-4 bg-[#A0A0A0]/10 border-0 flex-1" />
+        </div>
+        <p className="leading-normal tracking-wide">
+          {descriptionLines.map((line, index) => (
+            <Fragment key={index}>
+              {line}
+              {/* Add a <br/> element after each line except the last one */}
+              {index < descriptionLines.length - 1 && <br />}
+            </Fragment>
+          ))}
+        </p>
+      </div>
+    );
+  };
+
+  return (
+    <main className="h-fit xl:h-full w-[100dvw] flex flex-col xl:flex-row gap-4 xl:gap-0 items-center xl:overflow-hidden no-scrollbar">
+      <div className="h-fit w-full xl:w-[50dvw] xl:h-[100dvh] flex flex-col items-center gap-16 overflow-visible xl:overflow-y-scroll py-20 no-scrollbar">
+        <h1 className="text-4xl max-w-[700px] w-4/5">
+          Marcelo Chaman Mallqui
+          <p className="text-[#A0A0A0] inline font-light">
+            –Product Designer, Software Engineer & Founder
+          </p>
+        </h1>
+        <div className="max-w-[700px] w-4/5 flex flex-col gap-6 h-fit">
+          {resume.map((item, key) => (
+            <AboutSection
+              title={item.title}
+              description={item.description}
+              key={key}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="h-fit xl:h-full w-full xl:w-[50dvw] xl:h-[100dvh] flex flex-col gap-2 overflow-y-scroll xl:pt-24 no-scrollbar">
+        <div className="h-fit w-full flex flex-col gap-8 no-scrollbar ">
+          {photos.map((category, key) => (
+            <div key={key}>
+              {/* category details */}
+              <div className="mb-2 ml-[20px] z-50">
+                {category.title}
+                <p className="inline font-light text-[#A0A0A0]">
+                  {" "}
+                  – {category.description}
+                </p>
+              </div>
+              {/* Photos */}
+              <div className="h-full relative">
+                <div className="flex flex-row w-full xl:w-[50dvw] overflow-x-scroll gap-2 no-scrollbar px-4 static">
+                  <div className="bg-gradient-to-r from-[#161616] to-[#161616]/0 absolute left-0 h-full w-4 z-40" />
+                  {category.photos.map((photo, key) => (
+                    <PhotoCard
+                      image_url={photo.image_url}
+                      alt={photo.alt}
+                      key={key}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </main>
+  );
+}
