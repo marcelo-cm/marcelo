@@ -2,17 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+
+    .masonry-2-col {
+      column-count: 2;
+      column-gap: 0.5em;
+    }
+
+    .break-inside {
+      break-inside: avoid;
+    }
+  }
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
+  background-color: #161616;
+  /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255; */
+  color: white;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    background-color: #161616;
+    /* --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0; */
   }
 }
 

@@ -1,113 +1,211 @@
-import Image from 'next/image'
+import Image from "next/image";
+import ProjectCard from "./components/ProjectCard";
+import CustomLink from "./components/CustomLink";
 
 export default function Home() {
+  const resume = [
+    {
+      title: "Managing Director",
+      website: "https://qmind.ca",
+      organization: "QMIND",
+      date: "2023",
+      description:
+        "Leading Canada’s largest undergraduate organization on AI, 250+ members, 40+ AI projects",
+    },
+    {
+      title: "President",
+      website: "https://cucai.ca",
+      organization: "Canadian Undergraduate Conference on AI",
+      date: "2023",
+      description:
+        "Organizing Canada’s largest undergraduate conference on AI, 320+ delegates, featuring companies like Cohere, Microsoft, Intel, and more",
+    },
+    {
+      title: "International Competitor",
+      website: "https://qccu.info",
+      organization: "Queen’s Case Competition Union",
+      date: "2023",
+      description:
+        "1 of 6 students in my class (550 students) competing internationally on behalf of Queen’s university.",
+    },
+    {
+      title: "Advisor",
+      website: "https://instagram.com/inqubate.ai",
+      organization: "inQUbate",
+      date: "2023",
+      description:
+        "Organizing Canada’s largest undergraduate conference on AI, 320+ delegates, featuring companies like Cohere, Microsoft, Intel, and more",
+    },
+    {
+      title: "AI Research Analyst Intern",
+      website: "https://recalcacademy.com/",
+      organization: " Recalc Academy",
+      date: "2023",
+      description:
+        "Finance academy & accelerator program empowering ambitious students breaking into the world on finance. Automated processes & research AI tools in the data & AI space",
+    },
+    {
+      title: "Co-Founder & Advisor ",
+      website: "https://www.universitymedia.ca/",
+      organization: "University Media Group",
+      date: "2022-2023",
+      description:
+        "Changing the way students across Canada make friends before stepping on campus, 50k+ community",
+    },
+    {
+      title: "Founder",
+      website: "",
+      organization: "verycalmstudios.",
+      date: "2021-2022",
+      description:
+        "Marketing & design studio. Worked w/ FujiFilm, and on Footlocker, Adidas, & Hennessy supported projects",
+    },
+    {
+      title: "Founder",
+      website: "",
+      organization: "ustudios.",
+      date: "2017",
+      description:
+        "Fashion company where I found my love for art. Designed for companies 100k+ in revenue & design clothes for myself to this day",
+    },
+  ];
+
+  const projects = [
+    {
+      title: "QMIND Design Team Portal",
+      tags: ["Product Design"],
+      type: "Case Study",
+      image_url: "/DTP-P-A.png",
+      to: "https://medium.com/@marcelochaman/ux-product-design-case-study-qmind-design-team-portal-89d7eb8ea526",
+    },
+    {
+      title: "QMIND Website",
+      tags: ["UI", "Frontend"],
+      type: "Website",
+      image_url: "/QMINDWEB.gif",
+      to: "https://qmind.ca/",
+    },
+    {
+      title: "Easy Recipe",
+      tags: ["UX", "UI"],
+      type: "Website",
+      image_url: "/EasyRecipe-mobile1.gif",
+      to: "https://medium.com/@marcelochaman/easy-recipe-ux-ui-case-study-124a7992597e",
+    },
+    {
+      title: "EchoDMs",
+      tags: ["Backend"],
+      type: "Website",
+      image_url: "/EasyRecipe-mobile1.gif",
+      to: "https://medium.com/@marcelochaman/easy-recipe-ux-ui-case-study-124a7992597e",
+    },
+    {
+      title: "EchoDMs",
+      tags: ["Backend"],
+      type: "Website",
+      image_url: "/EasyRecipe-mobile1.gif",
+      to: "https://medium.com/@marcelochaman/easy-recipe-ux-ui-case-study-124a7992597e",
+    },
+    {
+      title: "EchoDMs",
+      tags: ["Backend"],
+      type: "Website",
+      image_url: "/EasyRecipe-mobile1.gif",
+      to: "https://medium.com/@marcelochaman/easy-recipe-ux-ui-case-study-124a7992597e",
+    },
+    {
+      title: "EchoDMs",
+      tags: ["Backend"],
+      type: "Website",
+      image_url: "/EasyRecipe-mobile1.gif",
+      to: "https://medium.com/@marcelochaman/easy-recipe-ux-ui-case-study-124a7992597e",
+    },
+    {
+      title: "EchoDMs",
+      tags: ["Backend"],
+      type: "Website",
+      image_url: "/EasyRecipe-mobile1.gif",
+      to: "https://medium.com/@marcelochaman/easy-recipe-ux-ui-case-study-124a7992597e",
+    },
+  ];
+
+  const ResumeSection = ({
+    title,
+    website,
+    organization,
+    date,
+    description,
+  }: {
+    title: string;
+    website: string;
+    organization: string;
+    date: string;
+    description: string;
+  }) => {
+    return (
+      <div className="flex flex-col w-full font-light">
+        <div className="flex flex-col sm:flex-row w-full items-left sm:items-center mb-[2px]">
+          <div className="text-normal flex flex-col sm:flex-row">
+            <div className="w-full sm:w-fit flex flex-row whitespace-nowrap items-center">
+              {title}{" "}
+              <hr className="h-px mx-4 bg-[#A0A0A0]/10 border-0 flex-1 sm:hidden w-0" />
+            </div>
+            <div className="inline text-[#A0A0A0] w-full">
+              <p className="hidden sm:inline ml-[4px]"> – </p>
+              {website ? (
+                <CustomLink to={website} icon underline={false}>
+                  {organization}
+                </CustomLink>
+              ) : (
+                organization
+              )}
+            </div>
+          </div>
+          <hr className="h-px mx-4 bg-[#A0A0A0]/10 border-0 sm:flex-1 invisible sm:visible" />
+          <p className="text-[#A0A0A0] break-keep whitespace-nowrap">{date}</p>
+        </div>
+        <p className="text-[#A0A0A0] leading-tight">{description}</p>
+      </div>
+    );
+  };
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+    <main className="h-fit md:h-full w-[100dvw] flex flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center p-2 overflow-y-scroll lg:overflow-hidden">
+      <div className="w-full min-w-[300px] lg:w-[45%] h-fit flex flex-row gap-2 lg:overflow-y-scroll no-scrollbar">
+        <div className="flex flex-row h-fit lg:h-[100dvh] w-full flex-wrap gap-2 pt-2">
+          {projects.map((project, key) => (
+            <ProjectCard
+              image_url={project.image_url}
+              to={project.to}
+              tags={project.tags}
+              title={project.title}
+              type={project.type}
+              key={key}
+              alt={project.title}
             />
-          </a>
+          ))}
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+      <div className="h-fit w-full xl:w-[55%] lg:h-[100dvh] flex flex-col items-center gap-16 lg:overflow-y-scroll py-16 lg:py-24">
+        <h1 className="text-4xl max-w-[700px] w-4/5">
+          Marcelo Chaman Mallqui
+          <p className="text-[#A0A0A0] inline font-light">
+            –Product Designer, Software Engineer & Founder
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        </h1>
+        <div className="max-w-[700px] w-4/5 flex flex-col gap-4">
+          {resume.map((item, key) => (
+            <ResumeSection
+              title={item.title}
+              website={item.website}
+              organization={item.organization}
+              date={item.date}
+              description={item.description}
+              key={key}
+            />
+          ))}
+        </div>
       </div>
     </main>
-  )
+  );
 }
