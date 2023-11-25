@@ -54,7 +54,7 @@ export default function Home() {
   const photos = [
     {
       title: "Fashion",
-      description: "What sparked by interest in design.",
+      description: "What sparked my interest in design.",
       photos: fashionListFormat,
     },
     {
