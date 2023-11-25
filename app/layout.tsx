@@ -6,8 +6,15 @@ import Navbar from "./components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.marcelochaman.com"),
   title: "Marcelo Chaman Mallqui",
   description: "A digital representation.",
+  openGraph: {
+    images: "/opengraph-image.png",
+  },
+  twitter: {
+    images: "/twitter-image.png",
+  },
 };
 
 export default function RootLayout({
