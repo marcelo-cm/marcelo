@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.marcelochaman.com"),
+  metadataBase: new URL("https://www.marcelochaman.ca"),
   title: "Marcelo Chaman Mallqui",
   description: "A digital representation.",
   openGraph: {
