@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
+      {/* <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:type" content="website"></meta>
         <meta property="og:url" content="https://www.marcelochaman.ca" />
@@ -40,7 +40,7 @@ export default function RootLayout({
           name="twitter:image"
           content="https://www.marcelochaman.ca/twitter-image.png"
         ></meta>
-      </head>
+      </head> */}
       <body className="h-[100dvh] w-[100dvw] xl:overflow-hidden flex flex-col lg:flex-row no-scrollbar">
         {children}
         <Navbar />
