@@ -18,7 +18,7 @@ export default function Home() {
       organization: "Canadian Undergraduate Conference on AI",
       date: "2023",
       description:
-        "Organizing Canada’s largest undergraduate conference on AI, 320+ delegates, featuring companies like Cohere, Microsoft, Intel, and more",
+        "Canada’s largest undergraduate conference on AI, 320+ delegates, featuring Cohere, Microsoft, Intel, and more",
     },
     {
       title: "International Competitor",
@@ -26,7 +26,7 @@ export default function Home() {
       organization: "Queen’s Case Competition Union",
       date: "2023",
       description:
-        "1 of 6 students in my class (550 students) competing internationally on behalf of Queen’s university.",
+        "1 of 20 students competing internationally on behalf of Queen’s university.",
     },
     {
       title: "Head of Technology",
@@ -37,20 +37,12 @@ export default function Home() {
         "300 person fellowship with fellows from Uber, Google, Goldman Sachs, JP Morgan, Uber and more",
     },
     {
-      title: "Advisor",
-      website: "https://instagram.com/inqubate.ai",
-      organization: "inQUbate",
-      date: "2023",
-      description:
-        "Organizing Canada’s largest undergraduate conference on AI, 320+ delegates, featuring companies like Cohere, Microsoft, Intel, and more",
-    },
-    {
       title: "AI Research Analyst Intern",
       website: "https://recalcacademy.com/",
       organization: " Recalc Academy",
       date: "2023",
       description:
-        "Finance academy & accelerator program empowering ambitious students breaking into the world on finance. Automated processes & research AI tools in the data & AI space",
+        "Finance academy & accelerator program empowering ambitious students breaking into the world on finance; Automated processes & researched AI tools in the data & finance space",
     },
     {
       title: "Co-Founder & Advisor ",
@@ -66,7 +58,7 @@ export default function Home() {
       organization: "verycalmstudios.",
       date: "2021-2022",
       description:
-        "Marketing & design studio. Worked w/ FujiFilm, and on Footlocker, Adidas, & Hennessy supported projects",
+        "Marketing & design studio. Worked on projects for FujiFilm, Footlocker, Adidas, and Hennessy ",
     },
     {
       title: "Founder",
