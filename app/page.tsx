@@ -87,7 +87,7 @@ export default function Home() {
     },
     {
       title: "CUCAI Website",
-      tags: ["UI Design", "Frontend Development"],
+      tags: ["UI Design", "Frontend"],
       type: "Website",
       image_url: "/CUCAIWEB.png",
       to: "https://www.cucai.ca/",
