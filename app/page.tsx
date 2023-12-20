@@ -70,13 +70,27 @@ export default function Home() {
     },
   ];
 
-  const projects = [
+  function reorderList(list: any[]) {
+    let oddIndexed = list.filter((_, index) => index % 2 === 0);
+    let evenIndexed = list.filter((_, index) => index % 2 !== 0);
+
+    return [...oddIndexed, ...evenIndexed];
+  }
+
+  const unorderedProjects = [
     {
       title: "QMIND Design Team Portal",
       tags: ["Product Design"],
       type: "Case Study",
       image_url: "/DTP-P-A.png",
       to: "https://medium.com/@marcelochaman/ux-product-design-case-study-qmind-design-team-portal-89d7eb8ea526",
+    },
+    {
+      title: "CUCAI Website",
+      tags: ["UI Design", "Frontend Development"],
+      type: "Website",
+      image_url: "/CUCAIWEB.png",
+      to: "https://www.cucai.ca/",
     },
     {
       title: "QMIND Website",
@@ -86,11 +100,11 @@ export default function Home() {
       to: "https://qmind.ca/",
     },
     {
-      title: "Attention! Is All That Matters",
-      tags: ["Writing"],
-      type: "Article",
-      image_url: "/attention-cover.webp",
-      to: "https://medium.com/@marcelochaman/attention-is-all-that-matters-51d141844dec",
+      title: "Memoria",
+      tags: ["Product"],
+      type: "Capsule",
+      image_url: "/MEMORIA-COVER.png",
+      to: "/projects/memoria",
     },
     {
       title: "Easy Recipe",
@@ -100,14 +114,6 @@ export default function Home() {
       to: "https://medium.com/@marcelochaman/easy-recipe-ux-ui-case-study-124a7992597e",
     },
     {
-      title: "Memoria",
-      tags: ["Product"],
-      type: "Capsule",
-      image_url: "/MEMORIA-COVER.png",
-      to: "/projects/memoria",
-    },
-
-    {
       title: "EchoDMs",
       tags: ["Backend", "Slack App"],
       type: "Website",
@@ -115,20 +121,23 @@ export default function Home() {
       to: "https://echo-dms.vercel.app/",
     },
     {
+      title: "Attention! Is All That Matters",
+      tags: ["Writing"],
+      type: "Article",
+      image_url: "/attention-cover.webp",
+      to: "https://medium.com/@marcelochaman/attention-is-all-that-matters-51d141844dec",
+    },
+
+    {
       title: "LockedIn",
       tags: ["Hackathon", "Product Design"],
       type: "Project",
       image_url: "/lockedin-cover.png",
       to: "/projects/lockedin",
     },
-    {
-      title: "CUCAI Website",
-      tags: ["UI Design", "Frontend Development"],
-      type: "Website",
-      image_url: "/CUCAIWEB.png",
-      to: "https://www.cucai.ca/",
-    },
   ];
+
+  const projects = reorderList(unorderedProjects);
 
   const ResumeSection = ({
     title,
