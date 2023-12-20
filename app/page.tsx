@@ -121,6 +121,13 @@ export default function Home() {
       image_url: "/lockedin-cover.png",
       to: "/projects/lockedin",
     },
+    {
+      title: "CUCAI Website",
+      tags: ["UI Design", "Frontend Development"],
+      type: "Website",
+      image_url: "/CUCAIWEB.png",
+      to: "https://www.cucai.ca/",
+    },
   ];
 
   const ResumeSection = ({

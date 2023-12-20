@@ -212,7 +212,7 @@ export default function Home() {
         </div>
       </div>
       <div className="h-fit xl:h-full w-full xl:w-[50dvw] xl:h-[100dvh] flex flex-col gap-2 xl:overflow-y-scroll xl:pt-24 no-scrollbar">
-        <div className="h-fit w-full flex flex-col gap-8 no-scrollbar ">
+        <div className="h-fit w-full flex flex-col gap-8 no-scrollbar">
           {photos.map((category, key) => (
             <div key={key}>
               {/* category details */}
