@@ -29,6 +29,14 @@ export default function Home() {
         "Led product design & development for an AI-powered communication system helping dental clinics capture $100k in lost revenue annually by increasing booking rates",
     },
     {
+      title: "Founder & Software Engineer",
+      website: "",
+      organization: "Memoria AI",
+      date: "2023",
+      description:
+        "Founded with 2 ex-Google PMs, Memoria was an AI voice-journalling tool that let users talk to their thoughts and get insights on their mental health. 800+ users",
+    },
+    {
       title: "International Competitor",
       website: "https://qccu.info",
       organization: "Queen’s Case Competition Union",
@@ -42,7 +50,7 @@ export default function Home() {
       organization: "HeadStart Fellowship",
       date: "2023",
       description:
-        "300 person fellowship with fellows from Uber, Google, Goldman Sachs, JP Morgan, Uber and more",
+        "300 person fellowship with fellows from Uber, Google, Goldman Sachs, JP Morgan, Uber & more",
     },
     {
       title: "AI Research Analyst Intern",
@@ -66,7 +74,7 @@ export default function Home() {
       organization: "verycalmstudios.",
       date: "2021-2022",
       description:
-        "Marketing & design studio. Worked on projects for FujiFilm, Footlocker, Adidas, and Hennessy ",
+        "Marketing & design studio. Worked on projects for FujiFilm, Footlocker, Adidas, and Hennessy. Met really cool people in the creative industry",
     },
     {
       title: "Founder",
@@ -74,7 +82,7 @@ export default function Home() {
       organization: "ustudios.",
       date: "2017",
       description:
-        "Fashion company where I found my love for art. Designed for companies 100k+ in revenue & design clothes for myself to this day",
+        "Fashion company where I found my love for art. Designed for companies with $100k+ in revenue & design clothes for myself to this day",
     },
   ];
 
