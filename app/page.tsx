@@ -21,6 +21,14 @@ export default function Home() {
         "Canada’s largest undergraduate conference on AI, 320+ delegates, featuring Cohere, Microsoft, Intel, and more",
     },
     {
+      title: "Software Engineer & Product Designer",
+      website: "https://callsmartai.ca",
+      organization: "CallSmart AI",
+      date: "2023",
+      description:
+        "Led product design & development for an AI-powered communication system helping dental clinics capture $100k in lost revenue annually by increasing booking rates",
+    },
+    {
       title: "International Competitor",
       website: "https://qccu.info",
       organization: "Queen’s Case Competition Union",
