@@ -251,7 +251,7 @@ export default function Home() {
               />
             </svg>
           </a>
-          <a target="_blank" href="/MarceloChamanMallqui.pdf">
+          <a target="_blank" href="/MarceloChamanMallqui2026.pdf">
             <svg
               width="16"
               height="16"
