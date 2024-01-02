@@ -7,10 +7,14 @@ import toJsxString from "react-element-to-jsx-string";
 export const ComponentContainer = ({
   date,
   label,
+  handleToast,
+  className,
   children,
 }: {
   date?: string;
   label?: string;
+  handleToast?: Function;
+  className?: string;
   children?: any;
 }) => {
   const [sourceOpen, setSourceOpen] = useState(false);
@@ -28,7 +32,7 @@ export const ComponentContainer = ({
   };
 
   return (
-    <div className="relative">
+    <div className={`relative ${className}`}>
       <div className="w-full border border-[1px] border-[#2e2e2e] border-dashed hover:border-dotted p-16 rounded-lg ">
         {children}
       </div>
@@ -49,6 +53,7 @@ export const ComponentContainer = ({
               <button
                 onClick={async () => {
                   await copyToClipboard(childrenSource);
+                  handleToast && handleToast("success", "Copied!", 2000, 0);
                   setSourceOpen(false);
                 }}
                 className="p-2 hover:bg-[#2e2e2e]/75 hover:text-white rounded-md active:ring-1 ring-[#A0A0A0]"
