@@ -2,52 +2,52 @@
 
 import React, { useRef, useState } from "react";
 import { ComponentContainer } from "./_components/ComponentContainer";
-import { Toast } from "./_components/Toast";
+import { ToastContainer } from "./_components/ToastContainer";
 
 import CustomLink from "../components/CustomLink";
 import { clearInterval } from "timers";
 
+type Toast = { id: number; type: string; message: string; timeout: number };
+
 export default function Playground() {
-  const [toastTrigger, setToastTrigger] = useState([-1]);
+  const [allToasts, setAllToasts] = useState<Toast[]>([]);
   const [toastType, setToastType] = useState("");
   const [toastMessage, setToastMessage] = useState("");
 
   const toastTimeouts: { [key: number]: NodeJS.Timeout } = {};
 
-  async function handleToast(
-    type: string = "success",
-    message: string = "Done",
-    timeout: number = 3000,
-    id: number
+  async function addToast(
+    type: string,
+    message: string,
+    timeout: number = 3000
   ) {
-    setToastType(type);
-    setToastMessage(message);
+    const id = Math.floor(Math.random() * 1000000);
 
-    setToastTrigger(toastTrigger.concat(id));
+    const newToast: Toast = {
+      id: id,
+      type: type,
+      message: message,
+      timeout: timeout,
+    };
+
+    setAllToasts((prev) => [...prev, newToast]);
+
     toastTimeouts[id] = setTimeout(() => {
       closeToast(id);
     }, timeout);
   }
 
   async function closeToast(id: number) {
-    setToastTrigger((currentTriggers) =>
-      currentTriggers.filter((item) => item !== id)
-    );
+    setAllToasts((prev) => prev.filter((toast) => toast.id !== id));
   }
 
   return (
     <div className="h-fit md:h-full w-[100dvw] flex flex-col gap-8 items-center py-16 px-8 overflow-y-scroll no-scrollbar">
-      <Toast
-        trigger={toastTrigger.includes(0)}
-        close={() => closeToast(0)}
-        type={toastType}
-        message={toastMessage}
-      />
+      <ToastContainer toasts={allToasts} close={closeToast} />
       {/* TITLE & PAGE DESCRIPTION */}
       <div className="w-full flex flex-col gap-4 items-center">
         <h1 className="text-4xl max-w-[700px] w-4/5">
-          Welcome to the Sandbox {String(toastTrigger)}{" "}
-          {String(toastTrigger.includes(0))}
+          Welcome to the Sandbox
           <p className="text-[#A0A0A0] inline font-light">
             –Grounds For Experimentation
           </p>
@@ -67,7 +67,7 @@ export default function Playground() {
         <ComponentContainer
           date="01.01.2024"
           label="Component Container (Link Component as an Example)"
-          handleToast={handleToast}
+          handleToast={addToast}
         >
           <CustomLink to="https://www.qmind.ca/" icon underline={false}>
             QMIND
@@ -76,30 +76,36 @@ export default function Playground() {
         <ComponentContainer
           date="01.02.2024"
           label="Toast Component"
-          handleToast={handleToast}
+          handleToast={addToast}
         >
-          <div className="flex gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-4">
             <button
               onClick={() =>
-                handleToast("success", "This is a success toast!", 2000, 0)
+                addToast("success", "This is a success toast!", 3000)
               }
-              className="bg-green-700/25 text-green-500 cursor-pointer py-2 px-3 rounded-md text-sm"
+              className="bg-green-900/50 text-green-500 cursor-pointer py-2 px-3 rounded-md text-sm"
             >
               Click for success toast!
             </button>
             <button
-              onClick={() =>
-                handleToast("error", "This is an error toast!", 2000, 0)
-              }
-              className="bg-red-500/25 text-red-500 cursor-pointer py-2 px-3 rounded-md text-sm"
+              onClick={() => addToast("error", "This is an error toast!", 3000)}
+              className="bg-red-900/50 text-red-500 cursor-pointer py-2 px-3 rounded-md text-sm"
             >
               Click for error toast!
             </button>
             <button
               onClick={() =>
-                handleToast("message", "This is a message toast!", 2000, 0)
+                addToast("warning", "This is a warning toast!", 3000)
               }
-              className="bg-gray-500/25 text-white cursor-pointer py-2 px-3 rounded-md text-sm"
+              className="bg-yellow-900/50 text-yellow-500 cursor-pointer py-2 px-3 rounded-md text-sm"
+            >
+              Click for message toast!
+            </button>
+            <button
+              onClick={() =>
+                addToast("message", "This is a message toast!", 3000)
+              }
+              className="bg-[#343434]/90 text-white cursor-pointer py-2 px-3 rounded-md text-sm"
             >
               Click for message toast!
             </button>

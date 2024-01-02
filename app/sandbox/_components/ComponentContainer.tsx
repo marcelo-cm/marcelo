@@ -53,7 +53,7 @@ export const ComponentContainer = ({
               <button
                 onClick={async () => {
                   await copyToClipboard(childrenSource);
-                  handleToast && handleToast("success", "Copied!", 2000, 0);
+                  handleToast && handleToast("success", "Copied!", 3000);
                   setSourceOpen(false);
                 }}
                 className="p-2 hover:bg-[#2e2e2e]/75 hover:text-white rounded-md active:ring-1 ring-[#A0A0A0]"
