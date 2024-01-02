@@ -5,13 +5,15 @@ import React, { useState } from "react";
 import toJsxString from "react-element-to-jsx-string";
 
 export const ComponentContainer = ({
-  date,
+  start,
+  end,
   label,
   handleToast,
   className,
   children,
 }: {
-  date?: string;
+  start: string;
+  end?: string;
   label?: string;
   handleToast?: Function;
   className?: string;
@@ -38,7 +40,9 @@ export const ComponentContainer = ({
       </div>
       <div className="flex z-50 justify-between p-2 text-xs text-[#a0a0a0]">
         <p>{label}</p>
-        <p>{date}</p>
+        <p>
+          {start} {end ? `- ${end}` : null}
+        </p>
       </div>
       <div className="hidden md:flex w-fit left-1/2 -translate-x-1/2 absolute bottom-[3px] flex justify-center">
         <button

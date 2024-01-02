@@ -65,7 +65,8 @@ export default function Playground() {
       </div>
       <div className="flex flex-col-reverse gap-8 max-w-[1100px] w-full">
         <ComponentContainer
-          date="01.01.2024"
+          start="01.01.2024"
+          end="Present"
           label="Component Container (Link Component as an Example)"
           handleToast={addToast}
         >
@@ -74,7 +75,8 @@ export default function Playground() {
           </CustomLink>
         </ComponentContainer>
         <ComponentContainer
-          date="01.02.2024"
+          start="01.02.2024"
+          end="Present"
           label="Toast Component"
           handleToast={addToast}
         >
