@@ -13,14 +13,14 @@ export default function Home() {
       description:
         "I am a 19 year old product designer & software engineer born in Lima, Peru, raised in Toronto leading Canada’s largest undergraduate organization on AI, and organizing the Canadian Undergraduate Conference on AI. I’m a 3x founder having worked in fashion at 13, to marketing & design studio at 16, and then scaled a 50k+ community at 18. Today I’m serial-building product with friends. \
          \n \n \
-        I grew up immersed by a energetic Peruvian culture, with amazing food, and a mother who always pushed me to try things I’m bad at... and sent me to engineer summer camps against my will. My brother introduced me to the world of technology when the iPhone 3GS released, and my greatest influence.\
+        I grew up immersed by a energetic Peruvian culture, with amazing food, and a mother who always pushed me to try things I’m bad at... and sent me to engineer summer camps against my will. My brother introduced me to the world of technology when the iPhone 3GS released, and he is my greatest influence.\
          \n \n \
         I love art, tech, community, and learning new things. I love making new friends. I love everything I do.",
     },
     {
       title: "WHO I USED TO BE",
       description:
-        "As a kid I spent most of my time on the basketball court, until the day I touched a camera. Quickly, I became obsessed with art in it’s many forms – from fashion, to photography and eventually user experience & product design. At 17, I joined QMIND, where I was introduced to AI, and the story is still writing itself until today.",
+        "As a kid I spent most of my time on the basketball court, until the day I touched a camera. Quickly, I became obsessed with art in its many forms – from fashion, to photography and eventually user experience & product design. At 17, I joined QMIND, where I was introduced to AI, and the story is still writing itself until today.",
     },
     {
       title: "WHO I WILL TO BE",
@@ -35,7 +35,7 @@ export default function Home() {
       organization: "inQUbate",
       date: "2023",
       description:
-        "Coming from a country with many underprivileged and impoverished families, I am determined to make the most out of the all the sources I have so that one day I can give back to those who enabled me to get where I am, and to the kids of Peru whom I see myself in.",
+        "Coming from a country with many underprivileged and impoverished families, I am determined to make the most out of the all the resources I have so that one day I can give back to those who enabled me to get where I am, and to the kids of Peru whom I see myself in.",
     },
   ];
 
