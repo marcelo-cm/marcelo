@@ -28,7 +28,7 @@ const ProjectCard = ({
 
   return (
     <a
-      className="break-inside-avoid border-[1px] border-[#2e2e2e] w-full h-fit bg-[#1C1C1C] rounded-xl p-2 flex flex-col gap-2 cursor-pointer"
+      className="active:scale-[103%] break-inside-avoid border-[1px] border-[#2e2e2e] w-full h-fit bg-[#1C1C1C] rounded-xl p-2 flex flex-col gap-2 cursor-pointer transition-all duration-300 hover:shadow-xl"
       href={to}
       target="_blank"
     >
@@ -40,7 +40,7 @@ const ProjectCard = ({
           height={300}
           alt={alt}
           quality={75}
-          className="rounded-md object-fill h-full w-full"
+          className="rounded-md object-fill h-full w-full brightness-[1.1] hover:brightness-[0.9] transition-all duration-300"
         />
         <div className="w-full flex justify-between items-center pt-4 p-3 rounded-md overflow-none absolute left-0 bottom-0 text-[15px]">
           <p className="z-50 font-light">{title}</p>

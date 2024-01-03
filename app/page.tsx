@@ -8,17 +8,33 @@ export default function Home() {
       title: "Managing Director",
       website: "https://qmind.ca",
       organization: "QMIND",
-      date: "2023",
+      date: "2023 – Present",
       description:
-        "Leading Canada’s largest undergraduate organization on AI, 250+ members, 40+ AI projects",
+        "Leading Canada’s largest undergraduate organization on AI, 250+ members, 40+ AI projects; democratizing access to AI education, research & community",
     },
     {
       title: "President",
       website: "https://cucai.ca",
       organization: "Canadian Undergraduate Conference on AI",
-      date: "2023",
+      date: "2023 – Present",
       description:
-        "Canada’s largest undergraduate conference on AI, 320+ delegates, featuring Cohere, Microsoft, Intel, and more",
+        "Canada’s largest undergraduate conference on AI, 320+ delegates, featuring speakers & sponsors from OpenAI, Cohere, Microsoft, Intel, Apple, NASA & more",
+    },
+    {
+      title: "International Competitor",
+      website: "https://qccu.info",
+      organization: "Queen’s Case Competition Union",
+      date: "2023 – Present",
+      description:
+        "1 of 20 students competing internationally on behalf of Queen’s university",
+    },
+    {
+      title: "Head of Technology",
+      website: "https://www.headstartfellowship.com/",
+      organization: "HeadStart Fellowship",
+      date: "2023 – Present",
+      description:
+        "300 person fellowship with fellows from Uber, Google, Goldman Sachs, JP Morgan & more",
     },
     {
       title: "Software Engineer & Product Designer",
@@ -35,22 +51,6 @@ export default function Home() {
       date: "2023",
       description:
         "Founded with 2 ex-Google PMs, Memoria was an AI voice-journalling tool that let users talk to their thoughts and get insights on their mental health. 800+ users",
-    },
-    {
-      title: "International Competitor",
-      website: "https://qccu.info",
-      organization: "Queen’s Case Competition Union",
-      date: "2023",
-      description:
-        "1 of 20 students competing internationally on behalf of Queen’s university.",
-    },
-    {
-      title: "Head of Technology",
-      website: "https://www.headstartfellowship.com/",
-      organization: "HeadStart Fellowship",
-      date: "2023",
-      description:
-        "300 person fellowship with fellows from Uber, Google, Goldman Sachs, JP Morgan, Uber & more",
     },
     {
       title: "AI Research Analyst Intern",
@@ -121,6 +121,13 @@ export default function Home() {
       type: "Capsule",
       image_url: "/MEMORIA-COVER.png",
       to: "/projects/memoria",
+    },
+    {
+      title: "The Sandbox",
+      tags: ["Design", "Frontend"],
+      type: "Project",
+      image_url: "/Sandbox2.png",
+      to: "/sandbox",
     },
     {
       title: "Easy Recipe",
@@ -319,7 +326,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full min-w-[300px] lg:w-[45%] lg:h-[100dvh] flex flex-row gap-2 lg:overflow-y-scroll no-scrollbar">
-        <div className=" columns-1 sm:columns-2 lg:columns-1 xl:columns-2 space-y-2 h-fit w-full gap-2 pt-2 overflow-y-scroll no-scrollbar">
+        <div className="columns-1 sm:columns-2 lg:columns-1 xl:columns-2 space-y-2 h-fit w-full gap-2 pt-2 overflow-y-scroll no-scrollbar">
           {projects.map((project, key) => (
             <ProjectCard
               image_url={project.image_url}

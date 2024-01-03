@@ -22,11 +22,11 @@ export const ToastContainer = ({
           className={`w-fit cursor-pointer transition-all duration-300 py-2 px-3 rounded-md text-sm z-50
       ${
         toast.type === "success"
-          ? "bg-green-900/50 text-green-500"
+          ? "bg-green-900/80 text-green-400"
           : toast.type === "error"
-          ? "bg-red-900/50 text-red-500"
+          ? "bg-red-900/80 text-red-400"
           : toast.type === "warning"
-          ? "bg-yellow-900/50 text-yellow-500"
+          ? "bg-yellow-900/80 text-yellow-400"
           : "bg-[#343434]/90 text-white"
       }`}
         >

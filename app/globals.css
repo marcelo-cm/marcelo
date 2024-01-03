@@ -26,6 +26,19 @@
   }
 }
 
+@keyframes scrollUpwards {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-25%); /* Move the content up by its full height */
+  }
+}
+
+.animate-scroll-upwards {
+  animation: scrollUpwards 60s linear infinite;
+}
+
 :root {
   background-color: #161616;
   /* --foreground-rgb: 0, 0, 0;

@@ -76,7 +76,7 @@ export default function Playground() {
         </ComponentContainer>
         <ComponentContainer
           start="01.02.2024"
-          end="Present"
+          end="01.03.2024"
           label="Toast Component"
           handleToast={addToast}
         >
@@ -85,13 +85,13 @@ export default function Playground() {
               onClick={() =>
                 addToast("success", "This is a success toast!", 3000)
               }
-              className="bg-green-900/50 text-green-500 cursor-pointer py-2 px-3 rounded-md text-sm"
+              className="bg-green-900/80 text-green-400 cursor-pointer py-2 px-3 rounded-md text-sm"
             >
               Click for success toast!
             </button>
             <button
               onClick={() => addToast("error", "This is an error toast!", 3000)}
-              className="bg-red-900/50 text-red-500 cursor-pointer py-2 px-3 rounded-md text-sm"
+              className="bg-red-900/80 text-red-400 cursor-pointer py-2 px-3 rounded-md text-sm"
             >
               Click for error toast!
             </button>
@@ -99,7 +99,7 @@ export default function Playground() {
               onClick={() =>
                 addToast("warning", "This is a warning toast!", 3000)
               }
-              className="bg-yellow-900/50 text-yellow-500 cursor-pointer py-2 px-3 rounded-md text-sm"
+              className="bg-yellow-900/80 text-yellow-400 cursor-pointer py-2 px-3 rounded-md text-sm"
             >
               Click for message toast!
             </button>
