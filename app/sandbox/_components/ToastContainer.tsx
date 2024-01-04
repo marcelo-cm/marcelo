@@ -1,7 +1,6 @@
 "use client";
 
-import { ClipboardCopyIcon, Cross2Icon } from "@radix-ui/react-icons";
-import React, { useState, forwardRef } from "react";
+import React from "react";
 
 export const ToastContainer = ({
   toasts,

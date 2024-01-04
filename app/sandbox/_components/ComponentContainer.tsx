@@ -38,16 +38,16 @@ export const ComponentContainer = ({
       <div className="w-full border border-[1px] border-[#2e2e2e] border-dashed hover:border-dotted p-16 rounded-lg ">
         {children}
       </div>
-      <div className="flex z-50 justify-between p-2 text-xs text-[#a0a0a0]">
-        <p>{label}</p>
-        <p>
+      <div className="flex gap-2 z-50 justify-between p-2 text-xs text-[#a0a0a0] flex-wrap">
+        <p className="break-keep">{label}</p>
+        <p className="break-keep">
           {start} {end ? `- ${end}` : null}
         </p>
       </div>
       <div className="hidden md:flex w-fit left-1/2 -translate-x-1/2 absolute bottom-[3px] flex justify-center">
         <button
           onClick={() => setSourceOpen((prev) => !prev)}
-          className="w-fit active:ring-1 ring-[#A0A0A0] text-xs text-[#a0a0a0] select-none	hover:text-white hover:bg-[#232323] py-1 px-2 rounded-md"
+          className="w-fit active:ring-1 ring-[#A0A0A0] text-xs text-[#a0a0a0] select-none	hover:text-white hover:bg-[#232323] py-1 px-2 rounded-md break-keep"
         >
           Source Code
         </button>

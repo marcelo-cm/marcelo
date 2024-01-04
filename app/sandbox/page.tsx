@@ -1,15 +1,25 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { ComponentContainer } from "./_components/ComponentContainer";
 import { ToastContainer } from "./_components/ToastContainer";
 
 import CustomLink from "../components/CustomLink";
-import { clearInterval } from "timers";
+import Select from "./_components/(Select Components)/Select";
+import SelectItem from "./_components/(Select Components)/SelectItem";
+import SelectLabel from "./_components/(Select Components)/SelectLabel";
+import SelectGroup from "./_components/(Select Components)/SelectGroup";
 
 type Toast = { id: number; type: string; message: string; timeout: number };
 
 export default function Playground() {
+  // Select
+  const selectRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    console.log(selectRef);
+  }, [selectRef]);
+
+  // Toasts
   const [allToasts, setAllToasts] = useState<Toast[]>([]);
   const [toastType, setToastType] = useState("");
   const [toastMessage, setToastMessage] = useState("");
@@ -42,7 +52,7 @@ export default function Playground() {
   }
 
   return (
-    <div className="h-fit md:h-full w-[100dvw] flex flex-col gap-8 items-center py-16 px-8 overflow-y-scroll no-scrollbar">
+    <div className="h-fit md:h-full w-[100dvw] flex flex-col gap-8 items-center pt-16 pb-24 px-8 overflow-y-scroll no-scrollbar">
       <ToastContainer toasts={allToasts} close={closeToast} />
       {/* TITLE & PAGE DESCRIPTION */}
       <div className="w-full flex flex-col gap-4 items-center">
@@ -101,7 +111,7 @@ export default function Playground() {
               }
               className="bg-yellow-900/80 text-yellow-400 cursor-pointer py-2 px-3 rounded-md text-sm"
             >
-              Click for message toast!
+              Click for warning toast!
             </button>
             <button
               onClick={() =>
@@ -112,6 +122,25 @@ export default function Playground() {
               Click for message toast!
             </button>
           </div>
+        </ComponentContainer>
+        <ComponentContainer
+          start="01.03.2024"
+          end="Present"
+          label="Select Component"
+          handleToast={addToast}
+        >
+          <Select ref={selectRef}>
+            <SelectGroup>
+              <SelectLabel>Label</SelectLabel>
+              <SelectItem>Item 1</SelectItem>
+              <SelectItem>Item 2</SelectItem>
+            </SelectGroup>
+            <SelectGroup>
+              <SelectLabel>Label</SelectLabel>
+              <SelectItem>Item 1</SelectItem>
+              <SelectItem>Item 2</SelectItem>
+            </SelectGroup>
+          </Select>
         </ComponentContainer>
       </div>
     </div>
