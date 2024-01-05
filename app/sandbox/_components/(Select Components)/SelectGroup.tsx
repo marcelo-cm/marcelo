@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 
-interface SelectGroupProps {
+export interface SelectGroupProps {
   children: React.ReactNode;
   label?: string;
 }

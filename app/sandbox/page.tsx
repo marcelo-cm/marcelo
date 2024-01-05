@@ -9,15 +9,21 @@ import Select from "./_components/(Select Components)/Select";
 import SelectItem from "./_components/(Select Components)/SelectItem";
 import SelectLabel from "./_components/(Select Components)/SelectLabel";
 import SelectGroup from "./_components/(Select Components)/SelectGroup";
+import { on } from "events";
 
 type Toast = { id: number; type: string; message: string; timeout: number };
 
 export default function Playground() {
   // Select
+  const [selectValue, setSelectValue] = useState<string>("Placeholder");
   const selectRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     console.log(selectRef);
   }, [selectRef]);
+
+  const handleSelectChange = (value: string) => {
+    setSelectValue(value);
+  };
 
   // Toasts
   const [allToasts, setAllToasts] = useState<Toast[]>([]);
@@ -70,7 +76,8 @@ export default function Playground() {
         </p>
         <p className="max-w-[700px] w-4/5">
           Below is a collection of small components as projects/experiments I've
-          worked on to keep my product design and front end skills sharp.
+          worked on to keep my product design and front end skills sharp. 30-45
+          mins daily.
         </p>
       </div>
       <div className="flex flex-col-reverse gap-8 max-w-[1100px] w-full">
@@ -123,23 +130,18 @@ export default function Playground() {
             </button>
           </div>
         </ComponentContainer>
+        {selectValue}
         <ComponentContainer
-          start="01.03.2024"
+          start="01.04.2024"
           end="Present"
           label="Select Component"
           handleToast={addToast}
         >
-          <Select ref={selectRef}>
-            <SelectGroup>
-              <SelectLabel>Label</SelectLabel>
-              <SelectItem>Item 1</SelectItem>
-              <SelectItem>Item 2</SelectItem>
-            </SelectGroup>
-            <SelectGroup>
-              <SelectLabel>Label</SelectLabel>
-              <SelectItem>Item 1</SelectItem>
-              <SelectItem>Item 2</SelectItem>
-            </SelectGroup>
+          <Select onChange={handleSelectChange} ref={selectRef}>
+            <SelectItem>Item 1</SelectItem>
+            <SelectItem>Item 2</SelectItem>
+            <SelectItem>Item 3</SelectItem>
+            <SelectItem>Item 4</SelectItem>
           </Select>
         </ComponentContainer>
       </div>

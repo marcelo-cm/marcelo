@@ -1,13 +1,27 @@
 import { FunctionComponent } from "react";
 
-interface SelectItemProps {
-  children: React.ReactNode;
+export interface SelectItemProps {
+  children: string | number;
+  onClick?: () => void;
 }
 
 const SelectItem: FunctionComponent<SelectItemProps> = ({
   children,
+  onClick,
 }: SelectItemProps) => {
-  return <div>{children}</div>;
+  // console.log("SelectItem:", children);
+
+  return (
+    <ul
+      onClick={() => {
+        // console.log("onClick:", children);
+        onClick && onClick();
+      }}
+      className="cursor-pointer"
+    >
+      {children}
+    </ul>
+  );
 };
 
 export default SelectItem;
