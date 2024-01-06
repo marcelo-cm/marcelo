@@ -20,7 +20,7 @@ const Navbar = () => {
 
     return (
       <a
-        className={`py-[6px] px-4 rounded-full h-fit w-fit hover:opacity-75 active:bg-white/10 active:[text-shadow:_0_0_5px_rgb(255_255_255_/_10%)] active:drop-shadow-[0_0_5px_rgb(255_255_255_/_80%)]: transition-all ${
+        className={`py-[6px] px-4 rounded-full h-fit w-fit hover:opacity-75 active:bg-white/10 active:[text-shadow:_0_0_5px_rgb(255_255_255_/_10%)] active:drop-shadow-[0_0_5px_rgb(255_255_255_/_80%)] transition-all ${
           isActive
             ? "bg-white/10 [text-shadow:_0_0_5px_rgb(255_255_255_/_10%)] drop-shadow-[0_0_5px_rgb(255_255_255_/_80%)]"
             : " "

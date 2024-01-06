@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { ComponentContainer } from "./_components/ComponentContainer";
 import { ToastContainer } from "./_components/ToastContainer";
 
-import CustomLink from "../components/CustomLink";
+import CustomLink from "../_components/CustomLink";
 import Select from "./_components/(Select Components)/Select";
 import SelectItem from "./_components/(Select Components)/SelectItem";
 import SelectLabel from "./_components/(Select Components)/SelectLabel";
@@ -138,10 +138,13 @@ export default function Playground() {
           handleToast={addToast}
         >
           <Select onChange={handleSelectChange} ref={selectRef}>
-            <SelectItem>Item 1</SelectItem>
-            <SelectItem>Item 2</SelectItem>
-            <SelectItem>Item 3</SelectItem>
-            <SelectItem>Item 4</SelectItem>
+            <SelectGroup>
+              <SelectLabel>Items</SelectLabel>
+              <SelectItem>Item 1</SelectItem>
+              <SelectItem>Item 2</SelectItem>
+              <SelectItem>Item 3</SelectItem>
+              <SelectItem>Item 4</SelectItem>
+            </SelectGroup>
           </Select>
         </ComponentContainer>
       </div>

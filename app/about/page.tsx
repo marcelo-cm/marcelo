@@ -1,6 +1,6 @@
 import Image from "next/image";
-import PhotoCard from "../components/PhotoCard";
-import CustomLink from "../components/CustomLink";
+import PhotoCard from "../_components/PhotoCard";
+import CustomLink from "../_components/CustomLink";
 import React from "react";
 import { Fragment } from "react";
 

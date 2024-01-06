@@ -1,7 +1,7 @@
-import React, { FunctionComponent, forwardRef, useRef, useState } from "react";
+import React, { forwardRef, useState } from "react";
 import SelectItem, { SelectItemProps } from "./SelectItem";
 import SelectGroup, { SelectGroupProps } from "./SelectGroup";
-import { render } from "react-dom";
+import SelectLabel from "./SelectLabel";
 
 interface SelectProps {
   onChange: (value: string) => void;
@@ -16,7 +16,9 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
     const handleItemClick = (itemValue: string) => {
       // console.log("itemValue", itemValue);
       setValue(itemValue);
+      // console.log("Closing");
       setIsOpen(false);
+      // console.log("Calling onChange");
       onChange(itemValue);
     };
 
@@ -36,18 +38,33 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
             onClick: () => handleItemClick(itemValue),
           });
         } else if (React.isValidElement(child) && child.type === SelectGroup) {
+          const typedChild = child as React.ReactElement<SelectGroupProps>;
+
+          return React.cloneElement(typedChild, {
+            onChange: handleItemClick,
+          });
         }
         return child;
       });
     };
 
     return (
-      <div tabIndex={0} ref={ref} onBlur={() => setIsOpen(false)}>
-        <div className="border w-fit p-4" onClick={() => setIsOpen(true)}>
+      <div
+        className="relative"
+        tabIndex={0}
+        ref={ref}
+        onBlur={() => setIsOpen(false)}
+      >
+        <div
+          className="py-[6px] px-6 rounded-md h-fit w-fit hover:opacity-75 border border-[#2e2e2e] bg-[#1C1C1C]"
+          onClick={() => setIsOpen(true)}
+        >
           {value}
         </div>
         {isOpen ? (
-          <div className="border p-4 w-fit h-fit">{renderChildren()}</div>
+          <div className="py-[6px] px-6 rounded-md h-fit w-fit border border-[#2e2e2e] bg-[#1C1C1C] absolute top-full mt-2">
+            {renderChildren()}
+          </div>
         ) : null}
       </div>
     );

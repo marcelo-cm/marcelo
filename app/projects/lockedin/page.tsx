@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect } from "react";
 import parse, { domToReact, Element } from "html-react-parser";
-import CustomLink from "@/app/components/CustomLink";
+import CustomLink from "@/app/_components/CustomLink";
 import Image from "next/image";
 
 function LockedIn() {

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import ProjectCard from "./components/ProjectCard";
-import CustomLink from "./components/CustomLink";
+import ProjectCard from "./_components/ProjectCard";
+import CustomLink from "./_components/CustomLink";
 
 export default function Home() {
   const resume = [
