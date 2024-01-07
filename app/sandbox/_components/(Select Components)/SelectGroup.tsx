@@ -40,7 +40,7 @@ const SelectGroup: FunctionComponent<SelectGroupProps> = ({
 
   return (
     <div>
-      {label}
+      <p className="font-semibold text-nowrap">{label}</p>
       {renderChildren()}
     </div>
   );

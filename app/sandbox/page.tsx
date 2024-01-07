@@ -130,7 +130,6 @@ export default function Playground() {
             </button>
           </div>
         </ComponentContainer>
-        {selectValue}
         <ComponentContainer
           start="01.04.2024"
           end="Present"
@@ -139,11 +138,18 @@ export default function Playground() {
         >
           <Select onChange={handleSelectChange} ref={selectRef}>
             <SelectGroup>
-              <SelectLabel>Items</SelectLabel>
-              <SelectItem>Item 1</SelectItem>
-              <SelectItem>Item 2</SelectItem>
-              <SelectItem>Item 3</SelectItem>
-              <SelectItem>Item 4</SelectItem>
+              <SelectLabel>Fruit</SelectLabel>
+              <SelectItem>Apple</SelectItem>
+              <SelectItem>Banana</SelectItem>
+              <SelectItem>Cherry</SelectItem>
+              <SelectItem>Durazno (Peach)</SelectItem>
+            </SelectGroup>
+            <SelectGroup>
+              <SelectLabel>Meats</SelectLabel>
+              <SelectItem>Chicken</SelectItem>
+              <SelectItem>Beef</SelectItem>
+              <SelectItem>Pork</SelectItem>
+              <SelectItem>Lamb</SelectItem>
             </SelectGroup>
           </Select>
         </ComponentContainer>

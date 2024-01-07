@@ -2,6 +2,7 @@ import React, { forwardRef, useState } from "react";
 import SelectItem, { SelectItemProps } from "./SelectItem";
 import SelectGroup, { SelectGroupProps } from "./SelectGroup";
 import SelectLabel from "./SelectLabel";
+import { CaretDownIcon, CaretUpIcon } from "@radix-ui/react-icons";
 
 interface SelectProps {
   onChange: (value: string) => void;
@@ -50,19 +51,26 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
 
     return (
       <div
-        className="relative"
+        className="relative w-max"
         tabIndex={0}
         ref={ref}
         onBlur={() => setIsOpen(false)}
       >
         <div
-          className="py-[6px] px-6 rounded-md h-fit w-fit hover:opacity-75 border border-[#2e2e2e] bg-[#1C1C1C]"
-          onClick={() => setIsOpen(true)}
+          className="py-[6px] pl-6 pr-2 flex items-center rounded-md h-fit w-fit hover:opacity-75 border border-[#2e2e2e] bg-[#1C1C1C] select-none cursor-pointer"
+          onClick={() => setIsOpen((prevState) => !prevState)}
         >
-          {value}
+          {value}{" "}
+          {isOpen ? (
+            <CaretUpIcon className="inline-block ml-2" />
+          ) : (
+            <CaretDownIcon className="inline-block ml-2" />
+          )}
         </div>
         {isOpen ? (
-          <div className="py-[6px] px-6 rounded-md h-fit w-fit border border-[#2e2e2e] bg-[#1C1C1C] absolute top-full mt-2">
+          <div
+            className={`py-2 px-3 rounded-md h-fit max-h-96 w-max border border-[#2e2e2e] bg-[#1C1C1C] absolute top-full mt-2 overflow-y-scroll z-50`}
+          >
             {renderChildren()}
           </div>
         ) : null}
