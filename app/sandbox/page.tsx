@@ -15,13 +15,15 @@ type Toast = { id: number; type: string; message: string; timeout: number };
 
 export default function Playground() {
   // Select
-  const [selectValue, setSelectValue] = useState<string>("Placeholder");
+  const [selectValue, setSelectValue] = useState<string | number>(
+    "Placeholder"
+  );
   const selectRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     console.log(selectRef);
   }, [selectRef]);
 
-  const handleSelectChange = (value: string) => {
+  const handleSelectChange = (value: string | number) => {
     setSelectValue(value);
   };
 
@@ -139,10 +141,16 @@ export default function Playground() {
           <Select onChange={handleSelectChange} ref={selectRef}>
             <SelectGroup>
               <SelectLabel>Fruit</SelectLabel>
-              <SelectItem>Apple</SelectItem>
+              <SelectItem value={1}>Apple</SelectItem>
               <SelectItem>Banana</SelectItem>
               <SelectItem>Cherry</SelectItem>
               <SelectItem>Durazno (Peach)</SelectItem>
+              <SelectGroup>
+                <SelectLabel>Sweet Fruits</SelectLabel>
+                <SelectItem value={1}>Apple</SelectItem>
+                <SelectItem>Raspberry</SelectItem>
+                <SelectItem>Mango</SelectItem>
+              </SelectGroup>
             </SelectGroup>
             <SelectGroup>
               <SelectLabel>Meats</SelectLabel>
@@ -150,6 +158,13 @@ export default function Playground() {
               <SelectItem>Beef</SelectItem>
               <SelectItem>Pork</SelectItem>
               <SelectItem>Lamb</SelectItem>
+            </SelectGroup>
+            <SelectGroup>
+              <SelectLabel>Vegetables</SelectLabel>
+              <SelectItem>Tomatoes</SelectItem>
+              <SelectItem>Lettuce</SelectItem>
+              <SelectItem>Carrot</SelectItem>
+              <SelectItem>Onion</SelectItem>
             </SelectGroup>
           </Select>
         </ComponentContainer>
