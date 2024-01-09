@@ -1,33 +1,33 @@
-import { FunctionComponent } from "react";
+import React, { useContext } from "react";
+import SelectContext from "./SelectContext";
 
 export interface SelectItemProps {
-  children: string | number;
-  active?: boolean;
-  id?: string;
+  children: React.ReactNode;
   value?: string | number;
-  onClick?: () => void;
 }
 
-const SelectItem: FunctionComponent<SelectItemProps> = ({
-  children,
-  active,
-  value = children,
-  onClick,
-}: SelectItemProps) => {
-  // console.log("SelectItem:", children);
+const SelectItem: React.FC<SelectItemProps> = ({ children, value }) => {
+  const { handleItemClick, selectedValue } = useContext(SelectContext);
+
+  // Determine if this item is selected
+  const isSelected = selectedValue === children;
+
+  // Function to handle the click on this item
+  const onClick = () => {
+    if (typeof children === "string" || typeof children === "number") {
+      handleItemClick(children, value || children);
+    }
+  };
 
   return (
-    <ul
-      onClick={() => {
-        // console.log("onClick:", children);
-        onClick && onClick();
-      }}
-      className={`${
-        active ? "bg-white/10" : null
-      } cursor-pointer py-[6px] m-1 pl-2 pr-6 rounded-md h-fit w-full hover:bg-white/10 active:ring-1 ring-inset ring-[#A0A0A0] transition-all text-nowrap	break-keep`}
+    <div
+      className={`cursor-pointer py-[6px] pl-2 pr-6 rounded-md h-fit hover:bg-white/10 active:ring-1 ring-inset ring-[#A0A0A0] transition-all text-nowrap	break-keep ${
+        isSelected ? "bg-white/10" : ""
+      }`}
+      onClick={onClick}
     >
       {children}
-    </ul>
+    </div>
   );
 };
 
