@@ -10,7 +10,9 @@ interface SelectProps {
 const Select = forwardRef<HTMLDivElement, SelectProps>(
   ({ onChange, children }, ref) => {
     const [isOpen, setIsOpen] = useState(false);
-    const [selectedDisplay, setSelectedDisplay] = useState<string | number>("");
+    const [selectedDisplay, setSelectedDisplay] = useState<string | number>(
+      "Please Select An Option"
+    );
     const [selectedValue, setSelectedValue] = useState<string | number>("");
 
     const handleItemClick = (
@@ -24,6 +26,7 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
     };
 
     const contextValue = { handleItemClick, selectedValue, selectedDisplay };
+
     return (
       <SelectContext.Provider value={contextValue}>
         <div

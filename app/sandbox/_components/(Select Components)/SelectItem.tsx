@@ -3,14 +3,21 @@ import SelectContext from "./SelectContext";
 
 export interface SelectItemProps {
   children: React.ReactNode;
-  value?: string | number;
+  value: string | number;
 }
 
 const SelectItem: React.FC<SelectItemProps> = ({ children, value }) => {
-  const { handleItemClick, selectedValue } = useContext(SelectContext);
+  const { handleItemClick, selectedValue, selectedDisplay } =
+    useContext(SelectContext);
+
+  if (selectedDisplay === null) {
+    throw new Error(
+      "SelectItem must be a child of a SelectLabel or SelectGroup"
+    );
+  }
 
   // Determine if this item is selected
-  const isSelected = selectedValue === children;
+  const isSelected = selectedValue === value;
 
   // Function to handle the click on this item
   const onClick = () => {

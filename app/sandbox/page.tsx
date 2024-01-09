@@ -140,20 +140,25 @@ export default function Playground() {
         >
           <Select onChange={handleSelectChange} ref={selectRef}>
             <SelectGroup>
-              <SelectLabel>Group 1</SelectLabel>
-              <SelectItem>Apple</SelectItem>
-              <SelectItem>Banana</SelectItem>
-              <SelectItem>Cherry</SelectItem>
+              <SelectLabel>Fruits</SelectLabel>
+              <SelectItem value={"Apple"}>Apple</SelectItem>
+              <SelectItem value={"Banana"}>Banana</SelectItem>
+              <SelectItem value={"Cherry"}>Cherry</SelectItem>
+              <SelectGroup>
+                <SelectLabel>More Fruits</SelectLabel>
+                <SelectItem value={"Peach"}>Peach</SelectItem>
+                <SelectItem value={"Strawberry"}>Strawberry</SelectItem>
+                <SelectItem value={"Raspberry"}>Raspberry</SelectItem>
+              </SelectGroup>
             </SelectGroup>
             <SelectGroup>
-              <SelectLabel>Group 2</SelectLabel>
-              <SelectItem>Apple</SelectItem>
-              <SelectItem>Banana</SelectItem>
-              <SelectItem>Cherry</SelectItem>
+              <SelectLabel>Vegetables</SelectLabel>
+              <SelectItem value={"Celery"}>Celery</SelectItem>
+              <SelectItem value={"Tomatoes"}>Tomatoes</SelectItem>
+              <SelectItem value={"Cheeseburger"}>Cheeseburger</SelectItem>
             </SelectGroup>
           </Select>
         </ComponentContainer>
-        <p>{selectValue}</p>
       </div>
     </div>
   );

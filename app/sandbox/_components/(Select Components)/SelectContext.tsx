@@ -1,8 +1,8 @@
 import React from "react";
 
 interface SelectContextType {
-  selectedValue: string | number;
-  selectedDisplay: string | number;
+  selectedValue: string | number | null;
+  selectedDisplay: string | number | null;
   handleItemClick: (
     displayValue: string | number,
     itemValue: string | number
@@ -11,8 +11,8 @@ interface SelectContextType {
 }
 
 const defaultContextValue: SelectContextType = {
-  selectedValue: "",
-  selectedDisplay: "",
+  selectedValue: null,
+  selectedDisplay: null,
   handleItemClick: () => {}, // Dummy function, actual implementation will be in Select
   // default values for any other state or handlers
 };
