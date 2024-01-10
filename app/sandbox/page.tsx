@@ -134,7 +134,7 @@ export default function Playground() {
         </ComponentContainer>
         <ComponentContainer
           start="01.04.2024"
-          end="Present"
+          end="01.09.2024"
           label="Select Component"
           handleToast={addToast}
         >

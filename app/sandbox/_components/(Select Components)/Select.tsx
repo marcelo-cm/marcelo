@@ -48,7 +48,7 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
           </div>
           {isOpen ? (
             <div
-              className={`p-2 rounded-md h-fit max-h-[36rem] w-max border border-[#2e2e2e] bg-[#1C1C1C] absolute top-full mt-2 overflow-y-scroll z-50 flex flex-col gap-1`}
+              className={`p-2 rounded-md h-fit max-h-[40rem] no-scrollbar w-max border border-[#2e2e2e] bg-[#1C1C1C] absolute top-full mt-2 overflow-y-scroll z-50 flex flex-col gap-1`}
             >
               {children}
             </div>
