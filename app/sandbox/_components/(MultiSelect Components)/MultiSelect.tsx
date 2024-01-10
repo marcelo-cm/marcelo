@@ -19,6 +19,7 @@ const MultiSelect = ({ onChange, children }: MultiSelectProps) => {
   ) => {
     if (itemValue in selectedValues) {
       setSelectedValues((prev) => prev.filter((value) => value !== itemValue));
+      //   setDisplayValues((prev) => prev.filter((value) => value !== itemValue));
     }
 
     const contextValue = { handleItemClick, selectedValues, selectedDisplays };
