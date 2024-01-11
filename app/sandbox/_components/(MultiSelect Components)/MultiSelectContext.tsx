@@ -1,18 +1,18 @@
 import React from "react";
 
 interface MultiSelectContextType {
-  selectedValues: (string | number | null)[];
-  selectedDisplays: (string | number | null)[];
-  handleItemClick: (
-    displayValue: string | number,
-    itemValue: string | number
-  ) => void;
+  selectedOptions: { value: string | number; display: string }[] | null;
+  selectedValues: (string | number)[] | null;
+  handleItemClick: (option: {
+    value: string | number;
+    display: string;
+  }) => void;
   // any other state or handlers
 }
 
 const defaultContextValue: MultiSelectContextType = {
-  selectedValues: [],
-  selectedDisplays: [],
+  selectedOptions: null,
+  selectedValues: null,
   handleItemClick: () => {}, // Dummy function, actual implementation will be in Select
   // default values for any other state or handlers
 };

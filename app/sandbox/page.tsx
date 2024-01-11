@@ -9,11 +9,27 @@ import Select from "./_components/(Select Components)/Select";
 import SelectItem from "./_components/(Select Components)/SelectItem";
 import SelectLabel from "./_components/(Select Components)/SelectLabel";
 import SelectGroup from "./_components/(Select Components)/SelectGroup";
-import { on } from "events";
+import MultiSelect from "./_components/(MultiSelect Components)/MultiSelect";
+import MultiSelectItem from "./_components/(MultiSelect Components)/MultiSelectItem";
 
 type Toast = { id: number; type: string; message: string; timeout: number };
 
 export default function Playground() {
+  // MultiSelect
+  const [multiSelectValues, setMultiSelectValues] = useState<
+    (string | number)[]
+  >([]);
+
+  const handleMultiSelectChange = (option: { value: string | number }) => {
+    if (multiSelectValues.includes(option.value)) {
+      setMultiSelectValues((prev) =>
+        prev.filter((item) => item !== option.value)
+      );
+    } else {
+      setMultiSelectValues([...multiSelectValues, option.value]);
+    }
+  };
+
   // Select
   const [selectValue, setSelectValue] = useState<string | number>(
     "Placeholder"
@@ -136,7 +152,6 @@ export default function Playground() {
           start="01.04.2024"
           end="01.09.2024"
           label="Select Component"
-          handleToast={addToast}
         >
           <Select onChange={handleSelectChange} ref={selectRef}>
             <SelectGroup>
@@ -158,6 +173,22 @@ export default function Playground() {
               <SelectItem value={"Cheeseburger"}>Cheeseburger</SelectItem>
             </SelectGroup>
           </Select>
+        </ComponentContainer>
+        <ComponentContainer
+          start="01.04.2024"
+          end="01.09.2024"
+          label="Select Component"
+        >
+          <MultiSelect onChange={handleMultiSelectChange}>
+            <MultiSelectItem value={1}>Apple</MultiSelectItem>
+            <MultiSelectItem value={2}>Banana</MultiSelectItem>
+            <MultiSelectItem value={3}>Cherry</MultiSelectItem>
+            <MultiSelectItem value={4}>Date</MultiSelectItem>
+            <MultiSelectItem value={5}>Elderberry</MultiSelectItem>
+            <MultiSelectItem value={6}>Fig</MultiSelectItem>
+            <MultiSelectItem value={7}>Grape</MultiSelectItem>
+            <MultiSelectItem value={8}>Honeydew</MultiSelectItem>
+          </MultiSelect>
         </ComponentContainer>
       </div>
     </div>
