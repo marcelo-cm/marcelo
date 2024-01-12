@@ -44,7 +44,7 @@ const MultiSelect = ({ onChange, children }: MultiSelectProps) => {
         onBlur={() => setIsOpen(false)}
       >
         <div
-          className="py-[6px] pl-2 pr-6 flex items-center rounded-md h-fit w-fit border border-[#2e2e2e] bg-[#1C1C1C] select-none cursor-pointer w-96 overflow-x-scroll no-scrollbar"
+          className="py-[6px] pl-2 pr-6 flex items-center rounded-md h-fit w-fit w-80 border border-[#2e2e2e] bg-[#1C1C1C] select-none cursor-pointer w-96 overflow-x-scroll no-scrollbar"
           onClick={() => setIsOpen((prevState) => !prevState)}
         >
           <div className="relative flex gap-2 flex-row pr-6">
@@ -58,7 +58,7 @@ const MultiSelect = ({ onChange, children }: MultiSelectProps) => {
                     handleItemClick(item);
                   }}
                 >
-                  {item.display}{" "}
+                  <p className="group-hover:opacity-75">{item.display}</p>
                   <Cross2Icon className="inline-block group-hover:text-red-500 transition-all" />
                 </div>
               ))
@@ -68,7 +68,7 @@ const MultiSelect = ({ onChange, children }: MultiSelectProps) => {
               </div>
             )}
           </div>
-          <div className="p-4 bg-[#1C1C1C] absolute right-0 rounded-md">
+          <div className="p-3 bg-[#1C1C1C] absolute right-[1px] rounded-md">
             {isOpen ? <CaretUpIcon /> : <CaretDownIcon />}
           </div>
         </div>

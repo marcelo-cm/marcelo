@@ -11,6 +11,8 @@ import SelectLabel from "./_components/(Select Components)/SelectLabel";
 import SelectGroup from "./_components/(Select Components)/SelectGroup";
 import MultiSelect from "./_components/(MultiSelect Components)/MultiSelect";
 import MultiSelectItem from "./_components/(MultiSelect Components)/MultiSelectItem";
+import MultiSelectGroup from "./_components/(MultiSelect Components)/MultiSelectGroup";
+import MultiSelectLabel from "./_components/(MultiSelect Components)/MultiSelectLabel";
 
 type Toast = { id: number; type: string; message: string; timeout: number };
 
@@ -175,19 +177,25 @@ export default function Playground() {
           </Select>
         </ComponentContainer>
         <ComponentContainer
-          start="01.04.2024"
-          end="01.09.2024"
-          label="Select Component"
+          start="01.10.2024"
+          end="01.12.2024"
+          label="MultiSelect Component"
         >
           <MultiSelect onChange={handleMultiSelectChange}>
-            <MultiSelectItem value={1}>Apple</MultiSelectItem>
-            <MultiSelectItem value={2}>Banana</MultiSelectItem>
-            <MultiSelectItem value={3}>Cherry</MultiSelectItem>
-            <MultiSelectItem value={4}>Date</MultiSelectItem>
-            <MultiSelectItem value={5}>Elderberry</MultiSelectItem>
-            <MultiSelectItem value={6}>Fig</MultiSelectItem>
-            <MultiSelectItem value={7}>Grape</MultiSelectItem>
-            <MultiSelectItem value={8}>Honeydew</MultiSelectItem>
+            <MultiSelectGroup>
+              <MultiSelectLabel>Fruits 1</MultiSelectLabel>
+              <MultiSelectItem value={1}>Apple</MultiSelectItem>
+              <MultiSelectItem value={2}>Banana</MultiSelectItem>
+              <MultiSelectItem value={3}>Cherry</MultiSelectItem>
+              <MultiSelectItem value={4}>Date</MultiSelectItem>
+            </MultiSelectGroup>
+            <MultiSelectGroup>
+              <MultiSelectLabel>Fruits 2</MultiSelectLabel>
+              <MultiSelectItem value={5}>Elderberry</MultiSelectItem>
+              <MultiSelectItem value={6}>Fig</MultiSelectItem>
+              <MultiSelectItem value={7}>Grape</MultiSelectItem>
+              <MultiSelectItem value={8}>Honeydew</MultiSelectItem>
+            </MultiSelectGroup>
           </MultiSelect>
         </ComponentContainer>
       </div>
