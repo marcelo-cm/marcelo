@@ -11,7 +11,7 @@ export const ToastContainer = ({
 }) => {
   return (
     <div
-      className={`absolute left-1/2 -translate-x-1/2 transition-all duration-300 h-fit flex flex-col-reverse gap-2 items-center ${
+      className={`absolute left-1/2 -translate-x-1/2 transition-all duration-300 h-fit flex flex-col-reverse gap-2 items-center z-50 ${
         toasts.length > 0 ? "top-2 translate-y-0" : "-top-2 -translate-y-full"
       }`}
     >

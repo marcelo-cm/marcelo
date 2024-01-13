@@ -96,8 +96,9 @@ export default function Playground() {
         </p>
         <p className="max-w-[700px] w-4/5">
           Below is a collection of small components as projects/experiments I've
-          worked on to keep my product design and front end skills sharp. 30-45
-          mins daily.
+          worked on to keep my product design and front end skills sharp. 30-60
+          minutes a day. No tutorials, just reading docs & experimenting. mins
+          daily.
         </p>
       </div>
       <div className="flex flex-col-reverse gap-8 max-w-[1100px] w-full">
@@ -197,6 +198,13 @@ export default function Playground() {
               <MultiSelectItem value={8}>Honeydew</MultiSelectItem>
             </MultiSelectGroup>
           </MultiSelect>
+        </ComponentContainer>
+        <ComponentContainer
+          label="Combobox Component"
+          start="01.12.2024"
+          end="Present"
+        >
+          Combobox Component Coming Soon
         </ComponentContainer>
       </div>
     </div>

@@ -35,7 +35,7 @@ export const ComponentContainer = ({
 
   return (
     <div className={`relative ${className}`}>
-      <div className="w-full border border-[1px] border-[#2e2e2e] border-dashed hover:border-dotted p-16 rounded-lg ">
+      <div className="w-full border border-[1px] border-[#2e2e2e] border-dashed hover:border-dotted p-16 rounded-lg flex flex-row justify-center">
         {children}
       </div>
       <div className="flex gap-2 z-50 justify-between p-2 text-xs text-[#a0a0a0] flex-wrap">
