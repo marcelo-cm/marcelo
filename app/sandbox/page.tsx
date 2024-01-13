@@ -37,9 +37,6 @@ export default function Playground() {
     "Placeholder"
   );
   const selectRef = useRef<HTMLDivElement | null>(null);
-  useEffect(() => {
-    console.log(selectRef);
-  }, [selectRef]);
 
   const handleSelectChange = (value: string | number) => {
     setSelectValue(value);
@@ -157,24 +154,17 @@ export default function Playground() {
           label="Select Component"
         >
           <Select onChange={handleSelectChange} ref={selectRef}>
-            <SelectGroup>
-              <SelectLabel>Fruits</SelectLabel>
-              <SelectItem value={"Apple"}>Apple</SelectItem>
-              <SelectItem value={"Banana"}>Banana</SelectItem>
-              <SelectItem value={"Cherry"}>Cherry</SelectItem>
-              <SelectGroup>
-                <SelectLabel>More Fruits</SelectLabel>
-                <SelectItem value={"Peach"}>Peach</SelectItem>
-                <SelectItem value={"Strawberry"}>Strawberry</SelectItem>
-                <SelectItem value={"Raspberry"}>Raspberry</SelectItem>
-              </SelectGroup>
-            </SelectGroup>
-            <SelectGroup>
-              <SelectLabel>Vegetables</SelectLabel>
-              <SelectItem value={"Celery"}>Celery</SelectItem>
-              <SelectItem value={"Tomatoes"}>Tomatoes</SelectItem>
-              <SelectItem value={"Cheeseburger"}>Cheeseburger</SelectItem>
-            </SelectGroup>
+            <SelectLabel>Fruits</SelectLabel>
+            <SelectItem value={"Apple"}>Apple</SelectItem>
+            <SelectItem value={"Banana"}>Banana</SelectItem>
+            <SelectItem value={"Cherry"}>Cherry</SelectItem>
+            <SelectItem value={"Peach"}>Peach</SelectItem>
+            <SelectItem value={"Strawberry"}>Strawberry</SelectItem>
+            <SelectItem value={"Raspberry"}>Raspberry</SelectItem>
+            <SelectLabel>Vegetables</SelectLabel>
+            <SelectItem value={"Celery"}>Celery</SelectItem>
+            <SelectItem value={"Tomatoes"}>Tomatoes</SelectItem>
+            <SelectItem value={"Cheeseburger"}>Cheeseburger</SelectItem>
           </Select>
         </ComponentContainer>
         <ComponentContainer

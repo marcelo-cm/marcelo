@@ -1,12 +1,14 @@
 import React, { FunctionComponent, useContext } from "react";
 import SelectContext from "./SelectContext";
 
-interface SelectGroupProps {
+export interface SelectGroupProps {
   children: React.ReactNode;
+  index?: number;
 }
 
 const SelectGroup: FunctionComponent<SelectGroupProps> = ({
   children,
+  index,
 }: SelectGroupProps) => {
   const context = useContext(SelectContext);
 
