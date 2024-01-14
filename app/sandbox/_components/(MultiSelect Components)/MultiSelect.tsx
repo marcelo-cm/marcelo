@@ -12,29 +12,22 @@ const MultiSelect = ({ onChange, children }: MultiSelectProps) => {
   const [selectedOptions, setSelectedOptions] = useState<
     { value: string | number; display: string }[]
   >([]);
-  const [selectedValues, setSelectedValues] = useState<(string | number)[]>([]);
 
   const handleItemClick = async (option: {
     value: string | number;
     display: string;
   }) => {
-    if (selectedValues.includes(option.value)) {
-      // console.log("removing", option);
+    if (selectedOptions.includes(option)) {
       setSelectedOptions((prev) =>
         prev.filter((item) => item.value != option.value)
       );
-      setSelectedValues((prev) =>
-        prev.filter((value) => value != option.value)
-      );
     } else {
-      // console.log("adding", option);
       setSelectedOptions([...selectedOptions, option]);
-      setSelectedValues([...selectedValues, option.value]);
     }
     onChange(option);
   };
 
-  const contextValue = { handleItemClick, selectedOptions, selectedValues };
+  const contextValue = { handleItemClick, selectedOptions };
 
   return (
     <MultiSelectContext.Provider value={contextValue}>

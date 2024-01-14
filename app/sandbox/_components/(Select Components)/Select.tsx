@@ -59,7 +59,6 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
         case "Escape":
           setIsOpen(false);
           break;
-        // ... [other key cases if needed]
       }
     };
 
@@ -82,14 +81,11 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
       do {
         nextIndex = direction === "forward" ? nextIndex + 1 : nextIndex - 1;
 
-        // Loop around if necessary
         if (nextIndex < 0) nextIndex = React.Children.count(children) - 1;
         else if (nextIndex >= React.Children.count(children)) nextIndex = 0;
 
-        // Get the child at the nextIndex
         const child = React.Children.toArray(children)[nextIndex];
 
-        // Check if the child is a SelectItem
         if (React.isValidElement(child) && child.type === SelectItem) {
           return nextIndex;
         }
@@ -105,20 +101,17 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
           focusedRef: focusedIndex === key ? focusedItemRef : null,
         } as React.HTMLAttributes<HTMLElement>);
       }
-
       return child;
     });
 
-    const onBlurHandler = (event: React.FocusEvent) => {
-      // Use a setTimeout to delay the state change
+    const onBlurHandler = () => {
       setTimeout(() => {
-        // Check if the focused element is not part of the select component
         if (ref && "current" in ref && ref.current) {
           if (!ref.current.contains(document.activeElement)) {
             setIsOpen(false);
           }
         }
-      }, 100); // 100ms delay, adjust as needed
+      }, 100);
     };
 
     const contextValue = {

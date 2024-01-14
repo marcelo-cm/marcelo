@@ -8,15 +8,13 @@ interface SelectContextType {
     displayValue: string | number,
     itemValue: string | number
   ) => void;
-  // any other state or handlers
 }
 
 const defaultContextValue: SelectContextType = {
   selectedValue: null,
   selectedDisplay: null,
   focusedIndex: null,
-  handleItemClick: () => {}, // Dummy function, actual implementation will be in Select
-  // default values for any other state or handlers
+  handleItemClick: () => {},
 };
 
 const SelectContext =

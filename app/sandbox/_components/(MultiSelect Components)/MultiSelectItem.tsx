@@ -10,8 +10,7 @@ const MultiSelectItem: React.FC<MultiSelectItemProps> = ({
   children,
   value,
 }) => {
-  const { handleItemClick, selectedOptions, selectedValues } =
-    useContext(MultiSelectContext);
+  const { handleItemClick, selectedOptions } = useContext(MultiSelectContext);
 
   if (selectedOptions === null) {
     throw new Error(
@@ -20,7 +19,9 @@ const MultiSelectItem: React.FC<MultiSelectItemProps> = ({
   }
 
   // Determine if this item is selected
-  const isSelected = selectedValues && selectedValues.includes(value);
+  const isSelected =
+    selectedOptions &&
+    selectedOptions.map((option) => option.value).includes(value);
 
   // Function to handle the click on this item
   const onClick = () => {

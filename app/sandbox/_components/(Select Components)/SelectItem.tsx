@@ -27,7 +27,6 @@ const SelectItem: React.FC<SelectItemProps> = ({
 
   // Determine if this item is selected
   const isSelected = selectedValue === value;
-  const isFocused = focusedIndex === index;
 
   // Function to handle the click on this item
   const onClick = () => {
@@ -45,7 +44,7 @@ const SelectItem: React.FC<SelectItemProps> = ({
       onClick={onClick}
       ref={focusedRef}
     >
-      {children} {index}
+      {children}
     </div>
   );
 };
