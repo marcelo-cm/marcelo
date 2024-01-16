@@ -13,6 +13,7 @@ import MultiSelect from "./_components/(MultiSelect Components)/MultiSelect";
 import MultiSelectItem from "./_components/(MultiSelect Components)/MultiSelectItem";
 import MultiSelectGroup from "./_components/(MultiSelect Components)/MultiSelectGroup";
 import MultiSelectLabel from "./_components/(MultiSelect Components)/MultiSelectLabel";
+import ComponentDetails from "./_components/ComponentDetails";
 
 type Toast = { id: number; type: string; message: string; timeout: number };
 
@@ -167,6 +168,11 @@ export default function Playground() {
             <SelectItem value={"Tomatoes"}>Tomatoes</SelectItem>
             <SelectItem value={"Cheeseburger"}>Cheeseburger</SelectItem>
           </Select>
+          <ComponentDetails>
+            Learned about context providers, how to use React.forwardRef to pass
+            a ref to a child, and using refs to make the component keyboard
+            accessible.
+          </ComponentDetails>
         </ComponentContainer>
         <ComponentContainer
           start="01.10.2024"
@@ -185,6 +191,10 @@ export default function Playground() {
             <MultiSelectItem value={7}>Grape</MultiSelectItem>
             <MultiSelectItem value={8}>Honeydew</MultiSelectItem>
           </MultiSelect>
+          <ComponentDetails>
+            Learned about leveraging blur handlers to enhance the UX (especially
+            with keyboard navigation)
+          </ComponentDetails>
         </ComponentContainer>
         <ComponentContainer
           label="Combobox Component"
