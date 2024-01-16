@@ -17,8 +17,6 @@ const SelectItem: React.FC<SelectItemProps> = ({
   const { handleItemClick, selectedValue, selectedDisplay, focusedIndex } =
     useContext(SelectContext);
 
-  console.log("SelectItem", index);
-
   if (selectedDisplay === null) {
     throw new Error(
       "SelectItem must be a child of a SelectLabel or SelectGroup"

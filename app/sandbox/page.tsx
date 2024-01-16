@@ -21,6 +21,7 @@ export default function Playground() {
   const [multiSelectValues, setMultiSelectValues] = useState<
     (string | number)[]
   >([]);
+  const multiSelectRef = useRef<HTMLDivElement | null>(null);
 
   const handleMultiSelectChange = (option: { value: string | number }) => {
     if (multiSelectValues.includes(option.value)) {
@@ -172,21 +173,17 @@ export default function Playground() {
           end="01.12.2024"
           label="MultiSelect Component"
         >
-          <MultiSelect onChange={handleMultiSelectChange}>
-            <MultiSelectGroup>
-              <MultiSelectLabel>Fruits 1</MultiSelectLabel>
-              <MultiSelectItem value={1}>Apple</MultiSelectItem>
-              <MultiSelectItem value={2}>Banana</MultiSelectItem>
-              <MultiSelectItem value={3}>Cherry</MultiSelectItem>
-              <MultiSelectItem value={4}>Date</MultiSelectItem>
-            </MultiSelectGroup>
-            <MultiSelectGroup>
-              <MultiSelectLabel>Fruits 2</MultiSelectLabel>
-              <MultiSelectItem value={5}>Elderberry</MultiSelectItem>
-              <MultiSelectItem value={6}>Fig</MultiSelectItem>
-              <MultiSelectItem value={7}>Grape</MultiSelectItem>
-              <MultiSelectItem value={8}>Honeydew</MultiSelectItem>
-            </MultiSelectGroup>
+          <MultiSelect onChange={handleMultiSelectChange} ref={multiSelectRef}>
+            <MultiSelectLabel>Fruits 1</MultiSelectLabel>
+            <MultiSelectItem value={1}>Apple</MultiSelectItem>
+            <MultiSelectItem value={2}>Banana</MultiSelectItem>
+            <MultiSelectItem value={3}>Cherry</MultiSelectItem>
+            <MultiSelectItem value={4}>Date</MultiSelectItem>
+            <MultiSelectLabel>Fruits 2</MultiSelectLabel>
+            <MultiSelectItem value={5}>Elderberry</MultiSelectItem>
+            <MultiSelectItem value={6}>Fig</MultiSelectItem>
+            <MultiSelectItem value={7}>Grape</MultiSelectItem>
+            <MultiSelectItem value={8}>Honeydew</MultiSelectItem>
           </MultiSelect>
         </ComponentContainer>
         <ComponentContainer

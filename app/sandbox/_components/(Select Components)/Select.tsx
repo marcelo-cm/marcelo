@@ -19,7 +19,6 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
     const focusedItemRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
-      // Whenever focusedIndex changes, focus the corresponding item
       if (focusedItemRef.current && focusedIndex !== null) {
         focusedItemRef.current.focus();
       }
