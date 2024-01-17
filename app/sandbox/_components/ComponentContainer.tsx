@@ -32,9 +32,11 @@ export const ComponentContainer = ({
       await navigator.clipboard.writeText(text);
       // Handle the success case - maybe show a tooltip, change icon, etc.
       console.log("Text copied to clipboard");
+      handleToast && handleToast("success", "Copied!", 3000);
     } catch (err) {
       // Handle the error case
       console.error("Failed to copy: ", err);
+      handleToast && handleToast("error", "Failed to Copy", 3000);
     }
   };
 
@@ -54,17 +56,29 @@ export const ComponentContainer = ({
         <div className="flex gap-2 z-40 justify-between flex-wrap relative">
           {/* Label + Learnings */}
           <div className="break-keep flex flex-row gap-1 items-center relative">
-            {label}{" "}
+            {label}
             <div className="hidden md:flex">
               {learnings ? (
-                <div className="relative" tabIndex={0}>
+                <div
+                  onBlur={() => setIsLearningOpen(false)}
+                  className="relative"
+                  tabIndex={0}
+                >
                   <button
                     onClick={() => setIsLearningOpen((prev) => !prev)}
                     className="p-[2px] rounded-full active:ring-1 ring-[#A0A0A0] text-xs text-[#a0a0a0] select-none	hover:text-white hover:bg-[#232323]"
                   >
                     <CaretDownIcon />
                   </button>
-                  {isLearningOpen ? detailsChildren : null}
+                  {isLearningOpen ? (
+                    <div
+                      onMouseDown={(e) => {
+                        e.preventDefault();
+                      }}
+                    >
+                      {detailsChildren}{" "}
+                    </div>
+                  ) : null}
                 </div>
               ) : null}
             </div>
@@ -73,7 +87,10 @@ export const ComponentContainer = ({
             {start} {end ? `- ${end}` : null}
           </p>
           {/* Source Code */}
-          <div className="hidden md:flex w-fit left-1/2 -translate-x-1/2 absolute -bottom-[2px] flex justify-center">
+          <div
+            onBlur={() => setSourceOpen(false)}
+            className="hidden md:flex w-fit left-1/2 -translate-x-1/2 absolute -bottom-[2px] flex justify-center"
+          >
             <button
               onClick={() => setSourceOpen((prev) => !prev)}
               className="w-fit active:ring-1 ring-[#A0A0A0] text-xs text-[#a0a0a0] select-none	hover:text-white hover:bg-[#232323] py-1 px-2 rounded-md break-keep"
@@ -81,12 +98,16 @@ export const ComponentContainer = ({
               Source Code
             </button>
             {sourceOpen ? (
-              <div className="absolute top-8 bg-[#161616] w-[700px] overflow-scroll no-scrollbar border border-[#2e2e2e] rounded-lg p-4">
+              <div
+                onMouseDown={(e) => {
+                  e.preventDefault();
+                }}
+                className="absolute top-8 bg-[#161616] w-[700px] overflow-scroll no-scrollbar border border-[#2e2e2e] rounded-lg p-4"
+              >
                 <div className="absolute top-2 right-2 flex gap-0 text-[#A0A0A0]">
                   <button
                     onClick={async () => {
                       await copyToClipboard(childrenSource);
-                      handleToast && handleToast("success", "Copied!", 3000);
                       setSourceOpen(false);
                     }}
                     className="p-2 hover:bg-[#2e2e2e]/75 hover:text-white rounded-md active:ring-1 ring-[#A0A0A0]"

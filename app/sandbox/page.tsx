@@ -46,8 +46,6 @@ export default function Playground() {
 
   // Toasts
   const [allToasts, setAllToasts] = useState<Toast[]>([]);
-  const [toastType, setToastType] = useState("");
-  const [toastMessage, setToastMessage] = useState("");
 
   const toastTimeouts: { [key: number]: NodeJS.Timeout } = {};
 
@@ -64,6 +62,8 @@ export default function Playground() {
       message: message,
       timeout: timeout,
     };
+
+    console.log("adding toast");
 
     setAllToasts((prev) => [...prev, newToast]);
 
@@ -154,6 +154,7 @@ export default function Playground() {
           start="01.04.2024"
           end="01.09.2024"
           label="Select Component"
+          handleToast={addToast}
         >
           <Select onChange={handleSelectChange} ref={selectRef}>
             <SelectLabel>Fruits</SelectLabel>
@@ -178,6 +179,7 @@ export default function Playground() {
           start="01.10.2024"
           end="01.12.2024"
           label="MultiSelect Component"
+          handleToast={addToast}
         >
           <MultiSelect onChange={handleMultiSelectChange} ref={multiSelectRef}>
             <MultiSelectLabel>Fruits 1</MultiSelectLabel>
@@ -193,13 +195,16 @@ export default function Playground() {
           </MultiSelect>
           <ComponentDetails>
             Learned about leveraging blur handlers to enhance the UX (especially
-            with keyboard navigation)
+            with keyboard navigation). Also learned about how to use
+            useMouseDown events to prevent the blur handler from firing when
+            clicking on the component.
           </ComponentDetails>
         </ComponentContainer>
         <ComponentContainer
           label="Combobox Component"
           start="01.12.2024"
           end="Present"
+          handleToast={addToast}
         >
           Combobox Component Coming Soon
         </ComponentContainer>

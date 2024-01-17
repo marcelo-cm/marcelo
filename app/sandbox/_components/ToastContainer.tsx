@@ -15,8 +15,9 @@ export const ToastContainer = ({
         toasts.length > 0 ? "top-2 translate-y-0" : "-top-2 -translate-y-full"
       }`}
     >
-      {toasts.map((toast: any) => (
+      {toasts.map((toast: any, key: number) => (
         <div
+          key={key}
           onClick={() => close && close(toast.id)}
           className={`w-fit cursor-pointer transition-all duration-300 py-2 px-3 rounded-md text-sm z-50
       ${
