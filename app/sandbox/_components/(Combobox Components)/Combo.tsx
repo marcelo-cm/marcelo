@@ -35,6 +35,7 @@ const Combo = forwardRef<HTMLDivElement, ComboProps>(
       selectedOptions,
       focusedIndex,
     };
+
     return (
       <ComboContext.Provider value={contextValue}>
         <div ref={ref}>{children}</div>

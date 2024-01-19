@@ -1,7 +1,7 @@
 import React from "react";
 
 interface ComboContextType {
-  selectedOptions: { value: string | number; display: null }[] | null;
+  selectedOptions: { value: string | number; display: string }[] | null;
   focusedIndex: number | null;
   handleItemClick: (option: {
     value: string | number;
