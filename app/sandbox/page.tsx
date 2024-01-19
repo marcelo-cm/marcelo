@@ -14,10 +14,23 @@ import MultiSelectItem from "./_components/(MultiSelect Components)/MultiSelectI
 import MultiSelectGroup from "./_components/(MultiSelect Components)/MultiSelectGroup";
 import MultiSelectLabel from "./_components/(MultiSelect Components)/MultiSelectLabel";
 import ComponentDetails from "./_components/ComponentDetails";
+import Combo from "./_components/(Combobox Components)/Combo";
 
 type Toast = { id: number; type: string; message: string; timeout: number };
 
 export default function Playground() {
+  // Combobox
+  const [comboValues, setComboValues] = useState<(string | number)[]>([]);
+  const comboRef = useRef<HTMLDivElement | null>(null);
+
+  const handleComboChange = (option: { value: string | number }) => {
+    if (comboValues.includes(option.value)) {
+      setComboValues((prev) => prev.filter((item) => item !== option.value));
+    } else {
+      setComboValues([...multiSelectValues, option.value]);
+    }
+  };
+
   // MultiSelect
   const [multiSelectValues, setMultiSelectValues] = useState<
     (string | number)[]
@@ -177,7 +190,7 @@ export default function Playground() {
         </ComponentContainer>
         <ComponentContainer
           start="01.10.2024"
-          end="01.12.2024"
+          end="01.14.2024"
           label="MultiSelect Component"
           handleToast={addToast}
         >
@@ -195,19 +208,19 @@ export default function Playground() {
           </MultiSelect>
           <ComponentDetails>
             Learned about leveraging blur handlers to enhance the UX (especially
-            with keyboard navigation). Also learned about how to use
-            useMouseDown events to prevent the blur handler from firing when
-            clicking on the component.
+            with keyboard navigation). Also learned about how to use onMouseDown
+            events to prevent the blur handler from firing when clicking on the
+            component.
           </ComponentDetails>
         </ComponentContainer>
-        <ComponentContainer
+        {/* <ComponentContainer
           label="Combobox Component"
-          start="01.12.2024"
+          start="01.18.2024"
           end="Present"
           handleToast={addToast}
         >
-          Combobox Component Coming Soon
-        </ComponentContainer>
+          <Combo onChange={handleComboChange}>Hello</Combo>
+        </ComponentContainer> */}
       </div>
     </div>
   );
