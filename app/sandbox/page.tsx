@@ -15,6 +15,7 @@ import MultiSelectGroup from "./_components/(MultiSelect Components)/MultiSelect
 import MultiSelectLabel from "./_components/(MultiSelect Components)/MultiSelectLabel";
 import ComponentDetails from "./_components/ComponentDetails";
 import Combo from "./_components/(Combobox Components)/Combo";
+import ComboItem from "./_components/(Combobox Components)/ComboItem";
 
 type Toast = { id: number; type: string; message: string; timeout: number };
 
@@ -213,14 +214,23 @@ export default function Playground() {
             component.
           </ComponentDetails>
         </ComponentContainer>
-        {/* <ComponentContainer
+        <ComponentContainer
           label="Combobox Component"
           start="01.18.2024"
           end="Present"
           handleToast={addToast}
         >
-          <Combo onChange={handleComboChange}>Hello</Combo>
-        </ComponentContainer> */}
+          <Combo onChange={handleComboChange} ref={comboRef}>
+            <ComboItem value={1}>Apple</ComboItem>
+            <ComboItem value={2}>Banana</ComboItem>
+            <ComboItem value={3}>Cherry</ComboItem>
+            <ComboItem value={4}>Date</ComboItem>
+            <ComboItem value={5}>Elderberry</ComboItem>
+            <ComboItem value={6}>Fig</ComboItem>
+            <ComboItem value={7}>Grape</ComboItem>
+            <ComboItem value={8}>Honeydew</ComboItem>
+          </Combo>
+        </ComponentContainer>
       </div>
     </div>
   );

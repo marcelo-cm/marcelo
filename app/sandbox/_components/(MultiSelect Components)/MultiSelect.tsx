@@ -127,6 +127,7 @@ const MultiSelect = forwardRef<HTMLDivElement, MultiSelectProps>(
       <MultiSelectContext.Provider value={contextValue}>
         <div
           className="relative w-max"
+          ref={ref}
           tabIndex={0}
           onKeyDown={handleKeyDown}
           onBlur={onBlurHandler}
@@ -134,8 +135,8 @@ const MultiSelect = forwardRef<HTMLDivElement, MultiSelectProps>(
           <div
             className="py-[6px] pl-2 pr-6 flex items-center rounded-md h-fit w-[65dvw] md:w-80 border border-[#2e2e2e] bg-[#1C1C1C] select-none cursor-pointer w-96 overflow-x-scroll no-scrollbar"
             onClick={() => {
-              setFocusedIndex(null);
               setIsOpen((prevState) => !prevState);
+              setFocusedIndex(null);
             }}
           >
             <div className="relative flex gap-2 flex-row pr-6">
