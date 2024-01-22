@@ -2,6 +2,7 @@ import React, { forwardRef, use, useEffect, useRef, useState } from "react";
 import ComboContext from "./ComboContext";
 import ComboItem from "./ComboItem";
 import { CaretDownIcon, CaretUpIcon, Cross2Icon } from "@radix-ui/react-icons";
+import { render } from "react-dom";
 
 interface ComboProps {
   onChange: (item: { value: string | number; display: string }) => void;
@@ -24,27 +25,73 @@ const Combo = forwardRef<HTMLDivElement, ComboProps>(
       }
     }, [focusedIndex]);
 
+    // const findNextFocusableIndex = (
+    //   currentIndex: number,
+    //   direction: string
+    // ) => {
+    //   let nextIndex = currentIndex;
+
+    //   do {
+    //     // let validIndex =
+    //     // renderChildren && renderChildren.map((item) => item.key);
+
+    //     // console.log(validIndex);
+    //     nextIndex = direction === "forward" ? nextIndex + 1 : nextIndex - 1;
+
+    //     if (renderChildren && nextIndex < 0) {
+    //       nextIndex = renderChildren.length - 1;
+    //     } else if (renderChildren && nextIndex >= renderChildren.length) {
+    //       nextIndex = 0;
+    //     }
+
+    //     const child = renderChildren && renderChildren[nextIndex];
+
+    //     if (React.isValidElement(child) && child.type === ComboItem) {
+    //       return nextIndex;
+    //     }
+    //   } while (nextIndex !== currentIndex);
+
+    //   return null;
+    // };
+
     const findNextFocusableIndex = (
       currentIndex: number,
       direction: string
     ) => {
-      let nextIndex = currentIndex;
+      let validIndex = renderChildren && renderChildren.map((item) => item.key);
+      console.log(validIndex);
+
+      // Find the current position in the validIndex array
+      let currentPosition = validIndex?.indexOf(String(currentIndex)) ?? -1;
+
+      // Handle invalid currentIndex
+      if (currentPosition === -1) return null;
+
+      let nextPosition = currentPosition;
 
       do {
-        nextIndex = direction === "forward" ? nextIndex + 1 : nextIndex - 1;
+        // Move to the next position based on the direction
+        nextPosition =
+          direction === "forward" ? nextPosition + 1 : nextPosition - 1;
 
-        if (renderChildren && nextIndex < 0) {
-          nextIndex = renderChildren.length - 1;
-        } else if (renderChildren && nextIndex >= renderChildren.length) {
-          nextIndex = 0;
+        // Wrap around if necessary
+        if (nextPosition < 0) {
+          nextPosition = (validIndex ?? []).length - 1;
+        } else if (nextPosition >= (validIndex ?? []).length) {
+          nextPosition = 0;
         }
 
-        const child = renderChildren && renderChildren[nextIndex];
+        let nextIndex = validIndex?.[nextPosition] ?? null;
+        const child =
+          renderChildren &&
+          typeof nextIndex == "bigint" &&
+          renderChildren[nextIndex];
 
+        // Check if the child is a valid React element of type ComboItem
         if (React.isValidElement(child) && child.type === ComboItem) {
           return nextIndex;
         }
-      } while (nextIndex !== currentIndex);
+      } while (nextPosition !== currentPosition); // Prevent infinite loop
 
       return null;
     };
