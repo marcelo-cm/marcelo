@@ -42,7 +42,7 @@ const ComboItem: React.FC<ComboItemProps> = ({
       tabIndex={-1}
       ref={focusedRef}
     >
-      {children} {index}
+      {children}
     </div>
   );
 };
