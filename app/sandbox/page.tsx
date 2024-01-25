@@ -14,6 +14,7 @@ import MultiSelectLabel from "./_components/(MultiSelect Components)/MultiSelect
 import ComponentDetails from "./_components/ComponentDetails";
 import Combo from "./_components/(Combobox Components)/Combo";
 import ComboItem from "./_components/(Combobox Components)/ComboItem";
+import Tooltip from "./_components/(Tooltip Component)/Tooltip";
 
 type Toast = { id: number; type: string; message: string; timeout: number };
 
@@ -228,6 +229,14 @@ export default function Playground() {
             <ComboItem value={7}>Grape</ComboItem>
             <ComboItem value={8}>Honeydew</ComboItem>
           </Combo>
+        </ComponentContainer>
+        <ComponentContainer
+          label="Tooltip"
+          start="01.25.2024"
+          end="Present"
+          handleToast={addToast}
+        >
+          <Tooltip content="Content here">Words here</Tooltip>
         </ComponentContainer>
       </div>
     </div>
