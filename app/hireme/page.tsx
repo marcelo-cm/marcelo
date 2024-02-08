@@ -29,12 +29,7 @@ function HireMe() {
       body: JSON.stringify({ message: prompt, conversation }),
     });
 
-    const response = await responseData.json();
-    console.log(response);
-
-    setLoading(false);
-
-    if (!response) {
+    if (!responseData.ok) {
       setConversation((prev) => [
         ...prev,
         {
@@ -43,12 +38,19 @@ function HireMe() {
             "Yikes. I couldn't quite hear you (it's loud in here). Can you try again?",
         },
       ]);
-    } else {
-      setConversation((prev) => [
-        ...prev,
-        { role: "CHATBOT", message: response && response.text },
-      ]);
+      console.error("Failed to fetch response from Cohere", responseData);
+      setLoading(false);
+      return;
     }
+
+    const response = await responseData.json();
+    console.log(response);
+
+    setLoading(false);
+    setConversation((prev) => [
+      ...prev,
+      { role: "CHATBOT", message: response && response.text },
+    ]);
   };
 
   useEffect(() => {
