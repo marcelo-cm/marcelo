@@ -1,13 +1,11 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { generate } from "@/lib/actions/generate.actions";
 import {
   CaretDownIcon,
   CaretUpIcon,
   PaperPlaneIcon,
 } from "@radix-ui/react-icons";
-import { set } from "cohere-ai/core/schemas";
 
 function HireMe() {
   const [conversation, setConversation] = useState<any[]>([
@@ -25,7 +23,14 @@ function HireMe() {
 
     setLoading(true);
 
-    const response = await generate(prompt, conversation);
+    const responseData = await fetch("/api/cohere-generate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: prompt, conversation }),
+    });
+
+    const response = await responseData.json();
+    console.log(response);
 
     setLoading(false);
 
