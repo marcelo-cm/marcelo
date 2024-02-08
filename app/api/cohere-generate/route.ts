@@ -1,6 +1,7 @@
-"use server";
 import cohere from "@/lib/cohere";
 import { NextResponse } from "next/server";
+
+export const runtime = "edge";
 
 export async function POST(req: Request) {
   const { message, conversation } = await req.json();
@@ -9,7 +10,7 @@ export async function POST(req: Request) {
     console.log("heard ya:", message);
 
     const response = await cohere.chat({
-      model: "command",
+      model: "command-light",
       message: message,
       chatHistory: [
         {

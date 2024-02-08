@@ -6,7 +6,7 @@ export const generate = async (message: string, conversation: any[]) => {
     console.log("heard ya:", message);
 
     const response = await cohere.chat({
-      model: "command",
+      model: "command-light",
       message: message,
       chatHistory: [
         {
