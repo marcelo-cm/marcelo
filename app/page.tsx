@@ -5,18 +5,10 @@ import CustomLink from "./_components/CustomLink";
 export default function Home() {
   const resume = [
     {
-      title: "Managing Director",
-      website: "https://qmind.ca",
-      organization: "QMIND",
-      date: "2023 – Present",
-      description:
-        "Leading Canada’s largest undergraduate organization on AI, 250+ members, 40+ AI projects; democratizing access to AI education, research & community",
-    },
-    {
       title: "President",
       website: "https://cucai.ca",
       organization: "Canadian Undergraduate Conference on AI",
-      date: "2023 – Present",
+      date: "2023 - Present",
       description:
         "Canada’s largest undergraduate conference on AI, 320+ delegates, featuring speakers & sponsors from OpenAI, Cohere, Microsoft, Intel, Apple, NASA & more",
     },
@@ -29,10 +21,18 @@ export default function Home() {
         "1 of 20 students competing internationally on behalf of Queen’s university",
     },
     {
+      title: "Managing Director",
+      website: "https://qmind.ca",
+      organization: "QMIND",
+      date: "2023 - 2024",
+      description:
+        "Leading Canada’s largest undergraduate organization on AI, 250+ members, 40+ AI projects; democratizing access to AI education, research & community",
+    },
+    {
       title: "Head of Technology",
       website: "https://www.headstartfellowship.com/",
       organization: "HeadStart Fellowship",
-      date: "2023 – Present",
+      date: "2023 – 2024",
       description:
         "300 person fellowship with fellows from Uber, Google, Goldman Sachs, JP Morgan & more",
     },
