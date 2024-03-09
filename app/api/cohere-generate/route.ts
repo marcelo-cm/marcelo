@@ -10,7 +10,7 @@ export async function POST(req: Request) {
     console.log("heard ya:", message);
 
     const response = await cohere.chat({
-      model: "command-light",
+      model: "command",
       message: message,
       chatHistory: [
         {
