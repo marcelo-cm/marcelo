@@ -4,7 +4,7 @@ import React from "react";
 
 const RobotWorkerLogs = ({ data }: { data: { [key: string]: number } }) => {
   return (
-    <div className="w-full md:w-1/3 md:max-w-[500px] bg-[#161616] h-full border-l border-[#1E1E1E] px-8 md:pt-36 md:pb-12 flex flex-col gap-8">
+    <div className="w-full md:w-1/3 md:max-w-[500px] bg-[#161616] h-full border-l border-[#1E1E1E] px-8 md:pt-36 pb-24 flex flex-col gap-8">
       <div className="flex flex-col h-fit relative">
         {Object.entries(data).map(([key, value], k) =>
           key === "REPEAT START" ? (

@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { useJobAppFormContext } from "@/lib/hooks/useJobAppFormContext";
 import JobAppActionBar from "./JobAppForm/JobAppActionBar";
 import RobotWorkerLogs from "@/components/workman/RobotWorkerLogs";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 function WorkmanForm() {
   const [robotLogs, setRobotLogs] = useState({
@@ -21,6 +21,14 @@ function WorkmanForm() {
     "REPEAT END": 4,
     "Checking we didn't miss a spot": 0,
   });
+
+  const endRef = useRef(null); // Reference to the end of the conversation
+
+  function scrollFunction() {
+    (endRef.current as HTMLElement | null)?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
 
   return (
     <JobAppFormProvider className="font-inter flex flex-col w-full grow text-purple-50">
@@ -41,8 +49,9 @@ function WorkmanForm() {
           </div>
         </div>
         <RobotWorkerLogs data={robotLogs} />
+        <div ref={endRef} />
       </div>
-      <JobAppActionBar />
+      <JobAppActionBar scrollFunction={scrollFunction} />
       <BackgroundBeams className="-z-50 bg-[#161616]" />
     </JobAppFormProvider>
   );
