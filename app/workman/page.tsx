@@ -7,8 +7,21 @@ import JobAppForm from "./JobAppForm/JobAppForm";
 import { Button } from "@/components/ui/button";
 import { useJobAppFormContext } from "@/lib/hooks/useJobAppFormContext";
 import JobAppActionBar from "./JobAppForm/JobAppActionBar";
+import RobotWorkerLogs from "@/components/workman/RobotWorkerLogs";
+import { useState } from "react";
 
 function WorkmanForm() {
+  const [robotLogs, setRobotLogs] = useState({
+    "Robot Reading Your Inputs": 2,
+    "REPEAT START": 0,
+    "Visiting Job Application Link": 2,
+    "Filling in Job Application": 1,
+    "Reviewing Inputs": 0,
+    "Submitting Application": 0,
+    "REPEAT END": 4,
+    "Checking we didn't miss a spot": 0,
+  });
+
   return (
     <JobAppFormProvider className="font-inter flex flex-col w-full grow text-purple-50">
       <div className="flex flex-row items-center h-full">
@@ -23,18 +36,14 @@ function WorkmanForm() {
               All you need to do is fill in the form below, once.
             </p>
           </div>
-          {/* form */}
           <div className="flex flex-1">
             <JobAppForm />
           </div>
         </div>
-        {/* worker */}
-        <div className="w-1/3 max-w-[500px] bg-[#111110] h-full border-l border-[#1E1E1E]">
-          Logs
-        </div>
+        <RobotWorkerLogs data={robotLogs} />
       </div>
       <JobAppActionBar />
-      <BackgroundBeams className="-z-50 bg-[#111110]" />
+      <BackgroundBeams className="-z-50 bg-[#161616]" />
     </JobAppFormProvider>
   );
 }

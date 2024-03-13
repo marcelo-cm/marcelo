@@ -28,7 +28,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        "workman-purp": "#5821EB",
+        "workman-purp": { DEFAULT: "#5821EB", secondary: "#9D77FF" },
       },
     },
   },
