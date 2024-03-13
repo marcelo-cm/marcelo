@@ -24,8 +24,8 @@ function WorkmanForm() {
 
   return (
     <JobAppFormProvider className="font-inter flex flex-col w-full grow text-purple-50">
-      <div className="flex flex-row items-center h-full">
-        <div className="flex-1 px-24">
+      <div className="flex flex-col md:flex-row h-[100dvh] md:h-full overflow-scroll">
+        <div className="flex-1 px-8 py-24 md:py-36 md:px-24">
           <div className="flex flex-col gap-2 mb-12">
             <h1 className="text-4xl font-semibold text-workman-purp">
               Job Application Robot{" "}

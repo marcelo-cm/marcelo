@@ -15,7 +15,7 @@ const JobAppActionBar = () => {
   const { canSubmit } = states;
 
   return (
-    <div className="bg-[#161616] w-full h-fit py-4 px-12 border-t border-[#1E1E1E] flex justify-end">
+    <div className="bg-[#161616] w-full h-fit py-4 px-12 border-t border-[#1E1E1E] flex justify-end bottom-0 absolute">
       <Button disabled={!canSubmit}>Run Robot</Button>
     </div>
   );
