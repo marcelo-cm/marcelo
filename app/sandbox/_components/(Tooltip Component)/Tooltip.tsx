@@ -14,6 +14,7 @@ const Tooltip = ({ children, content }: TooltipProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const contextValue = { content };
+
   return (
     <TooltipContext.Provider value={contextValue}>
       {isOpen ? (
