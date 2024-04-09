@@ -5,12 +5,20 @@ import CustomLink from "./_components/CustomLink";
 export default function Home() {
   const resume = [
     {
-      title: "President",
-      website: "https://cucai.ca",
-      organization: "Canadian Undergraduate Conference on AI",
-      date: "2023 - Present",
+      title: "Founding Product Engineer",
+      website: "https://workman.so/",
+      organization: "Workman AI",
+      date: "2024 – Present",
       description:
-        "Canada’s largest undergraduate conference on AI, 320+ delegates, featuring speakers & sponsors from OpenAI, Cohere, Microsoft, Intel, Apple, NASA & more",
+        "Building digital employees who live on the web that do real world tasks for you",
+    },
+    {
+      title: "Associate Software Engineer",
+      website: "https://tread.io/",
+      organization: "Tread",
+      date: "2024",
+      description:
+        "Building transportation management system. Working across the stack & helping integrate AI into organization workflows",
     },
     {
       title: "International Competitor",
@@ -27,6 +35,14 @@ export default function Home() {
       date: "2023 - 2024",
       description:
         "Leading Canada’s largest undergraduate organization on AI, 250+ members, 40+ AI projects; democratizing access to AI education, research & community",
+    },
+    {
+      title: "President",
+      website: "https://cucai.ca",
+      organization: "Canadian Undergraduate Conference on AI",
+      date: "2023 - 2024",
+      description:
+        "Canada’s largest undergraduate conference on AI, 340+ delegates, featuring speakers & sponsors from OpenAI, Cohere, Microsoft, Intel, Apple, NASA & more",
     },
     {
       title: "Head of Technology",
@@ -258,7 +274,7 @@ export default function Home() {
               />
             </svg>
           </a>
-          <a target="_blank" href="/MarceloChamanMallqui2026.pdf">
+          <a target="_blank" href="/MarceloChamanMallqui.pdf">
             <svg
               width="16"
               height="16"
