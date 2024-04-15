@@ -32,7 +32,7 @@ const PostPage = (props: any) => {
         <hr className="border-[#343434] my-2  w-full" />
         <article
           className="w-full max-w-[700px] 
-                    prose prose-p:text-white prose-p:font-light prose-p:leading-snug
+                    prose prose-p:text-white prose-p:text-[15px] prose-p:font-light prose-p:leading-snug
                     prose-headings:text-[#A0A0A0] prose-headings:text-xs prose-headings:font-medium prose-headings:uppercase prose-headings:leading-none prose-headings:pt-6
                     prose-a:text-[#A0A0A0] prose-a:font-normal prose-a:underline prose-a:cursor-pointer
                     prose-blockquote:text-[#A0A0A0] prose-blockquote:font-normal prose-blockquote:italic prose-blockquote:border-l-2 prose-blockquote:border-[#A0A0A0] prose-blockquote:pl-4
@@ -41,7 +41,7 @@ const PostPage = (props: any) => {
                     prose-kbd:text-[#A0A0A0] prose-kbd:font-normal prose-kbd:bg-[#343434] prose-kbd:rounded prose-kbd:px-1 prose-kbd:py-0.5 prose-kbd:cursor-pointer
                     prose-ol:text-white
                     prose-ul:text-white
-                    prose-li:text-white prose-li:pl-4 prose-li:marker:text-[#a0a0a0] prose-li:marker:font-light
+                    prose-li:text-white prose-li:pl-4 prose-li:marker:text-[#a0a0a0] prose-li:marker:font-light prose-li:text-[15px]
                     prose-img:border prose-img:border-[#343434] prose-img:rounded prose-img:cursor-pointer
                     prose-em:text-white prose-strong:text-white prose-strong:font-medium prose-strong:font-bold
                     pb-32
