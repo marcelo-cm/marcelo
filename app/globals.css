@@ -66,3 +66,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+pre code {
+  @apply !bg-transparent !border-none;
+}
