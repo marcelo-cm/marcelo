@@ -102,21 +102,17 @@ export default function Playground() {
         </h1>
         <p className="max-w-[700px] w-4/5">
           A 2024 goal of mine is to code every single day. As a full stack
-          engineer, I wanted to make sure I was sharpening both swords. While I
-          do LeetCode often, I wanted to make sure I kept my front end game
-          strong as well.
-        </p>
-        <p className="max-w-[700px] w-4/5">
-          Below is a collection of small components as projects/experiments I've
-          worked on to keep my product design and front end skills sharp. 30-60
-          minutes a day. No tutorials, just reading docs & experimenting. mins
-          daily.
+          engineer, I wanted to make sure I was sharpening both swords. Below is
+          a collection of small components as projects/experiments I've worked
+          on to keep my product design and front end skills sharp. No tutorials,
+          just reading docs & experimenting. I work on this when I don't have an
+          active project.
         </p>
       </div>
       <div className="flex flex-col-reverse gap-8 max-w-[1100px] w-full">
         <ComponentContainer
           start="01.01.2024"
-          end="Present"
+          end="0.1.05.2024"
           label="Component Container (Link Component as an Example)"
           handleToast={addToast}
         >
@@ -216,7 +212,6 @@ export default function Playground() {
         <ComponentContainer
           label="Combobox Component"
           start="01.18.2024"
-          end="Present"
           handleToast={addToast}
         >
           <Combo onChange={handleComboChange} ref={comboRef}>
@@ -230,14 +225,13 @@ export default function Playground() {
             <ComboItem value={8}>Honeydew</ComboItem>
           </Combo>
         </ComponentContainer>
-        <ComponentContainer
+        {/* <ComponentContainer
           label="Tooltip"
           start="01.25.2024"
-          end="Present"
           handleToast={addToast}
         >
           <Tooltip content="Content here">Words here</Tooltip>
-        </ComponentContainer>
+        </ComponentContainer> */}
       </div>
     </div>
   );

@@ -10,15 +10,15 @@ export default function Home() {
       organization: "Workman AI",
       date: "2024 – Present",
       description:
-        "Building digital employees who live on the web that do real world tasks for you",
+        "Leading product design & frontend development for a startup building AI-powered tools for the construction industry",
     },
     {
       title: "Associate Software Engineer",
       website: "https://tread.io/",
       organization: "Tread",
-      date: "2024",
+      date: "2024 - Present",
       description:
-        "Building transportation management system. Working across the stack & helping integrate AI into organization workflows",
+        "Building transportation management systems. Working across the stack & helping integrate AI into organization workflows",
     },
     {
       title: "International Competitor",
@@ -26,7 +26,7 @@ export default function Home() {
       organization: "Queen’s Case Competition Union",
       date: "2023 – Present",
       description:
-        "1 of 20 students competing internationally on behalf of Queen’s university",
+        "1 of 20 students competing internationally on behalf of Queen’s university. 3rd place at the BI International Case Competition 2024 (Norway)",
     },
     {
       title: "Managing Director",
@@ -34,7 +34,7 @@ export default function Home() {
       organization: "QMIND",
       date: "2023 - 2024",
       description:
-        "Leading Canada’s largest undergraduate organization on AI, 250+ members, 40+ AI projects; democratizing access to AI education, research & community",
+        "Canada’s largest undergraduate organization on AI, 250+ members, 40+ AI projects; democratizing access to AI education, research & community",
     },
     {
       title: "President",
@@ -112,37 +112,44 @@ export default function Home() {
   const unorderedProjects = [
     {
       title: "QMIND Design Team Portal",
-      tags: ["Product Design"],
+      tags: ["Product", "Design"],
       type: "Case Study",
       image_url: "/DTP-P-A.png",
       to: "https://medium.com/@marcelochaman/ux-product-design-case-study-qmind-design-team-portal-89d7eb8ea526",
     },
     {
       title: "CUCAI Website",
-      tags: ["UI Design", "Frontend"],
+      tags: ["Design", "Frontend"],
       type: "Website",
-      image_url: "/CUCAIWEB.png",
+      image_url: "/CUCAI-WEB.gif",
       to: "https://www.cucai.ca/",
     },
     {
+      title: "Workman",
+      tags: ["Product", "Design", "Frontend"],
+      type: "Website",
+      image_url: "/wm-dash.png",
+      to: "https://www.workman.so/",
+    },
+    {
       title: "QMIND Website",
-      tags: ["UI", "Frontend"],
+      tags: ["Design", "Frontend"],
       type: "Website",
       image_url: "/QMINDWEB.gif",
       to: "https://qmind.ca/",
     },
-    {
-      title: "Memoria",
-      tags: ["Product"],
-      type: "Capsule",
-      image_url: "/MEMORIA-COVER.png",
-      to: "/projects/memoria",
-    },
+    // {
+    //   title: "Memoria",
+    //   tags: ["Product"],
+    //   type: "Capsule",
+    //   image_url: "/MEMORIA-COVER.png",
+    //   to: "/projects/memoria",
+    // },
     {
       title: "The Sandbox",
       tags: ["Design", "Frontend"],
       type: "Project",
-      image_url: "/Sandbox2.png",
+      image_url: "/sandbox.webp",
       to: "/sandbox",
     },
     {
@@ -159,20 +166,19 @@ export default function Home() {
       image_url: "/echodms-cover.png",
       to: "https://echo-dms.vercel.app/",
     },
+    // {
+    //   title: "LockedIn",
+    //   tags: ["Hackathon", "Product Design"],
+    //   type: "Project",
+    //   image_url: "/lockedin-cover.png",
+    //   to: "/projects/lockedin",
+    // },
     {
       title: "Attention! Is All That Matters",
       tags: ["Writing"],
       type: "Article",
       image_url: "/attention-cover.webp",
       to: "https://medium.com/@marcelochaman/attention-is-all-that-matters-51d141844dec",
-    },
-
-    {
-      title: "LockedIn",
-      tags: ["Hackathon", "Product Design"],
-      type: "Project",
-      image_url: "/lockedin-cover.png",
-      to: "/projects/lockedin",
     },
   ];
 
