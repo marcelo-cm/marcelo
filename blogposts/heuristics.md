@@ -74,7 +74,7 @@ Minimize cognitive effort of keeping track of things. If it's not in my Notion, 
 
 An important part to philosophy is that you must know where your 'red line' is (your absolute maximum effort), because if worst comes to worst you can get there again temporarily and complete what needs to be done.
 
-Being stress is when you let your overwhelmed-ness get to you. It inhibits your ability to perform, and makes you upset. If it can be fixed in the next couple hours, there's no reason to be stressed – it's very temporary. If it cannot be solved in the short term, then as long as it's below your red line then it will be okay. If it's beyond your red line, then there is nothing you can do, prioritize the highest effort and lowest impact tasks. Being stressed will only make things worse — life is good, and nothing is ever that serious.
+Being stress is when you let your overwhelmed-ness get to you. It inhibits your ability to perform, and makes you upset. If it can be fixed in the next couple hours, there's no reason to be stressed – it's very temporary. If it cannot be solved in the short term, then as long as it's below your red line then it will be okay. If it's beyond your red line, then there is nothing you can do, prioritize the lowest effort and highest impact tasks. Being stressed will only make things worse — life is good, and nothing is ever that serious.
 
 # Low Effort High Impact
 
