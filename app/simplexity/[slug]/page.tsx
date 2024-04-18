@@ -24,12 +24,12 @@ const PostPage = (props: any) => {
 
   return (
     <div className="overflow-scroll no-scrollbar w-full flex justify-center py-16 p-4 font-light">
-      <div className="w-full max-w-[700px] flex flex-col items-center gap-2">
+      <div className="w-full max-w-[700px] flex flex-col gap-2">
         <div>
           <h2 className="">{post.data.title}</h2>
           <h3 className="text-[#a0a0a0]">{post.data.subtitle}</h3>
         </div>
-        <hr className="border-[#343434] my-2  w-full" />
+        <hr className="border-[#343434] my-2 w-full" />
         <article
           className="w-full max-w-[700px] 
                     prose prose-p:text-white prose-p:text-[15px] prose-p:font-light prose-p:leading-snug
@@ -44,6 +44,7 @@ const PostPage = (props: any) => {
                     prose-li:text-white prose-li:pl-4 prose-li:marker:text-[#a0a0a0] prose-li:marker:font-light prose-li:text-[15px]
                     prose-img:border prose-img:border-[#343434] prose-img:rounded prose-img:cursor-pointer
                     prose-em:text-white prose-strong:text-white prose-strong:font-medium prose-strong:font-bold
+                    prose-hr:border-[#343434] 
                     pb-32
                     "
         >
