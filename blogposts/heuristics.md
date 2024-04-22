@@ -50,7 +50,7 @@ You cannot be good at anything without being obsessed. Read about it, think abou
 
 Like LLMs output the average of all their training data, we too create the average of everything we consume – Not the best of it. To improve the output, you must carefully clean and curate data.
 
-If you train a model to do just one thing, it's going to flop if you try anything even slightly different (exaggerated). But if you teach it about several related thing, it'll handle any specific thing much better because it can make inference based on the other data. If you exclusively learn about one design medium, you will only ever be able to design the way you learnt — your work will blend in with others. By learning about furniture, architecture, fashion, and more, you will become a better product design as a side effect.
+If you train a model to do just one thing, it's going to flop if you try anything even slightly different (exaggerated). But if you teach it about several related thing, it'll handle any specific thing much better because it can make inference based on the other data. If you exclusively learn about one design medium, you will only ever be able to design the way you learnt — your work will blend in with others. By learning about furniture, architecture, fashion, and more, you will become a better product designer as a side effect.
 
 # 2 hours a day ([The Great CEO, Matt Machory](https://docs.google.com/document/d/1ZJZbv4J6FZ8Dnb0JuMhJxTnwl-dwqx5xl0s65DE3wO8/edit))
 
@@ -78,4 +78,4 @@ Being stress is when you let your overwhelmed-ness get to you. It inhibits your 
 
 # Low Effort High Impact
 
-Only do things that have 2< units of output for every unit of effort (input). Maximize the benefits of the things you do.
+Only do things that have 2+ units of output for every unit of effort (input). Maximize the benefits of the things you do.

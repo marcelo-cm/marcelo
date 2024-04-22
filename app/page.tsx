@@ -112,7 +112,7 @@ export default function Home() {
   const unorderedProjects = [
     {
       title: "QMIND Design Team Portal",
-      tags: ["Product", "Design"],
+      tags: ["Product", "UX", "UI"],
       type: "Case Study",
       image_url: "/DTP-P-A.png",
       to: "https://medium.com/@marcelochaman/ux-product-design-case-study-qmind-design-team-portal-89d7eb8ea526",
@@ -138,13 +138,6 @@ export default function Home() {
       image_url: "/QMINDWEB.gif",
       to: "https://qmind.ca/",
     },
-    // {
-    //   title: "Memoria",
-    //   tags: ["Product"],
-    //   type: "Capsule",
-    //   image_url: "/MEMORIA-COVER.png",
-    //   to: "/projects/memoria",
-    // },
     {
       title: "The Sandbox",
       tags: ["Design", "Frontend"],
