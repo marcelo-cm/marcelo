@@ -110,7 +110,20 @@ export default function Home() {
     return [...oddIndexed, ...evenIndexed];
   }
 
-  const unorderedProjects = [
+  const unorderedProjects: {
+    title: string;
+    tags: string[];
+    type: string;
+    image_url: string;
+    to: string;
+  }[] = [
+    {
+      title: "CUCAI Platform",
+      tags: ["Fullstack", "Design"],
+      type: "Project Breakdown",
+      image_url: "/project-images/cucai-platform/demo.gif",
+      to: "/projects/cucai-platform",
+    },
     {
       title: "QMIND Design Team Portal",
       tags: ["Product", "UX/UI"],
@@ -118,13 +131,7 @@ export default function Home() {
       image_url: "/DTP-P-A.png",
       to: "https://medium.com/@marcelochaman/ux-product-design-case-study-qmind-design-team-portal-89d7eb8ea526",
     },
-    {
-      title: "CUCAI Website",
-      tags: ["Design", "Frontend"],
-      type: "Website",
-      image_url: "/CUCAI-WEB.gif",
-      to: "https://www.cucai.ca/",
-    },
+
     {
       title: "Workman",
       tags: ["Product", "Design", "Frontend"],
@@ -166,6 +173,13 @@ export default function Home() {
       type: "Article",
       image_url: "/attention-cover.webp",
       to: "https://medium.com/@marcelochaman/attention-is-all-that-matters-51d141844dec",
+    },
+    {
+      title: "CUCAI Website",
+      tags: ["Design", "Frontend"],
+      type: "Website",
+      image_url: "/CUCAI-WEB.gif",
+      to: "https://www.cucai.ca/",
     },
   ];
 
