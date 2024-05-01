@@ -53,7 +53,7 @@ const InfoSection = ({
         <Image
           src={image}
           alt="Project Image"
-          className="max-h-[400px] md:h-[650px] min-[1376px]:h-[350px] h-full w-fit rounded-xl border-4 md:border-8 border-white/5"
+          className="max-h-[400px] md:h-[650px] min-[1376px]:h-[350px] w-fit rounded-xl border-4 md:border-8 border-white/5"
           width={500}
           height={400}
         />
