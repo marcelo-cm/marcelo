@@ -1,9 +1,9 @@
 import Image from "next/image";
-import PhotoCard from "../_components/PhotoCard";
-import CustomLink from "../_components/CustomLink";
+import PhotoCard from "../../components/molecules/PhotoCard";
+import CustomLink from "../../components/ui/custom-link";
 import React from "react";
 import { Fragment } from "react";
-import IconBar from "../_components/IconBar";
+import IconBar from "../../components/molecules/IconBar";
 
 export default function Home() {
   // const { fashionPhotos, artPhotos } = useLoaderData();

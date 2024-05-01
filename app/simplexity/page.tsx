@@ -1,7 +1,7 @@
 import Link from "next/link";
 import getPostMetadata, { PostMetadata } from "../../lib/hooks/getPostMetadata";
-import BlogLink from "../_components/BlogLink";
-import IconBar from "../_components/IconBar";
+import BlogLink from "../../components/molecules/BlogLink";
+import IconBar from "../../components/molecules/IconBar";
 
 const HomePage = () => {
   const postMetadata = getPostMetadata();

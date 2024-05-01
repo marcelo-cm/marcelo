@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { ComponentContainer } from "./_components/ComponentContainer";
 import { ToastContainer } from "./_components/ToastContainer";
 
-import CustomLink from "../_components/CustomLink";
+import CustomLink from "../../components/ui/custom-link";
 import Select from "./_components/(Select Components)/Select";
 import SelectItem from "./_components/(Select Components)/SelectItem";
 import SelectLabel from "./_components/(Select Components)/SelectLabel";
