@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import InfoSection from "./components/InfoSection";
+import CustomLink from "@/components/ui/custom-link";
 
 const CUCAIPlatform = () => {
   const TECHnTOOLS = [
@@ -113,14 +114,17 @@ const CUCAIPlatform = () => {
         imagePosition="right"
       >
         <p>
-          The Canadian Undergraduate Conference on AI is a not-for-profit
-          conference that bring together over 340 of the brightest minds on AI
-          from across the country. The conference serves as a platform for top
-          Canadian undergraduates in AI to learn, share their passion, and
-          connect with industry leaders. I had the privilege of leading CUCAI
-          2024, our most successful event yet, however I encountered countless
-          problems in the way that admin and logistics responsibilities were
-          being managed, especially with a small team.
+          The{" "}
+          <CustomLink to="https://www.cucai.ca/">
+            Canadian Undergraduate Conference on AI
+          </CustomLink>{" "}
+          is a not-for-profit conference that bring together over 340 of the
+          brightest minds on AI from across the country. The conference serves
+          as a platform for top Canadian undergraduates in AI to learn, share
+          their passion, and connect with industry leaders. I had the privilege
+          of leading CUCAI 2024, our most successful event yet, however I
+          encountered countless problems in the way that admin and logistics
+          responsibilities were being managed, especially with a small team.
         </p>
         <p>
           Designed to streamline the complexities of delegate management and
