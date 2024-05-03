@@ -14,7 +14,7 @@ I have seen a few common themes and questions when people ask me for advice; how
 
 You can live 100 lives before you finish your own. We are simply the aggregation of the experience from mentors: seek them consistently and ask questions obsessively. This is the reason that these very heuristics and philosophies exist.
 
-# 80/20 Rule of Opportunities ([originally version c/o Sana Raisfirooz](https://www.linkedin.com/in/sana-raisfirooz/))
+# 80/20 Rule of Opportunities
 
 Opportunities are 80 percent created, 20 percent serendipitous. We can't control what comes to us, so to increase it we must create more.
 
@@ -78,4 +78,8 @@ Being stress is when you let your overwhelmed-ness get to you. It inhibits your 
 
 # Low Effort High Impact
 
-Only do things that have 2+ units of output for every unit of effort (input). Maximize the benefits of the things you do.
+Only do things that have 2+ units of output for every unit of effort (input). Maximize the benefits of the things you do to achieve this.
+
+# Meetings & Emails
+
+If it can be an email, don't make it a meeting. If it is an email, write extremely concisely. If it must be a meeting, prepare an agenda — most meetings can be done in 20 mins.

@@ -16,7 +16,15 @@ function HireMe() {
   const [showSuggested, setShowSuggested] = useState(true);
   const conversationEndRef = useRef(null); // Reference to the end of the conversation
 
+  useEffect(() => {
+    (conversationEndRef.current as HTMLElement | null)?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }, [conversation, showSuggested]);
+
   const handlePrompt = async (prompt: string) => {
+    if (!prompt) return;
+
     console.log(prompt);
     setConversation((prev) => [...prev, { role: "USER", message: prompt }]);
     setPrompt("");
@@ -53,12 +61,6 @@ function HireMe() {
     ]);
   };
 
-  useEffect(() => {
-    (conversationEndRef.current as HTMLElement | null)?.scrollIntoView({
-      behavior: "smooth",
-    });
-  }, [conversation, showSuggested]);
-
   return (
     <div className="flex flex-col items-center justify-end w-full h-full pb-24 gap-2">
       <div className="w-[90%] max-w-[900px] pt-8 flex flex-col gap-4 h-auto overflow-y-scroll no-scrollbar border-3xl">
@@ -83,7 +85,7 @@ function HireMe() {
           ) : (
             <p
               key={index}
-              className="py-[6px] px-4 
+              className="py-2 px-4 
           transition-all 
           rounded-3xl
           rounded-br-none
