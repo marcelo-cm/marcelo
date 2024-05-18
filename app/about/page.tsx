@@ -1,8 +1,5 @@
 import Image from "next/image";
-import PhotoCard from "../../components/molecules/PhotoCard";
-import CustomLink from "../../components/ui/custom-link";
-import React from "react";
-import { Fragment } from "react";
+import React, {Fragment} from "react";
 import IconBar from "../../components/molecules/IconBar";
 
 export default function Home() {
@@ -12,7 +9,7 @@ export default function Home() {
     {
       title: "WHO I AM",
       description:
-        "I am a 19 year old product designer & software engineer born in Lima, Peru, raised in Toronto leading Canada’s largest undergraduate organization on AI, and organizing the Canadian Undergraduate Conference on AI. I’m a 3x founder having worked in fashion at 13, to marketing & design studio at 16, and then scaled a 50k+ community at 18. Today I’m serial-building product with friends. \
+        "I am a 20 year old product designer & software engineer born in Lima, Peru, raised in Toronto leading Canada’s largest undergraduate organization on AI, and organizing the Canadian Undergraduate Conference on AI. I’m a 3x founder having worked in fashion at 13, to marketing & design studio at 16, and then scaled a 50k+ community at 18. Today I’m serial-building product with friends. \
          \n \n \
         I grew up immersed by a energetic Peruvian culture, with amazing food, and a mother who always pushed me to try things I’m bad at... and sent me to engineer summer camps against my will. My brother introduced me to the world of technology when the iPhone 3GS released, and he is my greatest influence.\
          \n \n \
