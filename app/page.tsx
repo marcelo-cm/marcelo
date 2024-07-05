@@ -146,13 +146,13 @@ export default function Home() {
       image_url: '/QMINDWEB.gif',
       to: 'https://qmind.ca/',
     },
-    {
-      title: 'The Sandbox',
-      tags: ['Frontend'],
-      type: 'Project',
-      image_url: '/sandbox.webp',
-      to: '/sandbox',
-    },
+    // {
+    //   title: 'The Sandbox',
+    //   tags: ['Frontend'],
+    //   type: 'Project',
+    //   image_url: '/sandbox.webp',
+    //   to: '/sandbox',
+    // },
     {
       title: 'Easy Recipe',
       tags: ['UX', 'UI'],
