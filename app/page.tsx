@@ -6,20 +6,20 @@ import IconBar from '../components/molecules/IconBar';
 export default function Home() {
   const resume = [
     {
-      title: 'Founding Product Engineer',
+      title: 'Founder',
       website: 'https://workman.so/',
       organization: 'Workman AI',
       date: '2024 – Present',
       description:
-        'Leading product design & frontend development for a startup building AI-powered tools for the construction industry',
+        'Designing & building accounting automation tools for builders & contractors. Fully integrated with QuickBooks, and Gmail.',
     },
     {
-      title: 'Associate Software Engineer',
+      title: 'Software Engineer',
       website: 'https://tread.io/',
       organization: 'Tread',
       date: '2024 - Present',
       description:
-        'Building transportation management systems. Working across the stack & helping integrate AI into organization workflows',
+        '$3M ARR Series A Construction Tech startup. Worked on the core product across the stack using Ruby on Rails, React, and Postgres.',
     },
     {
       title: 'International Competitor',
@@ -135,8 +135,8 @@ export default function Home() {
     {
       title: 'Workman',
       tags: ['Product', 'Design', 'Frontend'],
-      type: 'Product Explanation',
-      image_url: '/workman.png',
+      type: 'Product',
+      image_url: '/WorkmanGif.gif',
       to: 'https://www.workman.so/',
     },
     {
@@ -146,13 +146,6 @@ export default function Home() {
       image_url: '/QMINDWEB.gif',
       to: 'https://qmind.ca/',
     },
-    // {
-    //   title: 'The Sandbox',
-    //   tags: ['Frontend'],
-    //   type: 'Project',
-    //   image_url: '/sandbox.webp',
-    //   to: '/sandbox',
-    // },
     {
       title: 'Easy Recipe',
       tags: ['UX', 'UI'],
