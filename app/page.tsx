@@ -14,6 +14,13 @@ export default function Home() {
         'Designing & building accounting automation tools for builders & contractors. Fully integrated with QuickBooks, and Gmail.',
     },
     {
+      title: 'Co-Founder',
+      website: 'https://intuitivelabs.co/',
+      organization: 'Intuitive Labs',
+      date: '2024 – Present',
+      description: 'Design, engineering & creative studio.',
+    },
+    {
       title: 'Software Engineer',
       website: 'https://tread.io/',
       organization: 'Tread',
