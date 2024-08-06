@@ -163,3 +163,32 @@ export const PROJECTS = [
     to: 'https://www.cucai.ca/',
   },
 ];
+
+export const ABOUT = [
+  {
+    title: 'WHO I AM',
+    description:
+      "I am a 20 year old product designer & software engineer born in Lima, Peru, raised in Toronto. I grew up experimenting in different things, from fashion at 13-15, to marketing & design studio at 16, and then scaled a 50k+ community at 18, and ran Canada's largest undergrad organizations on AI at 19. \
+         \n \n \
+        I grew up immersed by Peruvian culture, with amazing food, and a mother who always pushed me to try things I’m bad at... and sent me to engineer summer camps against my will. My brother introduced me to the world of technology when the iPhone 3GS released, and he is my greatest influence.\
+         \n \n \
+        I love art, tech, community, and learning new things. I love making new friends. I love everything I do.",
+  },
+  {
+    title: 'WHO I USED TO BE',
+    description:
+      'As a kid I spent most of my time on the basketball court, until the day I touched a camera. Quickly, I became obsessed with art in its many forms – from fashion, to photography and eventually user experience & product design.',
+  },
+  {
+    title: 'WHO I WILL TO BE',
+    description:
+      'Founder, builder, artist, and someone who gives back to underprivileged youth in Peru.\
+        \n \n \
+        My two goals in life are to design one of everything, and to provide the resources and opportunities to kids in my home country that didn’t have the luck I had to be brought to Canada by my parents.',
+  },
+  {
+    title: 'MY WHY',
+    description:
+      'Coming from a country with many underprivileged and impoverished families, I am determined to make the most out of the all the resources I have so that one day I can give back to those who enabled me to get where I am, and to the kids of Peru whom I see myself in.',
+  },
+];

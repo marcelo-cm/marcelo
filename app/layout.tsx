@@ -6,8 +6,6 @@ import Navbar from '../components/molecules/Navbar';
 
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
-
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.marcelochaman.ca'),
   title: 'Marcelo Chaman Mallqui',
