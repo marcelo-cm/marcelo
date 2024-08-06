@@ -1,7 +1,9 @@
-import React, { forwardRef, useEffect, useRef, useState } from "react";
-import MultiSelectContext from "./MultiSelectContext";
-import { CaretDownIcon, CaretUpIcon, Cross2Icon } from "@radix-ui/react-icons";
-import MultiSelectItem from "./MultiSelectItem";
+import React, { forwardRef, useEffect, useRef, useState } from 'react';
+
+import { CaretDownIcon, CaretUpIcon, Cross2Icon } from '@radix-ui/react-icons';
+
+import MultiSelectContext from './MultiSelectContext';
+import MultiSelectItem from './MultiSelectItem';
 
 interface MultiSelectProps {
   onChange: (item: { value: string | number; display: string }) => void;
@@ -25,12 +27,12 @@ const MultiSelect = forwardRef<HTMLDivElement, MultiSelectProps>(
 
     const findNextFocusableIndex = (
       currentIndex: number,
-      direction: string
+      direction: string,
     ) => {
       let nextIndex = currentIndex;
 
       do {
-        nextIndex = direction === "forward" ? nextIndex + 1 : nextIndex - 1;
+        nextIndex = direction === 'forward' ? nextIndex + 1 : nextIndex - 1;
 
         if (nextIndex < 0) nextIndex = React.Children.count(children) - 1;
         else if (nextIndex >= React.Children.count(children)) nextIndex = 0;
@@ -47,27 +49,27 @@ const MultiSelect = forwardRef<HTMLDivElement, MultiSelectProps>(
 
     const handleKeyDown = (event: React.KeyboardEvent) => {
       switch (event.key) {
-        case "ArrowDown":
+        case 'ArrowDown':
           event.preventDefault();
           setFocusedIndex((prevIndex) => {
             const newIndex =
               prevIndex === null
                 ? 0
-                : findNextFocusableIndex(prevIndex, "forward");
+                : findNextFocusableIndex(prevIndex, 'forward');
             return newIndex !== null ? newIndex : prevIndex;
           });
           break;
-        case "ArrowUp":
+        case 'ArrowUp':
           event.preventDefault();
           setFocusedIndex((prevIndex) => {
             const newIndex =
               prevIndex === null
                 ? 0
-                : findNextFocusableIndex(prevIndex, "backwards");
+                : findNextFocusableIndex(prevIndex, 'backwards');
             return newIndex !== null ? newIndex : prevIndex;
           });
           break;
-        case "Enter":
+        case 'Enter':
           event.preventDefault();
           if (focusedIndex !== null) {
             const child = React.Children.toArray(children)[focusedIndex];
@@ -79,7 +81,7 @@ const MultiSelect = forwardRef<HTMLDivElement, MultiSelectProps>(
             }
           }
           break;
-        case "Escape":
+        case 'Escape':
           setIsOpen(false);
           break;
       }
@@ -93,7 +95,7 @@ const MultiSelect = forwardRef<HTMLDivElement, MultiSelectProps>(
 
       if (values.includes(option.value)) {
         setSelectedOptions((prev) =>
-          prev.filter((item) => item.value != option.value)
+          prev.filter((item) => item.value != option.value),
         );
       } else {
         setSelectedOptions([...selectedOptions, option]);
@@ -113,7 +115,7 @@ const MultiSelect = forwardRef<HTMLDivElement, MultiSelectProps>(
 
     const onBlurHandler = () => {
       setTimeout(() => {
-        if (ref && "current" in ref && ref.current) {
+        if (ref && 'current' in ref && ref.current) {
           if (!ref.current.contains(document.activeElement)) {
             setIsOpen(false);
           }
@@ -172,7 +174,7 @@ const MultiSelect = forwardRef<HTMLDivElement, MultiSelectProps>(
         </div>
       </MultiSelectContext.Provider>
     );
-  }
+  },
 );
 
 export default MultiSelect;

@@ -1,5 +1,6 @@
-import { FunctionComponent, useContext } from "react";
-import SelectContext from "./SelectContext";
+import { FunctionComponent, useContext } from 'react';
+
+import SelectContext from './SelectContext';
 
 interface SelectLabelProps {
   children: React.ReactNode;
@@ -12,7 +13,7 @@ const SelectLabel: FunctionComponent<SelectLabelProps> = ({
 
   if (context.selectedDisplay === null) {
     throw new Error(
-      "SelectLabel must be a child of a SelectLabel or SelectGroup"
+      'SelectLabel must be a child of a SelectLabel or SelectGroup',
     );
   }
 

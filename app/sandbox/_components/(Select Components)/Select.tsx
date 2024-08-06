@@ -1,7 +1,9 @@
-import React, { forwardRef, useState, useRef, useEffect } from "react";
-import { CaretDownIcon, CaretUpIcon } from "@radix-ui/react-icons";
-import SelectContext from "./SelectContext";
-import SelectItem from "./SelectItem";
+import React, { forwardRef, useEffect, useRef, useState } from 'react';
+
+import { CaretDownIcon, CaretUpIcon } from '@radix-ui/react-icons';
+
+import SelectContext from './SelectContext';
+import SelectItem from './SelectItem';
 
 interface SelectProps {
   onChange: (value: string | number) => void;
@@ -12,9 +14,9 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
   ({ onChange, children }, ref) => {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedDisplay, setSelectedDisplay] = useState<string | number>(
-      "Please Select An Option"
+      'Please Select An Option',
     );
-    const [selectedValue, setSelectedValue] = useState<string | number>("");
+    const [selectedValue, setSelectedValue] = useState<string | number>('');
     const [focusedIndex, setFocusedIndex] = useState<number | null>(null);
     const focusedItemRef = useRef<HTMLDivElement | null>(null);
 
@@ -26,27 +28,27 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
 
     const handleKeyDown = (event: React.KeyboardEvent) => {
       switch (event.key) {
-        case "ArrowDown":
+        case 'ArrowDown':
           event.preventDefault();
           setFocusedIndex((prevIndex) => {
             const newIndex =
               prevIndex === null
                 ? 0
-                : findNextFocusableIndex(prevIndex, "forward");
+                : findNextFocusableIndex(prevIndex, 'forward');
             return newIndex !== null ? newIndex : prevIndex;
           });
           break;
-        case "ArrowUp":
+        case 'ArrowUp':
           event.preventDefault();
           setFocusedIndex((prevIndex) => {
             const newIndex =
               prevIndex === null
                 ? 0
-                : findNextFocusableIndex(prevIndex, "backwards");
+                : findNextFocusableIndex(prevIndex, 'backwards');
             return newIndex !== null ? newIndex : prevIndex;
           });
           break;
-        case "Enter":
+        case 'Enter':
           event.preventDefault();
           if (focusedIndex !== null) {
             const child = React.Children.toArray(children)[focusedIndex];
@@ -55,7 +57,7 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
             }
           }
           break;
-        case "Escape":
+        case 'Escape':
           setIsOpen(false);
           break;
       }
@@ -63,7 +65,7 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
 
     const handleItemClick = (
       displayValue: string | number,
-      itemValue: string | number
+      itemValue: string | number,
     ) => {
       setSelectedValue(itemValue);
       setSelectedDisplay(displayValue);
@@ -73,12 +75,12 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
 
     const findNextFocusableIndex = (
       currentIndex: number,
-      direction: string
+      direction: string,
     ) => {
       let nextIndex = currentIndex;
 
       do {
-        nextIndex = direction === "forward" ? nextIndex + 1 : nextIndex - 1;
+        nextIndex = direction === 'forward' ? nextIndex + 1 : nextIndex - 1;
 
         if (nextIndex < 0) nextIndex = React.Children.count(children) - 1;
         else if (nextIndex >= React.Children.count(children)) nextIndex = 0;
@@ -105,7 +107,7 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
 
     const onBlurHandler = () => {
       setTimeout(() => {
-        if (ref && "current" in ref && ref.current) {
+        if (ref && 'current' in ref && ref.current) {
           if (!ref.current.contains(document.activeElement)) {
             setIsOpen(false);
           }
@@ -153,7 +155,7 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
         </div>
       </SelectContext.Provider>
     );
-  }
+  },
 );
 
 export default Select;

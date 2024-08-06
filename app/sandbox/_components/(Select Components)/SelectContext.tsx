@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface SelectContextType {
   selectedValue: string | number | null;
@@ -6,7 +6,7 @@ interface SelectContextType {
   focusedIndex: number | null;
   handleItemClick: (
     displayValue: string | number,
-    itemValue: string | number
+    itemValue: string | number,
   ) => void;
 }
 

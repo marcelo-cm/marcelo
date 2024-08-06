@@ -1,6 +1,8 @@
-import React from "react";
-import CustomLink from "../ui/custom-link";
-import { PostMetadata } from "@/lib/hooks/getPostMetadata";
+import React from 'react';
+
+import CustomLink from '../ui/custom-link';
+
+import { PostMetadata } from '@/lib/hooks/getPostMetadata';
 
 const BlogLink = (props: PostMetadata) => {
   return (
@@ -11,7 +13,7 @@ const BlogLink = (props: PostMetadata) => {
       <div className="flex flex-col sm:flex-row w-full items-left sm:items-center mb-[2px]">
         <div className="text-normal flex flex-col sm:flex-row">
           <div className="w-full sm:w-fit flex flex-row whitespace-nowrap items-center">
-            {props.title}{" "}
+            {props.title}{' '}
             <hr className="h-px mx-4 bg-[#A0A0A0]/10 border-0 flex-1 sm:hidden w-0" />
           </div>
         </div>

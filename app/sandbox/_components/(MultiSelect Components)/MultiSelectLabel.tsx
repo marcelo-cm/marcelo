@@ -1,5 +1,6 @@
-import { FunctionComponent, useContext } from "react";
-import MultiSelectContext from "./MultiSelectContext";
+import { FunctionComponent, useContext } from 'react';
+
+import MultiSelectContext from './MultiSelectContext';
 
 interface MultiSelectLabelProps {
   children: React.ReactNode;
@@ -12,7 +13,7 @@ const MultiSelectLabel: FunctionComponent<MultiSelectLabelProps> = ({
 
   if (context.selectedOptions === null) {
     throw new Error(
-      "MultiSelectLabel must be a child of a MultiSelectLabel or MultiSelectGroup"
+      'MultiSelectLabel must be a child of a MultiSelectLabel or MultiSelectGroup',
     );
   }
 

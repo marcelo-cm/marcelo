@@ -1,5 +1,6 @@
-import React, { useContext } from "react";
-import MultiSelectContext from "./MultiSelectContext";
+import React, { useContext } from 'react';
+
+import MultiSelectContext from './MultiSelectContext';
 
 export interface MultiSelectItemProps {
   children: React.ReactNode;
@@ -19,7 +20,7 @@ const MultiSelectItem: React.FC<MultiSelectItemProps> = ({
 
   if (selectedOptions === null) {
     throw new Error(
-      "SelectItem must be a child of a SelectLabel or SelectGroup"
+      'SelectItem must be a child of a SelectLabel or SelectGroup',
     );
   }
 
@@ -28,7 +29,7 @@ const MultiSelectItem: React.FC<MultiSelectItemProps> = ({
     selectedOptions.map((option) => option.value).includes(value);
 
   const onClick = () => {
-    if (typeof children === "string") {
+    if (typeof children === 'string') {
       handleItemClick({ value: value, display: children });
     }
   };
@@ -36,7 +37,7 @@ const MultiSelectItem: React.FC<MultiSelectItemProps> = ({
   return (
     <div
       className={`cursor-pointer py-[6px] pl-2 pr-6 rounded-md h-fit hover:bg-white/10 active:ring-1 ring-inset ring-[#A0A0A0] transition-all text-nowrap	break-keep ${
-        isSelected ? "bg-white/10" : ""
+        isSelected ? 'bg-white/10' : ''
       }`}
       onClick={onClick}
       tabIndex={-1}

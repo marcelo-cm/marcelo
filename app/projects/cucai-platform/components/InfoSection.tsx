@@ -1,12 +1,13 @@
-import Image from "next/image";
-import React from "react";
+import React from 'react';
+
+import Image from 'next/image';
 
 const InfoSection = ({
   title,
   description,
   children,
   image,
-  imagePosition = "right",
+  imagePosition = 'right',
   level = 1,
   className,
 }: {
@@ -14,7 +15,7 @@ const InfoSection = ({
   description: string;
   children: React.ReactNode;
   image?: string;
-  imagePosition?: "left" | "right";
+  imagePosition?: 'left' | 'right';
   level?: number;
   className?: string;
 }) => {
@@ -25,7 +26,7 @@ const InfoSection = ({
       } ${className}`}
       id={title}
     >
-      {image && imagePosition == "left" ? (
+      {image && imagePosition == 'left' ? (
         <Image
           src={image}
           alt="Project Image"
@@ -34,14 +35,14 @@ const InfoSection = ({
           height={200}
         />
       ) : null}
-      <div className={`w-full ${""} flex flex-col gap-2`} id="Overview">
+      <div className={`w-full ${''} flex flex-col gap-2`} id="Overview">
         <h1
           className={`${
             level == 1
-              ? "text-2xl max-w-[700px]"
+              ? 'text-2xl max-w-[700px]'
               : level == 2
-              ? `text-xl italic`
-              : null
+                ? `text-xl italic`
+                : null
           } md:min-w-[530px]  w-full`}
         >
           {title}
@@ -49,7 +50,7 @@ const InfoSection = ({
         </h1>
         {children}
       </div>
-      {image && imagePosition == "right" ? (
+      {image && imagePosition == 'right' ? (
         <Image
           src={image}
           alt="Project Image"

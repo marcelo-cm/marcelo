@@ -1,20 +1,20 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "../components/molecules/Navbar";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from '@vercel/analytics/react';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from '../components/molecules/Navbar';
+
+import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.marcelochaman.ca"),
-  title: "Marcelo Chaman Mallqui",
-  description: "A digital representation.",
+  metadataBase: new URL('https://www.marcelochaman.ca'),
+  title: 'Marcelo Chaman Mallqui',
+  description: 'A digital representation.',
   openGraph: {
-    images: "/opengraph-image.png",
+    images: '/opengraph-image.png',
   },
   twitter: {
-    images: "/twitter-image.png",
+    images: '/twitter-image.png',
   },
 };
 

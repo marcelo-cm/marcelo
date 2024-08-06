@@ -1,8 +1,11 @@
-import React, { forwardRef, use, useEffect, useRef, useState } from "react";
-import ComboContext from "./ComboContext";
-import ComboItem from "./ComboItem";
-import { CaretDownIcon, CaretUpIcon, Cross2Icon } from "@radix-ui/react-icons";
-import { render } from "react-dom";
+import React, { forwardRef, use, useEffect, useRef, useState } from 'react';
+
+import { CaretDownIcon, CaretUpIcon, Cross2Icon } from '@radix-ui/react-icons';
+
+import { render } from 'react-dom';
+
+import ComboContext from './ComboContext';
+import ComboItem from './ComboItem';
 
 interface ComboProps {
   onChange: (item: { value: string | number; display: string }) => void;
@@ -17,7 +20,7 @@ const Combo = forwardRef<HTMLDivElement, ComboProps>(
     >([]);
     const [focusedIndex, setFocusedIndex] = useState<number | null>(null);
     const focusedItemRef = useRef<HTMLDivElement | null>(null);
-    const [searchVal, setSearchVal] = useState("");
+    const [searchVal, setSearchVal] = useState('');
 
     useEffect(() => {
       if (focusedItemRef.current && focusedIndex !== null) {
@@ -27,7 +30,7 @@ const Combo = forwardRef<HTMLDivElement, ComboProps>(
 
     const findNextFocusableIndex = (
       currentIndex: number,
-      direction: string
+      direction: string,
     ) => {
       if (!renderChildren || renderChildren.length === 0) return null;
 
@@ -36,14 +39,14 @@ const Combo = forwardRef<HTMLDivElement, ComboProps>(
       const validIndex = renderChildren
         .map((item) => {
           const key =
-            typeof item.key === "string"
-              ? parseInt(item.key.replace(".", ""), 10)
+            typeof item.key === 'string'
+              ? parseInt(item.key.replace('.', ''), 10)
               : null;
           return key;
         })
         .filter((key): key is number => key !== null);
 
-      let increment = direction === "forward" ? 1 : -1;
+      let increment = direction === 'forward' ? 1 : -1;
 
       do {
         let currentPosition = validIndex?.indexOf(currentIndex);
@@ -68,27 +71,27 @@ const Combo = forwardRef<HTMLDivElement, ComboProps>(
 
     const handleKeyDown = (event: React.KeyboardEvent) => {
       switch (event.key) {
-        case "ArrowDown":
+        case 'ArrowDown':
           event.preventDefault();
           setFocusedIndex((prevIndex) => {
             const newIndex =
               prevIndex === null
                 ? 0
-                : findNextFocusableIndex(prevIndex, "forward");
+                : findNextFocusableIndex(prevIndex, 'forward');
             return newIndex !== null ? newIndex : prevIndex;
           });
           break;
-        case "ArrowUp":
+        case 'ArrowUp':
           event.preventDefault();
           setFocusedIndex((prevIndex) => {
             const newIndex =
               prevIndex === null
                 ? 0
-                : findNextFocusableIndex(prevIndex, "backwards");
+                : findNextFocusableIndex(prevIndex, 'backwards');
             return newIndex !== null ? newIndex : prevIndex;
           });
           break;
-        case "Enter":
+        case 'Enter':
           event.preventDefault();
           if (focusedIndex !== null) {
             const child = React.Children.toArray(children)[focusedIndex];
@@ -100,7 +103,7 @@ const Combo = forwardRef<HTMLDivElement, ComboProps>(
             }
           }
           break;
-        case "Escape":
+        case 'Escape':
           setIsOpen(false);
           break;
       }
@@ -141,7 +144,7 @@ const Combo = forwardRef<HTMLDivElement, ComboProps>(
 
     const onBlurHandler = () => {
       setTimeout(() => {
-        if (ref && "current" in ref && ref.current) {
+        if (ref && 'current' in ref && ref.current) {
           if (!ref.current.contains(document.activeElement)) {
             setIsOpen(false);
           }
@@ -157,7 +160,7 @@ const Combo = forwardRef<HTMLDivElement, ComboProps>(
 
       if (values.includes(option.value)) {
         setSelectedOptions((prev) =>
-          prev.filter((item) => item.value != option.value)
+          prev.filter((item) => item.value != option.value),
         );
       } else {
         setSelectedOptions([...selectedOptions, option]);
@@ -185,7 +188,7 @@ const Combo = forwardRef<HTMLDivElement, ComboProps>(
             onClick={() => {
               setIsOpen((prevState) => !prevState);
               setFocusedIndex(null);
-              setSearchVal("");
+              setSearchVal('');
             }}
           >
             <div className="relative flex gap-2 flex-row pr-6">
@@ -235,7 +238,7 @@ const Combo = forwardRef<HTMLDivElement, ComboProps>(
         </div>
       </ComboContext.Provider>
     );
-  }
+  },
 );
 
 export default Combo;

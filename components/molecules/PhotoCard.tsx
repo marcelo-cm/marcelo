@@ -1,5 +1,6 @@
-import Image from "next/image";
-import React from "react";
+import React from 'react';
+
+import Image from 'next/image';
 
 const PhotoCard = ({ image_url, alt }: { image_url: string; alt: string }) => {
   return (
