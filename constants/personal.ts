@@ -106,6 +106,13 @@ export const RESUME = [
 
 export const PROJECTS = [
   {
+    title: 'Workman',
+    tags: ['Design', 'Fullstack'],
+    type: 'Product',
+    image_url: '/WorkmanGif.gif',
+    to: 'https://www.workman.so/',
+  },
+  {
     title: 'CUCAI Platform',
     tags: ['Fullstack', 'Design'],
     type: 'Project Breakdown',
@@ -120,13 +127,6 @@ export const PROJECTS = [
     to: 'https://medium.com/@marcelochaman/ux-product-design-case-study-qmind-design-team-portal-89d7eb8ea526',
   },
 
-  {
-    title: 'Workman',
-    tags: ['Product', 'Design', 'Frontend'],
-    type: 'Product',
-    image_url: '/WorkmanGif.gif',
-    to: 'https://www.workman.so/',
-  },
   {
     title: 'QMIND Website',
     tags: ['Design', 'Frontend'],
