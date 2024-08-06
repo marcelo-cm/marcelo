@@ -5,14 +5,14 @@ export const RESUME = [
     organization: 'Workman AI',
     date: '2024 – Present',
     description:
-      'Designing & building accounting automation tools for builders & contractors. Fully integrated with QuickBooks, and Gmail.',
+      'Designing & building accounting automation tools for builders & contractors; Fully integrated with QuickBooks, and Gmail',
   },
   {
     title: 'Co-Founder',
     website: 'https://intuitivelabs.co/',
     organization: 'Intuitive Labs',
     date: '2024 – Present',
-    description: 'Design, engineering & creative studio.',
+    description: 'Design, engineering & creative studio',
   },
   {
     title: 'Software Engineer',
@@ -20,7 +20,7 @@ export const RESUME = [
     organization: 'Tread',
     date: '2024 - Present',
     description:
-      '$3M ARR Series A Construction Tech startup. Worked on the core product across the stack using Ruby on Rails, React, and Postgres.',
+      '$3M ARR Series A Construction Tech startup. Worked on the core product across the stack using Ruby on Rails, React, and Postgres',
   },
   {
     title: 'International Competitor',
@@ -28,7 +28,7 @@ export const RESUME = [
     organization: 'Queen’s Case Competition Union',
     date: '2023 – Present',
     description:
-      '1 of 20 students competing internationally on behalf of Queen’s university. 3rd place at the BI International Case Competition 2024 (Norway)',
+      'Competing internationally on behalf of Queen’s university. 3rd place at the BI International Case Competition 2024 (Norway)',
   },
   {
     title: 'Managing Director',
@@ -36,7 +36,7 @@ export const RESUME = [
     organization: 'QMIND',
     date: '2023 - 2024',
     description:
-      'Canada’s largest undergraduate organization on AI, 250+ members, 40+ AI projects; democratizing access to AI education, research & community',
+      "Canada's largest undergraduate organization on AI, 250+ members, 40+ AI projects; democratizing access to AI education, research & community",
   },
   {
     title: 'President',
@@ -44,7 +44,7 @@ export const RESUME = [
     organization: 'Canadian Undergraduate Conference on AI',
     date: '2023 - 2024',
     description:
-      'Canada’s largest undergraduate conference on AI, 340+ delegates, featuring speakers & sponsors from OpenAI, Cohere, Microsoft, Intel, Apple, NASA & more',
+      "Canada's largest undergraduate conference on AI, 340+ delegates, featuring speakers & sponsors from OpenAI, Cohere, Microsoft, Intel, Apple, NASA & more",
   },
   {
     title: 'Head of Technology',
@@ -60,7 +60,7 @@ export const RESUME = [
     organization: 'CallSmart AI',
     date: '2023',
     description:
-      'Led product design & development for an AI-powered communication system helping dental clinics capture $100k in lost revenue annually by increasing booking rates',
+      'Designed and developed for an AI-powered communication system helping dental clinics capture $100k in lost revenue annually by increasing booking rates',
   },
   {
     title: 'Founder & Software Engineer',
@@ -68,7 +68,7 @@ export const RESUME = [
     organization: 'Memoria AI',
     date: '2023',
     description:
-      'Founded with 2 ex-Google PMs, Memoria was an AI voice-journalling tool that let users talk to their thoughts and get insights on their mental health. 800+ users',
+      "AI voice-journalling tool founded with 2 ex-Google PMs. Users can 'talk to their thoughts' and get insights on their mental health. 800+ users",
   },
   {
     title: 'AI Research Analyst Intern',
@@ -76,15 +76,15 @@ export const RESUME = [
     organization: ' Recalc Academy',
     date: '2023',
     description:
-      'Finance academy & accelerator program empowering ambitious students breaking into the world on finance; Automated processes & researched AI tools in the data & finance space',
+      'Finance academy & accelerator program sending ambitious students to top investment banking firms in the US; Automated processes & researched AI tools in the data & finance space',
   },
   {
-    title: 'Co-Founder & Advisor ',
+    title: 'Co-Founder',
     website: 'https://www.universitymedia.ca/',
     organization: 'University Media Group',
     date: '2022-2023',
     description:
-      'Changing the way students across Canada make friends before stepping on campus, 50k+ community',
+      'Helped students across Canada make friends before stepping on campus. Scaled to 50k+ person community',
   },
   {
     title: 'Founder',
@@ -100,7 +100,7 @@ export const RESUME = [
     organization: 'ustudios.',
     date: '2017',
     description:
-      'Fashion company where I found my love for art. Designed for companies with $100k+ in revenue & design clothes for myself to this day',
+      'Fashion company where I found my love for art. Designed for companies with $100k+ in revenue',
   },
 ];
 
