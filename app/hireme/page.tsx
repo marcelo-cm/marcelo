@@ -122,7 +122,7 @@ function HireMe() {
         <div ref={conversationEndRef} />
       </div>
       {showSuggested ? (
-        <div className="flex flex-col gap-2 items-center w-full w-[90%] max-w-[500px]">
+        <div className="flex flex-col gap-2 items-center w-[90%] max-w-[500px]">
           <p className="w-fit text-[#2e2e2e] italic">Suggested Questions</p>
           <button
             onClick={() => handlePrompt('Who is Marcelo?')}

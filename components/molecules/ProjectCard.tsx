@@ -40,7 +40,7 @@ const ProjectCard = ({
           width={400}
           height={300}
           alt={alt}
-          quality={75}
+          unoptimized
           className="rounded-md object-fill h-full w-full  hover:brightness-[0.8] transition-all duration-300"
         />
         <div className="w-full flex justify-between items-center pt-4 p-3 rounded-md overflow-none absolute left-0 bottom-0 text-[15px]">
