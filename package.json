@@ -3,10 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next && tsc && prettier --check .",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "prettier --check . && tsc",
+    "lint:type": "tsc",
+    "lint:fix": "prettier --write . && type",
+    "format": "prettier --write .",
+    "analyze": "ANALYZE=true next build",
+    "clean": "rm -rf .next/ && next build"
   },
   "dependencies": {
     "@million/lint": "^1.0.0-rc.76",
@@ -25,7 +30,7 @@
     "gray-matter": "^4.0.3",
     "html-react-parser": "^5.0.6",
     "markdown-to-jsx": "^7.4.7",
-    "next": "14.0.3",
+    "next": "^14.2.5",
     "react": "^18",
     "react-dom": "^18",
     "react-element-to-jsx-string": "^15.0.0",
@@ -34,12 +39,15 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.12",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
     "inspx": "^0.0.1-alpha.6",
     "postcss": "^8",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.5",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }

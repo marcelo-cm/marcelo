@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import TooltipContext from "./TooltipContext";
+import React, { useState } from 'react';
+
+import TooltipContext from './TooltipContext';
 
 interface TooltipProps {
   children: React.ReactNode;
@@ -8,7 +9,7 @@ interface TooltipProps {
 
 const Tooltip = ({ children, content }: TooltipProps) => {
   if (!content) {
-    throw new Error("Tooltip must have content");
+    throw new Error('Tooltip must have content');
   }
 
   const [isOpen, setIsOpen] = useState(false);

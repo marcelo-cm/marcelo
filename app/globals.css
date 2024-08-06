@@ -69,5 +69,5 @@ body {
 }
 
 pre code {
-  @apply !bg-transparent !border-none;
+  @apply !border-none !bg-transparent;
 }

@@ -1,37 +1,39 @@
-import Image from "next/image";
-import React from "react";
-import InfoSection from "./components/InfoSection";
-import CustomLink from "@/components/ui/custom-link";
+import React from 'react';
+
+import Image from 'next/image';
+
+import InfoSection from './components/InfoSection';
+import CustomLink from '@/components/ui/custom-link';
 
 const CUCAIPlatform = () => {
   const TECHnTOOLS = [
-    "Next.js",
-    "Typescript",
-    "Tailwind CSS",
-    "Shadcn",
-    "PostgreSQL",
-    "Supabase",
-    "Vercel",
-    "Figma",
-    "Stripe",
+    'Next.js',
+    'Typescript',
+    'Tailwind CSS',
+    'Shadcn',
+    'PostgreSQL',
+    'Supabase',
+    'Vercel',
+    'Figma',
+    'Stripe',
   ];
 
   const SKILLS = [
-    "Full-stack Development",
-    "UI/UX Design",
-    "Database Management",
-    "Integration",
-    "Unit Testing",
+    'Full-stack Development',
+    'UI/UX Design',
+    'Database Management',
+    'Integration',
+    'Unit Testing',
   ];
 
   const TABLEOFCONTENTS = [
-    "Overview",
-    "Features (Delegate Side)",
-    "Features (Admin Side)",
-    "Database",
-    "Challenges",
-    "Learnings",
-    "Future Scope",
+    'Overview',
+    'Features (Delegate Side)',
+    'Features (Admin Side)',
+    'Database',
+    'Challenges',
+    'Learnings',
+    'Future Scope',
   ];
 
   return (
@@ -114,10 +116,10 @@ const CUCAIPlatform = () => {
         imagePosition="right"
       >
         <p>
-          The{" "}
+          The{' '}
           <CustomLink to="https://www.cucai.ca/">
             Canadian Undergraduate Conference on AI
-          </CustomLink>{" "}
+          </CustomLink>{' '}
           is a not-for-profit conference that bring together over 340 of the
           brightest minds on AI from across the country. The conference serves
           as a platform for top Canadian undergraduates in AI to learn, share
@@ -194,7 +196,7 @@ const CUCAIPlatform = () => {
           <p>
             The Delegate Dashboard is the information hub for all delegates to
             track their profile information, ticket status and information,
-            project details, and a place to access all{" "}
+            project details, and a place to access all{' '}
             <em>Important Resource</em>.
           </p>
           <div>

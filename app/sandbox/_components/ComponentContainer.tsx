@@ -1,12 +1,15 @@
 'use client';
 
+import React, { useState } from 'react';
+
 import {
   CaretDownIcon,
   ClipboardCopyIcon,
   Cross2Icon,
 } from '@radix-ui/react-icons';
-import React, {useState} from 'react';
+
 import toJsxString from 'react-element-to-jsx-string';
+
 import ComponentDetails from './ComponentDetails';
 
 export const ComponentContainer = ({
@@ -42,7 +45,7 @@ export const ComponentContainer = ({
   };
 
   const detailsChildren = childrenArray.find(
-    (child) => React.isValidElement(child) && child.type === ComponentDetails
+    (child) => React.isValidElement(child) && child.type === ComponentDetails,
   );
 
   const learnings =
@@ -53,24 +56,24 @@ export const ComponentContainer = ({
 
   return (
     <div className={`relative ${className}`}>
-      <div className='w-full border border-[#2e2e2e] border-dashed hover:border-dotted px-8 py-16 rounded-lg flex flex-row justify-center'>
+      <div className="w-full border border-[#2e2e2e] border-dashed hover:border-dotted px-8 py-16 rounded-lg flex flex-row justify-center">
         {childrenArray[0]}
       </div>
-      <div className='flex gap-2 flex-col p-2 text-xs text-[#a0a0a0]'>
-        <div className='flex gap-2 z-40 justify-between flex-wrap relative'>
+      <div className="flex gap-2 flex-col p-2 text-xs text-[#a0a0a0]">
+        <div className="flex gap-2 z-40 justify-between flex-wrap relative">
           {/* Label + Learnings */}
-          <div className='break-keep flex flex-row gap-1 items-center relative'>
+          <div className="break-keep flex flex-row gap-1 items-center relative">
             {label}
-            <div className='hidden md:flex'>
+            <div className="hidden md:flex">
               {learnings ? (
                 <div
                   onBlur={() => setIsLearningOpen(false)}
-                  className='relative'
+                  className="relative"
                   tabIndex={0}
                 >
                   <button
                     onClick={() => setIsLearningOpen((prev) => !prev)}
-                    className='p-[2px] rounded-full active:ring-1 ring-[#A0A0A0] text-xs text-[#a0a0a0] select-none	hover:text-white hover:bg-[#232323]'
+                    className="p-[2px] rounded-full active:ring-1 ring-[#A0A0A0] text-xs text-[#a0a0a0] select-none	hover:text-white hover:bg-[#232323]"
                   >
                     <CaretDownIcon />
                   </button>
@@ -87,7 +90,7 @@ export const ComponentContainer = ({
               ) : null}
             </div>
           </div>
-          <p className='break-keep'>
+          <p className="break-keep">
             {start} {end ? `- ${end}` : null}
           </p>
           {/* Source Code */}

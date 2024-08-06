@@ -1,5 +1,6 @@
-import React, { useContext } from "react";
-import SelectContext from "./SelectContext";
+import React, { useContext } from 'react';
+
+import SelectContext from './SelectContext';
 
 export interface SelectItemProps {
   children: React.ReactNode;
@@ -19,7 +20,7 @@ const SelectItem: React.FC<SelectItemProps> = ({
 
   if (selectedDisplay === null) {
     throw new Error(
-      "SelectItem must be a child of a SelectLabel or SelectGroup"
+      'SelectItem must be a child of a SelectLabel or SelectGroup',
     );
   }
 
@@ -28,7 +29,7 @@ const SelectItem: React.FC<SelectItemProps> = ({
 
   // Function to handle the click on this item
   const onClick = () => {
-    if (typeof children === "string" || typeof children === "number") {
+    if (typeof children === 'string' || typeof children === 'number') {
       handleItemClick(children, value || children);
     }
   };
@@ -36,7 +37,7 @@ const SelectItem: React.FC<SelectItemProps> = ({
   return (
     <div
       className={`cursor-pointer py-[6px] pl-2 pr-6 rounded-md h-fit hover:bg-white/10 active:ring-1 ring-inset ring-[#A0A0A0] transition-all text-nowrap	break-keep ${
-        isSelected ? "bg-white/10" : ""
+        isSelected ? 'bg-white/10' : ''
       }`}
       tabIndex={-1}
       onClick={onClick}

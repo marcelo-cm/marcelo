@@ -1,7 +1,7 @@
-import ProjectCard from '../components/molecules/ProjectCard';
-import CustomLink from '../components/ui/custom-link';
-import ResumeSection from '../components/molecules/ResumeSection';
 import IconBar from '../components/molecules/IconBar';
+import ProjectCard from '../components/molecules/ProjectCard';
+import ResumeSection from '../components/molecules/ResumeSection';
+import CustomLink from '../components/ui/custom-link';
 
 export default function Home() {
   const resume = [
@@ -186,17 +186,17 @@ export default function Home() {
   const projects = reorderList(unorderedProjects);
 
   return (
-    <main className='h-fit md:h-full w-[100dvw] flex flex-col lg:flex-row-reverse gap-8 lg:gap-0 items-center p-2 overflow-y-scroll lg:overflow-hidden'>
-      <div className='h-fit w-full xl:w-[55%] lg:h-[100dvh] flex flex-col items-center gap-4 lg:overflow-y-scroll lg:py-24 no-scrollbar pt-16'>
-        <h1 className='text-4xl max-w-[700px] w-4/5'>
+    <main className="h-fit md:h-full w-[100dvw] flex flex-col lg:flex-row-reverse gap-8 lg:gap-0 items-center p-2 overflow-y-scroll lg:overflow-hidden">
+      <div className="h-fit w-full xl:w-[55%] lg:h-[100dvh] flex flex-col items-center gap-4 lg:overflow-y-scroll lg:py-24 no-scrollbar pt-16">
+        <h1 className="text-4xl max-w-[700px] w-4/5">
           Marcelo Chaman Mallqui
-          <p className='text-[#A0A0A0] inline font-light'>
+          <p className="text-[#A0A0A0] inline font-light">
             –Product Designer, Software Engineer & Founder
           </p>
         </h1>
         {/* ICONS */}
         <IconBar />
-        <div className='h-fit max-w-[700px] w-4/5 flex flex-col gap-4'>
+        <div className="h-fit max-w-[700px] w-4/5 flex flex-col gap-4">
           {resume.map((item, key) => (
             <ResumeSection
               title={item.title}
@@ -209,8 +209,8 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className='w-full min-w-[300px] lg:w-[45%] lg:h-[100dvh] flex flex-row gap-2 lg:overflow-y-scroll no-scrollbar'>
-        <div className='columns-1 sm:columns-2 lg:columns-1 xl:columns-2 space-y-2 h-fit w-full gap-2 pt-2 overflow-y-scroll no-scrollbar'>
+      <div className="w-full min-w-[300px] lg:w-[45%] lg:h-[100dvh] flex flex-row gap-2 lg:overflow-y-scroll no-scrollbar">
+        <div className="columns-1 sm:columns-2 lg:columns-1 xl:columns-2 space-y-2 h-fit w-full gap-2 pt-2 overflow-y-scroll no-scrollbar">
           {projects.map((project, key) => (
             <ProjectCard
               image_url={project.image_url}

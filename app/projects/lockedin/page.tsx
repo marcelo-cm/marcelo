@@ -1,70 +1,72 @@
-import React, { Fragment, useEffect } from "react";
-import parse, { domToReact, Element } from "html-react-parser";
-import CustomLink from "@/components/ui/custom-link";
-import Image from "next/image";
+import React, { Fragment, useEffect } from 'react';
+
+import parse, { Element, domToReact } from 'html-react-parser';
+import Image from 'next/image';
+
+import CustomLink from '@/components/ui/custom-link';
 
 function LockedIn() {
   const proj_info = [
-    { section_name: "MY ROLE", section_content: ["Product Designer"] },
-    { section_name: "TECH STACK", section_content: ["Figma"] },
+    { section_name: 'MY ROLE', section_content: ['Product Designer'] },
+    { section_name: 'TECH STACK', section_content: ['Figma'] },
     {
-      section_name: "DATE & PLACE",
-      section_content: ["May 2023, San Francisco"],
+      section_name: 'DATE & PLACE',
+      section_content: ['May 2023, San Francisco'],
     },
   ];
 
   const content = [
     {
-      section_name: "DESCRIPTION",
+      section_name: 'DESCRIPTION',
       section_content: [
         "Locked In is a social accountability app that has a GitHub-commit-like feature but for all work, not just coding. At the beginning of each work session, you can start your session by swiping across the bottom bar – Just like good 'ol iOS – and a timer will start.",
-        "",
+        '',
         'When your timer is on, your status will update to "Locked In" for all your friends to see! This will be motivating for others to also lock in with you – and friends can even turn on their notification for you so they get a ding when you lock in.',
-        "",
+        '',
         "When you're done working, simply swipe back and you will get brought to a screen where you can write the details of your work session, add any tags or relevant links, and publish it to your Ship Log. You can share your Ship Log, and the heatmap it comes with, with friends, or employers you want to impress!",
       ],
     },
     {
-      section_name: "STORY",
+      section_name: 'STORY',
       images: [],
       section_content: [
         "I was sitting in the HI SF Fisherman's Wharf Hostel [$43 a night, would rec.] for <a href=\"https://buildspace.so/\"> buildspace's n&w s3 </a> event and after meeting a few builder's a felt super inspired to create something new. My first inspiration for this idea was triggered by two things:",
-        "",
-        "Everyone is SF was guaranteed to ask me one thing: What are you building?",
-        "",
+        '',
+        'Everyone is SF was guaranteed to ask me one thing: What are you building?',
+        '',
         'Every time I would cold email/pitch a startup to hire me (0% from the field so far, but that\'s what I get for going for the full-time PM roles at Series A companies), they would ask me: "What have you built?"',
         "and while I could tell them that I'm all about that grind, actions spoke louder than words. I wished there was a way for me to show my consistent every day grind – just like GitHub heatmaps – but for non-software related building (ie. designing). Immediately, it hit me. Three hours later, it was done.",
       ],
     },
     {
-      section_name: "SCREENS",
+      section_name: 'SCREENS',
       images: [
         {
-          url: "/project-images/lockedin/HOME.png",
-          alt: "Home",
+          url: '/project-images/lockedin/HOME.png',
+          alt: 'Home',
           width: 500,
           height: 500,
         },
         {
-          url: "/project-images/lockedin/LOCKED-IN.png",
-          alt: "Swipe to Start!",
+          url: '/project-images/lockedin/LOCKED-IN.png',
+          alt: 'Swipe to Start!',
           width: 500,
           height: 500,
         },
         {
-          url: "/project-images/lockedin/PUBLISH.png",
-          alt: "Publish your WOrk Session",
+          url: '/project-images/lockedin/PUBLISH.png',
+          alt: 'Publish your WOrk Session',
           width: 500,
           height: 500,
         },
         {
-          url: "/project-images/lockedin/SHIPLOG.png",
-          alt: "See your Ship Log Heatmap",
+          url: '/project-images/lockedin/SHIPLOG.png',
+          alt: 'See your Ship Log Heatmap',
           width: 500,
           height: 500,
         },
         {
-          url: "/project-images/lockedin/FRIENDS.png",
+          url: '/project-images/lockedin/FRIENDS.png',
           alt: "Check Out Your Friends' Status",
           width: 500,
           height: 500,
@@ -74,20 +76,20 @@ function LockedIn() {
     {
       images: [
         {
-          url: "/project-images/lockedin/about.png",
-          alt: "Why Locked In?",
+          url: '/project-images/lockedin/about.png',
+          alt: 'Why Locked In?',
           width: 500,
           height: 500,
         },
         {
-          url: "/project-images/lockedin/how1.png",
-          alt: "How it works",
+          url: '/project-images/lockedin/how1.png',
+          alt: 'How it works',
           width: 500,
           height: 500,
         },
         {
-          url: "/project-images/lockedin/how2.png",
-          alt: "How it works (2)",
+          url: '/project-images/lockedin/how2.png',
+          alt: 'How it works (2)',
           width: 500,
           height: 500,
         },
@@ -114,30 +116,30 @@ function LockedIn() {
         replace: (domNode) => {
           if (
             domNode instanceof Element &&
-            domNode.name === "a" &&
+            domNode.name === 'a' &&
             domNode.attribs &&
             domNode.attribs.href
           ) {
             return (
               <CustomLink to={domNode.attribs.href}>
                 {domToReact(
-                  domNode.children as unknown as import("html-react-parser").DOMNode[]
+                  domNode.children as unknown as import('html-react-parser').DOMNode[],
                 )}
               </CustomLink>
             );
-          } else if (domNode instanceof Element && domNode.name === "li") {
+          } else if (domNode instanceof Element && domNode.name === 'li') {
             return (
               <li className="list-disc">
                 {domToReact(
-                  domNode.children as unknown as import("html-react-parser").DOMNode[]
+                  domNode.children as unknown as import('html-react-parser').DOMNode[],
                 )}
               </li>
             );
-          } else if (domNode instanceof Element && domNode.name === "ol") {
+          } else if (domNode instanceof Element && domNode.name === 'ol') {
             return (
               <ol>
                 {domToReact(
-                  domNode.children as unknown as import("html-react-parser").DOMNode[]
+                  domNode.children as unknown as import('html-react-parser').DOMNode[],
                 )}
               </ol>
             );
@@ -161,13 +163,13 @@ function LockedIn() {
           {images?.map((image, index) => (
             <div
               className={`min-w-[300px] ${
-                images.length == 1 ? "w-fit" : "w-[45%]"
+                images.length == 1 ? 'w-fit' : 'w-[45%]'
               } mb-4`}
               key={index}
             >
               <Image
                 src={image.url}
-                alt={image?.alt || ""}
+                alt={image?.alt || ''}
                 width={image.width}
                 height={image.height}
                 className="rounded-xl border-8 border-white/5 mt-4 mb-2"

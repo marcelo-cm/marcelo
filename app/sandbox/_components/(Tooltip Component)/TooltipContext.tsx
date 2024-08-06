@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 interface TooltipContextType {
   content: string;
 }
 
-const defaultContextValue: TooltipContextType = { content: "" };
+const defaultContextValue: TooltipContextType = { content: '' };
 
 const TooltipContext =
   React.createContext<TooltipContextType>(defaultContextValue);
