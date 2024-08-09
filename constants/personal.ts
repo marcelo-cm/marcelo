@@ -126,7 +126,13 @@ export const PROJECTS = [
     image_url: '/DTP-P-A.png',
     to: 'https://medium.com/@marcelochaman/ux-product-design-case-study-qmind-design-team-portal-89d7eb8ea526',
   },
-
+  {
+    title: 'EchoDMs',
+    tags: ['Backend'],
+    type: 'Website',
+    image_url: '/echodms-cover.png',
+    to: 'https://echo-dms.vercel.app/',
+  },
   {
     title: 'QMIND Website',
     tags: ['Design', 'Frontend'],
@@ -140,13 +146,6 @@ export const PROJECTS = [
     type: 'Case Study',
     image_url: '/EasyRecipe-mobile1.gif',
     to: 'https://medium.com/@marcelochaman/easy-recipe-ux-ui-case-study-124a7992597e',
-  },
-  {
-    title: 'EchoDMs',
-    tags: ['Backend', 'Slack App'],
-    type: 'Website',
-    image_url: '/echodms-cover.png',
-    to: 'https://echo-dms.vercel.app/',
   },
   {
     title: 'Attention! Is All That Matters',
