@@ -132,7 +132,7 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
           onKeyDown={handleKeyDown} // Add the keyDown handler here
         >
           <div
-            className="py-[6px] pl-6 pr-2 flex items-center rounded-md h-fit w-fit hover:opacity-75 border border-[#2e2e2e] bg-[#1C1C1C] select-none cursor-pointer"
+            className="flex h-fit w-fit cursor-pointer select-none items-center rounded-md border border-[#2e2e2e] bg-[#1C1C1C] py-[6px] pl-6 pr-2 hover:opacity-75"
             onClick={() => {
               setIsOpen((prevState) => !prevState);
               setFocusedIndex(null);
@@ -140,14 +140,14 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
           >
             {selectedDisplay}
             {isOpen ? (
-              <CaretUpIcon className="inline-block ml-2" />
+              <CaretUpIcon className="ml-2 inline-block" />
             ) : (
-              <CaretDownIcon className="inline-block ml-2" />
+              <CaretDownIcon className="ml-2 inline-block" />
             )}
           </div>
           {isOpen ? (
             <div
-              className={`p-2 rounded-md h-fit max-h-[40rem] no-scrollbar w-max border border-[#2e2e2e] bg-[#1C1C1C] absolute top-full mt-2 overflow-y-scroll z-50 flex flex-col gap-1`}
+              className={`no-scrollbar absolute top-full z-50 mt-2 flex h-fit max-h-[40rem] w-max flex-col gap-1 overflow-y-scroll rounded-md border border-[#2e2e2e] bg-[#1C1C1C] p-2`}
             >
               {renderChildren}
             </div>

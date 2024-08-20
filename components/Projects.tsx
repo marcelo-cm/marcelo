@@ -14,8 +14,8 @@ function reorderList(list: any[]) {
 const Projects = () => {
   const projects = reorderList(PROJECTS);
   return (
-    <section className="w-full min-w-[300px] lg:w-[45dvw] lg:h-[100dvh] flex flex-row gap-2 lg:overflow-y-scroll no-scrollbar">
-      <div className="columns-1 sm:columns-2 lg:columns-1 xl:columns-2 space-y-2 h-fit w-full gap-2 pt-2 overflow-y-scroll no-scrollbar">
+    <section className="no-scrollbar flex w-full min-w-[300px] flex-row gap-2 lg:h-[100dvh] lg:w-[45dvw] lg:overflow-y-scroll">
+      <div className="no-scrollbar h-fit w-full columns-1 gap-2 space-y-2 overflow-y-scroll pt-2 sm:columns-2 lg:columns-1 xl:columns-2">
         {projects.map((project, key) => (
           <ProjectCard
             image_url={project.image_url}

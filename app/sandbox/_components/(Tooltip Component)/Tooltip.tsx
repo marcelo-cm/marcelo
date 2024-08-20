@@ -19,7 +19,7 @@ const Tooltip = ({ children, content }: TooltipProps) => {
   return (
     <TooltipContext.Provider value={contextValue}>
       {isOpen ? (
-        <div className="bg-black text-white py-2 px-4 absolute top-0 translate-y-1/2 z-10 rounded-md">
+        <div className="absolute top-0 z-10 translate-y-1/2 rounded-md bg-black px-4 py-2 text-white">
           {content}
         </div>
       ) : null}

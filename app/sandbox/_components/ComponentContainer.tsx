@@ -56,13 +56,13 @@ export const ComponentContainer = ({
 
   return (
     <div className={`relative ${className}`}>
-      <div className="w-full border border-[#2e2e2e] border-dashed hover:border-dotted px-8 py-16 rounded-lg flex flex-row justify-center">
+      <div className="flex w-full flex-row justify-center rounded-lg border border-dashed border-[#2e2e2e] px-8 py-16 hover:border-dotted">
         {childrenArray[0]}
       </div>
-      <div className="flex gap-2 flex-col p-2 text-xs text-[#a0a0a0]">
-        <div className="flex gap-2 z-40 justify-between flex-wrap relative">
+      <div className="flex flex-col gap-2 p-2 text-xs text-[#a0a0a0]">
+        <div className="relative z-40 flex flex-wrap justify-between gap-2">
           {/* Label + Learnings */}
-          <div className="break-keep flex flex-row gap-1 items-center relative">
+          <div className="relative flex flex-row items-center gap-1 break-keep">
             {label}
             <div className="hidden md:flex">
               {learnings ? (
@@ -73,7 +73,7 @@ export const ComponentContainer = ({
                 >
                   <button
                     onClick={() => setIsLearningOpen((prev) => !prev)}
-                    className="p-[2px] rounded-full active:ring-1 ring-[#A0A0A0] text-xs text-[#a0a0a0] select-none	hover:text-white hover:bg-[#232323]"
+                    className="select-none rounded-full p-[2px] text-xs text-[#a0a0a0] ring-[#A0A0A0] hover:bg-[#232323] hover:text-white active:ring-1"
                   >
                     <CaretDownIcon />
                   </button>

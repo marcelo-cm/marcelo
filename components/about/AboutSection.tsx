@@ -10,9 +10,9 @@ const AboutSection = ({
   const descriptionLines = description.split('\n');
 
   return (
-    <div className="flex flex-col gap-[4px] w-full font-light">
-      <div className="flex flex-row w-full items-center mb-[2px] text-[#A0A0A0] font-normal text-xs">
-        {title} <hr className="h-px mx-4 bg-[#A0A0A0]/10 border-0 flex-1" />
+    <div className="flex w-full flex-col gap-[4px] font-light">
+      <div className="mb-[2px] flex w-full flex-row items-center text-xs font-normal text-[#A0A0A0]">
+        {title} <hr className="mx-4 h-px flex-1 border-0 bg-[#A0A0A0]/10" />
       </div>
       <p className="leading-normal tracking-wide">
         {descriptionLines.map((line, index) => (

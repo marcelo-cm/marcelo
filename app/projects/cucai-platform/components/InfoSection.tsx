@@ -21,7 +21,7 @@ const InfoSection = ({
 }) => {
   return (
     <div
-      className={`w-full flex max-[1376px]:flex-col gap-8 lg:ml-${
+      className={`flex w-full gap-8 max-[1376px]:flex-col lg:ml-${
         level * 2
       } ${className}`}
       id={title}
@@ -30,7 +30,7 @@ const InfoSection = ({
         <Image
           src={image}
           alt="Project Image"
-          className="max-h-[400px] md:h-[650px] min-[1376px]:h-[350px] w-fit rounded-xl border-4 md:border-8 border-white/5"
+          className="max-h-[400px] w-fit rounded-xl border-4 border-white/5 md:h-[650px] md:border-8 min-[1376px]:h-[350px]"
           width={200}
           height={200}
         />
@@ -39,14 +39,14 @@ const InfoSection = ({
         <h1
           className={`${
             level == 1
-              ? 'text-2xl max-w-[700px]'
+              ? 'max-w-[700px] text-2xl'
               : level == 2
                 ? `text-xl italic`
                 : null
-          } md:min-w-[530px]  w-full`}
+          } w-full md:min-w-[530px]`}
         >
           {title}
-          <p className="text-[#A0A0A0] inline font-light">–{description}</p>
+          <p className="inline font-light text-[#A0A0A0]">–{description}</p>
         </h1>
         {children}
       </div>
@@ -54,7 +54,7 @@ const InfoSection = ({
         <Image
           src={image}
           alt="Project Image"
-          className="max-h-[400px] md:h-[650px] min-[1376px]:h-[350px] w-fit rounded-xl border-4 md:border-8 border-white/5"
+          className="max-h-[400px] w-fit rounded-xl border-4 border-white/5 md:h-[650px] md:border-8 min-[1376px]:h-[350px]"
           width={500}
           height={400}
         />

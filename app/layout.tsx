@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="h-[100dvh] w-[100dvw] xl:overflow-hidden flex flex-col lg:flex-row no-scrollbar">
+      <body className="no-scrollbar flex h-[100dvh] w-[100dvw] flex-col lg:flex-row xl:overflow-hidden">
         {children}
         <Navbar />
         <Analytics />

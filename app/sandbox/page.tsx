@@ -94,17 +94,17 @@ export default function Playground() {
 
   return (
     <Inspect disabled={false}>
-      <div className="h-fit md:h-full w-[100dvw] flex flex-col gap-8 items-center pt-16 pb-24 px-8 overflow-y-scroll no-scrollbar">
+      <div className="no-scrollbar flex h-fit w-[100dvw] flex-col items-center gap-8 overflow-y-scroll px-8 pb-24 pt-16 md:h-full">
         <ToastContainer toasts={allToasts} close={closeToast} />
         {/* TITLE & PAGE DESCRIPTION */}
-        <div className="w-full flex flex-col gap-4 items-center">
-          <h1 className="text-4xl max-w-[700px] w-4/5">
+        <div className="flex w-full flex-col items-center gap-4">
+          <h1 className="w-4/5 max-w-[700px] text-4xl">
             Welcome to the Sandbox
-            <p className="text-[#A0A0A0] inline font-light">
+            <p className="inline font-light text-[#A0A0A0]">
               –Grounds For Experimentation
             </p>
           </h1>
-          <p className="max-w-[700px] w-4/5">
+          <p className="w-4/5 max-w-[700px]">
             A 2024 goal of mine is to code every single day. As a full stack
             engineer, I wanted to make sure I was sharpening both swords. Below
             is a collection of small components as projects/experiments I've
@@ -114,7 +114,7 @@ export default function Playground() {
             to see the dimensions!
           </p>
         </div>
-        <div className="flex flex-col-reverse gap-8 max-w-[1100px] w-full">
+        <div className="flex w-full max-w-[1100px] flex-col-reverse gap-8">
           <ComponentContainer
             start="01.01.2024"
             end="0.1.05.2024"
@@ -136,7 +136,7 @@ export default function Playground() {
                 onClick={() =>
                   addToast('success', 'This is a success toast!', 3000)
                 }
-                className="bg-green-900/80 text-green-400 cursor-pointer py-2 px-3 rounded-md text-sm"
+                className="cursor-pointer rounded-md bg-green-900/80 px-3 py-2 text-sm text-green-400"
               >
                 Click for success toast!
               </button>
@@ -144,7 +144,7 @@ export default function Playground() {
                 onClick={() =>
                   addToast('error', 'This is an error toast!', 3000)
                 }
-                className="bg-red-900/80 text-red-400 cursor-pointer py-2 px-3 rounded-md text-sm"
+                className="cursor-pointer rounded-md bg-red-900/80 px-3 py-2 text-sm text-red-400"
               >
                 Click for error toast!
               </button>
@@ -152,7 +152,7 @@ export default function Playground() {
                 onClick={() =>
                   addToast('warning', 'This is a warning toast!', 3000)
                 }
-                className="bg-yellow-900/80 text-yellow-400 cursor-pointer py-2 px-3 rounded-md text-sm"
+                className="cursor-pointer rounded-md bg-yellow-900/80 px-3 py-2 text-sm text-yellow-400"
               >
                 Click for warning toast!
               </button>
@@ -160,7 +160,7 @@ export default function Playground() {
                 onClick={() =>
                   addToast('message', 'This is a message toast!', 3000)
                 }
-                className="bg-[#343434]/90 text-white cursor-pointer py-2 px-3 rounded-md text-sm"
+                className="cursor-pointer rounded-md bg-[#343434]/90 px-3 py-2 text-sm text-white"
               >
                 Click for message toast!
               </button>

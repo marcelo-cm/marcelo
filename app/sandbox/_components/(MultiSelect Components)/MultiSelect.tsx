@@ -135,17 +135,17 @@ const MultiSelect = forwardRef<HTMLDivElement, MultiSelectProps>(
           onBlur={onBlurHandler}
         >
           <div
-            className="py-[6px] pl-2 pr-6 flex items-center rounded-md h-fit w-[65dvw] md:w-80 border border-[#2e2e2e] bg-[#1C1C1C] select-none cursor-pointer w-96 overflow-x-scroll no-scrollbar"
+            className="no-scrollbar flex h-fit w-96 w-[65dvw] cursor-pointer select-none items-center overflow-x-scroll rounded-md border border-[#2e2e2e] bg-[#1C1C1C] py-[6px] pl-2 pr-6 md:w-80"
             onClick={() => {
               setIsOpen((prevState) => !prevState);
               setFocusedIndex(null);
             }}
           >
-            <div className="relative flex gap-2 flex-row pr-6">
+            <div className="relative flex flex-row gap-2 pr-6">
               {selectedOptions.length > 0 ? (
                 selectedOptions.map((item, key) => (
                   <div
-                    className="py-[6px] p-2 rounded-md h-fit bg-white/10 flex flex-row items-center gap-2 flex-nowrap group active:ring-1 ring-inset ring-red-500 transition-all"
+                    className="group flex h-fit flex-row flex-nowrap items-center gap-2 rounded-md bg-white/10 p-2 py-[6px] ring-inset ring-red-500 transition-all active:ring-1"
                     key={key}
                     onClick={(e) => {
                       e.stopPropagation();
@@ -153,21 +153,21 @@ const MultiSelect = forwardRef<HTMLDivElement, MultiSelectProps>(
                     }}
                   >
                     <p className="group-hover:opacity-75">{item.display}</p>
-                    <Cross2Icon className="inline-block group-hover:text-red-500 transition-all" />
+                    <Cross2Icon className="inline-block transition-all group-hover:text-red-500" />
                   </div>
                 ))
               ) : (
-                <div className="py-[6px] p-2 rounded-md h-fit">
+                <div className="h-fit rounded-md p-2 py-[6px]">
                   No Options Selected
                 </div>
               )}
             </div>
-            <div className="p-3 bg-[#1C1C1C] absolute right-[1px] rounded-md">
+            <div className="absolute right-[1px] rounded-md bg-[#1C1C1C] p-3">
               {isOpen ? <CaretUpIcon /> : <CaretDownIcon />}
             </div>
           </div>
           {isOpen ? (
-            <div className="p-2 rounded-md h-fit max-h-[40rem] no-scrollbar w-max border border-[#2e2e2e] bg-[#1C1C1C] absolute top-full mt-2 overflow-y-scroll z-50 flex flex-col gap-1">
+            <div className="no-scrollbar absolute top-full z-50 mt-2 flex h-fit max-h-[40rem] w-max flex-col gap-1 overflow-y-scroll rounded-md border border-[#2e2e2e] bg-[#1C1C1C] p-2">
               {renderChildren}
             </div>
           ) : null}

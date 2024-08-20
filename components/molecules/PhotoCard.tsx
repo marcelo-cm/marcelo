@@ -8,7 +8,7 @@ const PhotoCard = ({ image_url, alt }: { image_url: string; alt: string }) => {
       src={image_url}
       alt={alt}
       quality={50}
-      className="rounded-md h-full object-contain "
+      className="h-full rounded-md object-contain"
       placeholder="blur" // Optional blur-up while loading
     />
   );

@@ -16,15 +16,15 @@ const ResumeSection = ({
   description: string;
 }) => {
   return (
-    <div className="flex flex-col w-full font-light h-fit">
-      <div className="flex flex-col sm:flex-row w-full items-left sm:items-center mb-[2px]">
+    <div className="flex h-fit w-full flex-col font-light">
+      <div className="items-left mb-[2px] flex w-full flex-col sm:flex-row sm:items-center">
         <div className="text-normal flex flex-col sm:flex-row">
-          <div className="w-full sm:w-fit flex flex-row whitespace-nowrap items-center">
+          <div className="flex w-full flex-row items-center whitespace-nowrap sm:w-fit">
             {title}{' '}
-            <hr className="h-px mx-4 bg-[#A0A0A0]/10 border-0 flex-1 sm:hidden w-0" />
+            <hr className="mx-4 h-px w-0 flex-1 border-0 bg-[#A0A0A0]/10 sm:hidden" />
           </div>
-          <div className="inline text-[#A0A0A0] w-full">
-            <p className="hidden sm:inline ml-[4px]"> – </p>
+          <div className="inline w-full text-[#A0A0A0]">
+            <p className="ml-[4px] hidden sm:inline"> – </p>
             {website ? (
               <CustomLink to={website} icon underline={false}>
                 {organization}
@@ -34,10 +34,10 @@ const ResumeSection = ({
             )}
           </div>
         </div>
-        <hr className="h-px mx-4 bg-[#A0A0A0]/10 border-0 sm:flex-1 invisible sm:visible" />
-        <p className="text-[#A0A0A0] break-keep whitespace-nowrap">{date}</p>
+        <hr className="invisible mx-4 h-px border-0 bg-[#A0A0A0]/10 sm:visible sm:flex-1" />
+        <p className="whitespace-nowrap break-keep text-[#A0A0A0]">{date}</p>
       </div>
-      <p className="text-[#A0A0A0] leading-tight">{description}</p>
+      <p className="leading-tight text-[#A0A0A0]">{description}</p>
     </div>
   );
 };

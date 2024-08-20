@@ -297,7 +297,7 @@ function Memoria() {
 
     return (
       <div className="mb-6">
-        <h3 className="flex flex-row w-full items-center mb-[2px] text-[#A0A0A0] font-normal text-xs">
+        <h3 className="mb-[2px] flex w-full flex-row items-center text-xs font-normal text-[#A0A0A0]">
           {title || null}
         </h3>
         <div className="flex flex-row flex-wrap gap-4">
@@ -313,9 +313,9 @@ function Memoria() {
                 alt={image?.alt || ''}
                 width={image.width}
                 height={image.height}
-                className="rounded-xl border-8 border-white/5 mt-4 mb-2"
+                className="mb-2 mt-4 rounded-xl border-8 border-white/5"
               />
-              <p className="text-center text-[#A0A0A0] text-light text-xs">
+              <p className="text-light text-center text-xs text-[#A0A0A0]">
                 {image.alt}
               </p>
             </div>
@@ -327,17 +327,17 @@ function Memoria() {
   };
 
   return (
-    <div className="h-full w-full overflow-y-scroll no-scrollbar">
-      <div className="h-fit w-full flex flex-col justify-center items-center gap-8 py-16 px-4 font-normal tracking-wide">
-        <div className="max-w-[1000px] w-full flex flex-col gap-2">
+    <div className="no-scrollbar h-full w-full overflow-y-scroll">
+      <div className="flex h-fit w-full flex-col items-center justify-center gap-8 px-4 py-16 font-normal tracking-wide">
+        <div className="flex w-full max-w-[1000px] flex-col gap-2">
           <div>
             <h2>Memoria</h2>
             <h3 className="opacity-50">
               My first startup, a voice journalling tool.
             </h3>
           </div>
-          <hr className="border-[#343434] mb-4" />
-          <div className="flex md:flex-row flex-col gap-2 md:gap-10">
+          <hr className="mb-4 border-[#343434]" />
+          <div className="flex flex-col gap-2 md:flex-row md:gap-10">
             <div className="flex flex-col">
               {proj_info.map((item, key) => (
                 <SectionContainer
@@ -347,7 +347,7 @@ function Memoria() {
                 />
               ))}
             </div>
-            <div className="flex flex-col flex-1">
+            <div className="flex flex-1 flex-col">
               {content.map((item, key) => (
                 <SectionContainer
                   title={item.section_name}

@@ -7,9 +7,9 @@ import AboutSection from './AboutSection';
 
 const About = () => {
   return (
-    <section className="h-fit w-full xl:w-[50dvw] xl:h-[100dvh] flex flex-col items-center gap-4 xl:overflow-y-scroll py-16 no-scrollbar">
+    <section className="no-scrollbar flex h-fit w-full flex-col items-center gap-4 py-16 xl:h-[100dvh] xl:w-[50dvw] xl:overflow-y-scroll">
       <TitleWithIcons />
-      <div className="max-w-[700px] w-4/5 flex flex-col gap-6 h-fit">
+      <div className="flex h-fit w-4/5 max-w-[700px] flex-col gap-6">
         {ABOUT.map((item, key) => (
           <AboutSection
             title={item.title}

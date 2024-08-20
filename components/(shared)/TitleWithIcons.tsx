@@ -5,9 +5,9 @@ import IconBar from '../molecules/IconBar';
 const TitleWithIcons = () => {
   return (
     <>
-      <h1 className="text-4xl max-w-[700px] w-4/5">
+      <h1 className="w-4/5 max-w-[700px] text-4xl">
         Marcelo Chaman Mallqui
-        <p className="text-[#A0A0A0] inline font-light">
+        <p className="inline font-light text-[#A0A0A0]">
           –Product Designer, Software Engineer & Founder
         </p>
       </h1>

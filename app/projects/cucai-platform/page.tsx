@@ -37,34 +37,34 @@ const CUCAIPlatform = () => {
   ];
 
   return (
-    <div className="flex flex-col items-left w-dvw h-dvh overflow-x-hidden overflow-y-scroll py-16 pb-32 p-6 lg:px-32 gap-16">
-      <div className="w-full flex flex-col gap-8">
+    <div className="items-left flex h-dvh w-dvw flex-col gap-16 overflow-x-hidden overflow-y-scroll p-6 py-16 pb-32 lg:px-32">
+      <div className="flex w-full flex-col gap-8">
         {/* Title and Tagline */}
-        <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 justify-left w-full">
-          <h1 className="text-4xl md:min-w-[530px] max-w-[700px] w-full">
+        <div className="justify-left flex w-full flex-col gap-4 lg:flex-row lg:gap-8">
+          <h1 className="w-full max-w-[700px] text-4xl md:min-w-[530px]">
             Conference Management Platform
-            <p className="text-[#A0A0A0] inline font-light">
+            <p className="inline font-light text-[#A0A0A0]">
               –Canadian Undergraduate Conference on AI
             </p>
           </h1>
-          <p className="lg:max-w-[400px] w-full font-light leading-tight">
+          <p className="w-full font-light leading-tight lg:max-w-[400px]">
             A platform that facilitates the application, payment hotel selection
             & tracking process for delegates, and enables admins to manage
             applicants, ticketing, and admission process.
           </p>
         </div>
-        <div className="flex gap-8 flex-wrap">
+        <div className="flex flex-wrap gap-8">
           <Image
             src="/project-images/cucai-platform/demo.gif"
             alt="CUCAI Platform"
-            className="w-full max-w-[1120px] rounded-xl border-2 md:border-8 border-white/5"
+            className="w-full max-w-[1120px] rounded-xl border-2 border-white/5 md:border-8"
             width={500}
             height={300}
           />
           {/* Project Details */}
-          <div className="flex flex-col lg:flex-row-reverse gap-8 max-w-[1120px] min-[1569px]:flex-col [1568px]:w-fit gap-4">
+          <div className="[1568px]:w-fit flex max-w-[1120px] flex-col gap-4 gap-8 lg:flex-row-reverse min-[1569px]:flex-col">
             <div>
-              <p className="text-[#A0A0A0] text-xs font-medium mb-2">
+              <p className="mb-2 text-xs font-medium text-[#A0A0A0]">
                 TECHNOLOGY & TOOLS
               </p>
               {
@@ -77,7 +77,7 @@ const CUCAIPlatform = () => {
               }
             </div>
             <div>
-              <p className="text-[#A0A0A0] text-xs font-medium mb-2">SKILLS</p>
+              <p className="mb-2 text-xs font-medium text-[#A0A0A0]">SKILLS</p>
               {
                 // Tech & Tools
                 SKILLS.map((tech, index) => (
@@ -88,16 +88,16 @@ const CUCAIPlatform = () => {
               }
             </div>
             <div>
-              <p className="text-[#A0A0A0] text-xs font-medium mb-2">
+              <p className="mb-2 text-xs font-medium text-[#A0A0A0]">
                 TECHNOLOGY & TOOLS
               </p>
-              <ol className="list-decimal ml-5">
+              <ol className="ml-5 list-decimal">
                 {
                   // Tech & Tools
                   TABLEOFCONTENTS.map((tech, index) => (
                     <a
                       key={index}
-                      className="block underline underline-offset-2 hover:underline-none hover:text-[#A0A0A0]"
+                      className="hover:underline-none block underline underline-offset-2 hover:text-[#A0A0A0]"
                       href={`#${tech}`}
                     >
                       <li>{tech}</li>
@@ -173,7 +173,7 @@ const CUCAIPlatform = () => {
           <div>
             Based on the information collected in multipage & dynamic path form,
             we can construct 3 objects in our database:
-            <ul className="list-decimal ml-8">
+            <ul className="ml-8 list-decimal">
               <li>Delegate Profile (delegates)</li>
               <li>Ticket Information (tickets)</li>
               <li>Project Information (projects, if applicable)</li>
@@ -201,14 +201,14 @@ const CUCAIPlatform = () => {
           </p>
           <div>
             A Ticket object may have 4 states & 2 types:
-            <div className="flex flex-row w-full">
-              <ol className="list-decimal ml-8 w-1/2">
+            <div className="flex w-full flex-row">
+              <ol className="ml-8 w-1/2 list-decimal">
                 <li>Applied</li>
                 <li>Accepted</li>
                 <li>Paid</li>
                 <li>Rejected</li>
               </ol>
-              <ol className="list-decimal ml-8  w-1/2">
+              <ol className="ml-8 w-1/2 list-decimal">
                 <li>Conference</li>
                 <li>Hotel</li>
               </ol>
@@ -275,7 +275,7 @@ const CUCAIPlatform = () => {
           <div>
             You may search a delegate by name. You can make two decisions on
             this screen:
-            <ul className="list-decimal ml-8">
+            <ul className="ml-8 list-decimal">
               <li>What ticket type they will receive</li>
               <li>What batch they will be accepted in</li>
             </ul>
@@ -347,24 +347,24 @@ const CUCAIPlatform = () => {
           </p>
         </InfoSection>
       </InfoSection>
-      <div className="flex flex-col gap-4  justify-left w-full">
-        <h1 className="text-2xl md:min-w-[530px] w-full">
+      <div className="justify-left flex w-full flex-col gap-4">
+        <h1 className="w-full text-2xl md:min-w-[530px]">
           Database
-          <p className="text-[#A0A0A0] inline font-light">
+          <p className="inline font-light text-[#A0A0A0]">
             –How is the data structured and related?
           </p>
         </h1>
         <img
           src="/project-images/cucai-platform/database-diagram.png"
           alt="CUCAI Platform"
-          className="w-full max-w-[700px] rounded-xl border-2 md:border-8 border-white/5"
+          className="w-full max-w-[700px] rounded-xl border-2 border-white/5 md:border-8"
         />
       </div>
       <InfoSection
         title="Challenges"
         description="What were the challenges I faced?"
       >
-        <ol className="list-disc ml-8 flex flex-col gap-2">
+        <ol className="ml-8 flex list-disc flex-col gap-2">
           <li>
             <p className="font-medium">
               Database Design and Feature Exclusion:
@@ -417,7 +417,7 @@ const CUCAIPlatform = () => {
         title="Learnings"
         description="What did I learn from this project?"
       >
-        <ol className="list-disc ml-8 flex flex-col gap-2">
+        <ol className="ml-8 flex list-disc flex-col gap-2">
           <li>
             <p className="font-medium">
               Efficient Problem-Solving with Alternative Solutions:
@@ -496,7 +496,7 @@ const CUCAIPlatform = () => {
         title="Future Scope"
         description="What can be improved or added?"
       >
-        <ol className="list-disc ml-8 flex flex-col gap-2">
+        <ol className="ml-8 flex list-disc flex-col gap-2">
           <li>
             <p className="font-medium">Delegate Dashboard:</p>
             Planned improvements include allowing delegates to downgrade their

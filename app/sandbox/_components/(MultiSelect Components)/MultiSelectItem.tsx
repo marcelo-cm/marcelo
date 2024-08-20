@@ -36,7 +36,7 @@ const MultiSelectItem: React.FC<MultiSelectItemProps> = ({
 
   return (
     <div
-      className={`cursor-pointer py-[6px] pl-2 pr-6 rounded-md h-fit hover:bg-white/10 active:ring-1 ring-inset ring-[#A0A0A0] transition-all text-nowrap	break-keep ${
+      className={`h-fit cursor-pointer text-nowrap break-keep rounded-md py-[6px] pl-2 pr-6 ring-inset ring-[#A0A0A0] transition-all hover:bg-white/10 active:ring-1 ${
         isSelected ? 'bg-white/10' : ''
       }`}
       onClick={onClick}

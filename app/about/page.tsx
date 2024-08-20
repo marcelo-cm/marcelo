@@ -5,7 +5,7 @@ import Photos from '@/components/about/Photos';
 
 export default function Home() {
   return (
-    <main className="h-fit xl:h-full w-[100dvw] flex flex-col xl:flex-row gap-4 xl:gap-0 items-center overflow-y-scroll xl:overflow-hidden no-scrollbar">
+    <main className="no-scrollbar flex h-fit w-[100dvw] flex-col items-center gap-4 overflow-y-scroll xl:h-full xl:flex-row xl:gap-0 xl:overflow-hidden">
       <About />
       <Photos />
     </main>

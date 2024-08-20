@@ -6,7 +6,7 @@ const ComponentDetails = ({ children }: { children: React.ReactNode }) => {
   }
 
   return (
-    <div className="absolute top-6 bg-[#161616] w-[90dvw] md:w-[700px] overflow-scroll no-scrollbar border border-[#2e2e2e] rounded-lg p-4">
+    <div className="no-scrollbar absolute top-6 w-[90dvw] overflow-scroll rounded-lg border border-[#2e2e2e] bg-[#161616] p-4 md:w-[700px]">
       {children}
     </div>
   );
