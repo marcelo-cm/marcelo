@@ -83,3 +83,7 @@ Only do things that have 2+ units of output for every unit of effort (input). Ma
 # Meetings & Emails
 
 If it can be an email, don't make it a meeting. If it is an email, write extremely concisely. If it must be a meeting, prepare an agenda — most meetings can be done in 20 mins.
+
+# How to not be regular
+
+Do traditional things, get traditional results. Make sure you get into rooms that people like you haven't been in. For me, this was a becoming a software engineer as a business student, after spending most of my teenage years doing creative work.

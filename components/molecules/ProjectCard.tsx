@@ -29,7 +29,7 @@ const ProjectCard = ({
 
   return (
     <a
-      className="flex h-fit w-full cursor-pointer break-inside-avoid flex-col gap-2 rounded-xl border-[1px] border-[#2e2e2e] bg-[#1C1C1C] p-2 transition-all duration-300 hover:shadow-xl active:scale-[103%]"
+      className="border-u-900/50 bg-u-950 flex h-fit w-full cursor-pointer break-inside-avoid flex-col gap-2 rounded-xl border p-2 transition-all duration-300 hover:shadow-xl"
       href={to}
       target="_blank"
     >
