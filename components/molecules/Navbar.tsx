@@ -2,9 +2,7 @@
 
 import React from 'react';
 
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import path from 'path';
 
 const Navbar = () => {
   const NavbarItem = ({
@@ -35,7 +33,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="absolute bottom-8 left-1/2 z-50 flex h-fit w-fit -translate-x-1/2 flex-row flex-nowrap gap-2 rounded-full border-[1px] border-[#2e2e2e] bg-[#1C1C1C] p-[4px]">
+    <div className="absolute bottom-6 left-1/2 z-50 flex h-fit w-fit -translate-x-1/2 flex-row flex-nowrap gap-2 rounded-full border-[1px] border-u-900/50 bg-u-950 p-[4px]">
       <NavbarItem href="/">Home</NavbarItem>
       <NavbarItem href="/about">About</NavbarItem>
       <NavbarItem href="mailto:marcechaman@gmail.com" target="_black">

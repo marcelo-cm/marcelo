@@ -29,7 +29,7 @@ const ProjectCard = ({
 
   return (
     <a
-      className="border-u-900/50 bg-u-950 flex h-fit w-full cursor-pointer break-inside-avoid flex-col gap-2 rounded-xl border p-2 transition-all duration-300 hover:shadow-xl"
+      className="flex h-fit w-full cursor-pointer break-inside-avoid flex-col gap-2 rounded-xl border border-u-900/50 bg-u-950 p-2 transition-all duration-300 hover:shadow-xl"
       href={to}
       target="_blank"
     >
@@ -40,7 +40,6 @@ const ProjectCard = ({
           width={400}
           height={300}
           alt={alt}
-          unoptimized
           className="h-full w-full rounded-md object-fill transition-all duration-300 hover:brightness-[0.8]"
         />
         <div className="overflow-none absolute bottom-0 left-0 flex w-full items-center justify-between rounded-md p-3 pt-4 text-[15px]">
@@ -54,7 +53,7 @@ const ProjectCard = ({
         </div>
       </div>
       {to.length ? (
-        <div className="flex h-12 items-center justify-center rounded-md bg-[#232323] transition-all hover:bg-[#292929]">
+        <div className="flex h-12 items-center justify-center rounded-md bg-u-900/25 transition-all hover:bg-u-900/50">
           <p className="select-none">View {type}</p>
         </div>
       ) : null}

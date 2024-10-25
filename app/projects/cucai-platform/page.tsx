@@ -43,7 +43,7 @@ const CUCAIPlatform = () => {
         <div className="justify-left flex w-full flex-col gap-4 lg:flex-row lg:gap-8">
           <h1 className="w-full max-w-[700px] text-4xl md:min-w-[530px]">
             Conference Management Platform
-            <p className="inline font-light text-[#A0A0A0]">
+            <p className="inline font-light text-u-300">
               –Canadian Undergraduate Conference on AI
             </p>
           </h1>
@@ -64,7 +64,7 @@ const CUCAIPlatform = () => {
           {/* Project Details */}
           <div className="[1568px]:w-fit flex max-w-[1120px] flex-col gap-4 gap-8 lg:flex-row-reverse min-[1569px]:flex-col">
             <div>
-              <p className="mb-2 text-xs font-medium text-[#A0A0A0]">
+              <p className="mb-2 text-xs font-medium text-u-300">
                 TECHNOLOGY & TOOLS
               </p>
               {
@@ -77,7 +77,7 @@ const CUCAIPlatform = () => {
               }
             </div>
             <div>
-              <p className="mb-2 text-xs font-medium text-[#A0A0A0]">SKILLS</p>
+              <p className="mb-2 text-xs font-medium text-u-300">SKILLS</p>
               {
                 // Tech & Tools
                 SKILLS.map((tech, index) => (
@@ -88,7 +88,7 @@ const CUCAIPlatform = () => {
               }
             </div>
             <div>
-              <p className="mb-2 text-xs font-medium text-[#A0A0A0]">
+              <p className="mb-2 text-xs font-medium text-u-300">
                 TECHNOLOGY & TOOLS
               </p>
               <ol className="ml-5 list-decimal">
@@ -97,7 +97,7 @@ const CUCAIPlatform = () => {
                   TABLEOFCONTENTS.map((tech, index) => (
                     <a
                       key={index}
-                      className="hover:underline-none block underline underline-offset-2 hover:text-[#A0A0A0]"
+                      className="hover:underline-none block underline underline-offset-2 hover:text-u-300"
                       href={`#${tech}`}
                     >
                       <li>{tech}</li>
@@ -350,7 +350,7 @@ const CUCAIPlatform = () => {
       <div className="justify-left flex w-full flex-col gap-4">
         <h1 className="w-full text-2xl md:min-w-[530px]">
           Database
-          <p className="inline font-light text-[#A0A0A0]">
+          <p className="inline font-light text-u-300">
             –How is the data structured and related?
           </p>
         </h1>

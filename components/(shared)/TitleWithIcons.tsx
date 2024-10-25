@@ -7,7 +7,7 @@ const TitleWithIcons = () => {
     <>
       <h1 className="w-[90%] max-w-[700px] text-4xl">
         Marcelo Chaman Mallqui
-        <span className="text-u-300 font-light">
+        <span className="font-light text-u-300">
           –Product Designer, Software Engineer & Founder
         </span>
       </h1>

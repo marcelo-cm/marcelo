@@ -297,7 +297,7 @@ function Memoria() {
 
     return (
       <div className="mb-6">
-        <h3 className="mb-[2px] flex w-full flex-row items-center text-xs font-normal text-[#A0A0A0]">
+        <h3 className="mb-[2px] flex w-full flex-row items-center text-xs font-normal text-u-300">
           {title || null}
         </h3>
         <div className="flex flex-row flex-wrap gap-4">
@@ -315,7 +315,7 @@ function Memoria() {
                 height={image.height}
                 className="mb-2 mt-4 rounded-xl border-8 border-white/5"
               />
-              <p className="text-light text-center text-xs text-[#A0A0A0]">
+              <p className="text-light text-center text-xs text-u-300">
                 {image.alt}
               </p>
             </div>
@@ -336,7 +336,7 @@ function Memoria() {
               My first startup, a voice journalling tool.
             </h3>
           </div>
-          <hr className="mb-4 border-[#343434]" />
+          <hr className="mb-4 border-u-900" />
           <div className="flex flex-col gap-2 md:flex-row md:gap-10">
             <div className="flex flex-col">
               {proj_info.map((item, key) => (

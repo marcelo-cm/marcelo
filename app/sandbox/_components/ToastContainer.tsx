@@ -26,7 +26,7 @@ export const ToastContainer = ({
                 ? 'bg-red-900/80 text-red-400'
                 : toast.type === 'warning'
                   ? 'bg-yellow-900/80 text-yellow-400'
-                  : 'bg-[#343434]/90 text-white'
+                  : 'bg-u-900/90 text-white'
           }`}
         >
           {toast.message}

@@ -46,7 +46,7 @@ const InfoSection = ({
           } w-full md:min-w-[530px]`}
         >
           {title}
-          <p className="inline font-light text-[#A0A0A0]">–{description}</p>
+          <p className="inline font-light text-u-300">–{description}</p>
         </h1>
         {children}
       </div>

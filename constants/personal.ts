@@ -1,34 +1,42 @@
 export const RESUME = [
   {
+    title: 'Neo Scholar',
+    website: 'https://neo.com/',
+    organization: 'Neo',
+    date: '2024 - Present',
+    description:
+      'Neo is a venture firm backing companies like OpenAI, Ramp, Scale AI, Cursor, Pika, and more',
+  },
+  {
     title: 'Founder',
     website: 'https://workman.so/',
     organization: 'Workman AI',
-    date: '2024 – Present',
+    date: '2024 - Present',
     description:
       'Designing & building accounting automation tools for builders & contractors; Fully integrated with QuickBooks, and Gmail',
   },
   {
-    title: 'Co-Founder',
+    title: 'Partner',
     website: 'https://intuitivelabs.co/',
     organization: 'Intuitive Labs',
-    date: '2024 – Present',
-    description: 'Design, engineering & creative studio',
+    date: '2024 - Present',
+    description: 'Engineering & design agency.',
   },
   {
     title: 'Software Engineer',
     website: 'https://tread.io/',
     organization: 'Tread',
-    date: '2024 - Present',
+    date: '2024',
     description:
       '$3M ARR Series A Construction Tech startup. Worked on the core product across the stack using Ruby on Rails, React, and Postgres',
   },
   {
     title: 'International Competitor',
     website: 'https://qccu.info',
-    organization: 'Queen’s Case Competition Union',
-    date: '2023 – Present',
+    organization: "Queen's Case Competition Union",
+    date: '2023 - Present',
     description:
-      'Competing internationally on behalf of Queen’s university. 3rd place at the BI International Case Competition 2024 (Norway)',
+      "Competing internationally on behalf of Queen's university. 3rd place at the BI International Case Competition 2024 (Norway)",
   },
   {
     title: 'Managing Director',
@@ -50,33 +58,9 @@ export const RESUME = [
     title: 'Head of Technology',
     website: 'https://www.headstartfellowship.com/',
     organization: 'HeadStart Fellowship',
-    date: '2023 – 2024',
+    date: '2023 - 2024',
     description:
       '300 person fellowship with fellows from Uber, Google, Goldman Sachs, JP Morgan & more',
-  },
-  {
-    title: 'Software Engineer & Product Designer',
-    website: 'https://callsmartai.ca',
-    organization: 'CallSmart AI',
-    date: '2023',
-    description:
-      'Designed and developed for an AI-powered communication system helping dental clinics capture $100k in lost revenue annually by increasing booking rates',
-  },
-  {
-    title: 'Founder & Software Engineer',
-    website: '',
-    organization: 'Memoria AI',
-    date: '2023',
-    description:
-      "AI voice-journalling tool founded with 2 ex-Google PMs. Users can 'talk to their thoughts' and get insights on their mental health. 800+ users",
-  },
-  {
-    title: 'AI Research Analyst Intern',
-    website: 'https://recalcacademy.com/',
-    organization: ' Recalc Academy',
-    date: '2023',
-    description:
-      'Finance academy & accelerator program sending ambitious students to top investment banking firms in the US; Automated processes & researched AI tools in the data & finance space',
   },
   {
     title: 'Co-Founder',

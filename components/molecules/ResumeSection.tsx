@@ -21,9 +21,9 @@ const ResumeSection = ({
         <div className="text-normal flex flex-col sm:flex-row">
           <div className="flex w-full flex-row items-center whitespace-nowrap sm:w-fit">
             {title}{' '}
-            <hr className="mx-4 h-px w-0 flex-1 border-0 bg-[#A0A0A0]/10 sm:hidden" />
+            <hr className="mx-4 h-px w-0 flex-1 border-0 bg-u-300/10 sm:hidden" />
           </div>
-          <div className="inline w-full text-[#A0A0A0]">
+          <div className="inline w-full text-u-300">
             <p className="ml-[4px] hidden sm:inline"> – </p>
             {website ? (
               <CustomLink to={website} icon underline={false}>
@@ -34,10 +34,10 @@ const ResumeSection = ({
             )}
           </div>
         </div>
-        <hr className="invisible mx-4 h-px border-0 bg-[#A0A0A0]/10 sm:visible sm:flex-1" />
-        <p className="whitespace-nowrap break-keep text-[#A0A0A0]">{date}</p>
+        <hr className="invisible mx-4 h-px border-0 bg-u-300/10 sm:visible sm:flex-1" />
+        <p className="whitespace-nowrap break-keep text-u-300">{date}</p>
       </div>
-      <p className="leading-tight text-[#A0A0A0]">{description}</p>
+      <p className="leading-tight text-u-300">{description}</p>
     </div>
   );
 };

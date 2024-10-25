@@ -14,7 +14,7 @@ const HomePage = () => {
       <div className="flex w-full flex-col items-center gap-4 p-4 md:p-0 md:pt-4">
         <h1 className="w-full max-w-[700px] text-4xl">
           Simplexity
-          <p className="inline font-light text-[#A0A0A0]">
+          <p className="inline font-light text-u-300">
             –Personal Research & Thoughts
           </p>
         </h1>

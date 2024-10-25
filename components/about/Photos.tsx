@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Image from 'next/image';
+
 const Photos = () => {
   let artListFormat: string[] = [];
 
@@ -33,20 +35,22 @@ const Photos = () => {
           <div key={key}>
             <div className="z-50 mb-2 ml-[20px]">
               {category.title}
-              <p className="inline font-light text-[#A0A0A0]">
+              <p className="inline font-light text-u-300">
                 {' '}
-                – {category.description}
+                - {category.description}
               </p>
             </div>
             <div className="relative h-full">
               <div className="no-scrollbar static flex h-[300px] w-full flex-row gap-2 overflow-x-scroll px-4 xl:w-[50dvw]">
                 <div className="absolute left-0 z-40 h-full w-4 bg-gradient-to-r from-[#161616] to-[#161616]/0" />
                 {category.photos.map((photo, key) => (
-                  <img
+                  <Image
                     src={photo}
-                    alt=""
+                    alt="Photo"
                     key={key}
-                    className="flex h-full w-full rounded-lg border-[2px] border-[#2e2e2e] bg-[#1C1C1C]"
+                    width={400}
+                    height={300}
+                    className="flex h-full w-full rounded-lg border-[2px] border-u-900/25 bg-u-950"
                   />
                 ))}
               </div>

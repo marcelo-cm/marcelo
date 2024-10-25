@@ -59,7 +59,7 @@ export const ComponentContainer = ({
       <div className="flex w-full flex-row justify-center rounded-lg border border-dashed border-[#2e2e2e] px-8 py-16 hover:border-dotted">
         {childrenArray[0]}
       </div>
-      <div className="flex flex-col gap-2 p-2 text-xs text-[#a0a0a0]">
+      <div className="flex flex-col gap-2 p-2 text-xs text-u-300">
         <div className="relative z-40 flex flex-wrap justify-between gap-2">
           {/* Label + Learnings */}
           <div className="relative flex flex-row items-center gap-1 break-keep">
@@ -73,7 +73,7 @@ export const ComponentContainer = ({
                 >
                   <button
                     onClick={() => setIsLearningOpen((prev) => !prev)}
-                    className="select-none rounded-full p-[2px] text-xs text-[#a0a0a0] ring-[#A0A0A0] hover:bg-[#232323] hover:text-white active:ring-1"
+                    className="select-none rounded-full p-[2px] text-xs text-u-300 ring-u-300 hover:bg-[#232323] hover:text-white active:ring-1"
                   >
                     <CaretDownIcon />
                   </button>
@@ -100,7 +100,7 @@ export const ComponentContainer = ({
           >
             <button
               onClick={() => setSourceOpen((prev) => !prev)}
-              className='w-fit active:ring-1 ring-[#A0A0A0] text-xs text-[#a0a0a0] select-none	hover:text-white hover:bg-[#232323] py-1 px-2 rounded-md break-keep'
+              className='w-fit active:ring-1 ring-u-300 text-xs text-u-300 select-none	hover:text-white hover:bg-[#232323] py-1 px-2 rounded-md break-keep'
             >
               Source Code
             </button>
@@ -111,13 +111,13 @@ export const ComponentContainer = ({
                 }}
                 className='absolute top-8 bg-[#161616] w-[700px] overflow-scroll no-scrollbar border border-[#2e2e2e] rounded-lg p-4'
               >
-                <div className='absolute top-2 right-2 flex gap-0 text-[#A0A0A0]'>
+                <div className='absolute top-2 right-2 flex gap-0 text-u-300'>
                   <button
                     onClick={async () => {
                       await copyToClipboard(childrenSource);
                       setSourceOpen(false);
                     }}
-                    className='p-2 hover:bg-[#2e2e2e]/75 hover:text-white rounded-md active:ring-1 ring-[#A0A0A0]'
+                    className='p-2 hover:bg-[#2e2e2e]/75 hover:text-white rounded-md active:ring-1 ring-u-300'
                   >
                     <ClipboardCopyIcon />
                   </button>

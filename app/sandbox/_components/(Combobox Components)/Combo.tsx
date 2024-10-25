@@ -228,7 +228,7 @@ const Combo = forwardRef<HTMLDivElement, ComboProps>(
                 {renderChildren && renderChildren.length > 0 ? (
                   renderChildren
                 ) : (
-                  <p className="font-light italic text-[#A0A0A0]">
+                  <p className="font-light italic text-u-300">
                     No Options Found
                   </p>
                 )}

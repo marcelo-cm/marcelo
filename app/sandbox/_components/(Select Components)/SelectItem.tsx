@@ -36,7 +36,7 @@ const SelectItem: React.FC<SelectItemProps> = ({
 
   return (
     <div
-      className={`h-fit cursor-pointer text-nowrap break-keep rounded-md py-[6px] pl-2 pr-6 ring-inset ring-[#A0A0A0] transition-all hover:bg-white/10 active:ring-1 ${
+      className={`h-fit cursor-pointer text-nowrap break-keep rounded-md py-[6px] pl-2 pr-6 ring-inset ring-u-300 transition-all hover:bg-white/10 active:ring-1 ${
         isSelected ? 'bg-white/10' : ''
       }`}
       tabIndex={-1}

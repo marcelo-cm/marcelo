@@ -100,7 +100,7 @@ export default function Playground() {
         <div className="flex w-full flex-col items-center gap-4">
           <h1 className="w-4/5 max-w-[700px] text-4xl">
             Welcome to the Sandbox
-            <p className="inline font-light text-[#A0A0A0]">
+            <p className="inline font-light text-u-300">
               –Grounds For Experimentation
             </p>
           </h1>
@@ -160,7 +160,7 @@ export default function Playground() {
                 onClick={() =>
                   addToast('message', 'This is a message toast!', 3000)
                 }
-                className="cursor-pointer rounded-md bg-[#343434]/90 px-3 py-2 text-sm text-white"
+                className="cursor-pointer rounded-md bg-u-900/90 px-3 py-2 text-sm text-white"
               >
                 Click for message toast!
               </button>

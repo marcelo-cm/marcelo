@@ -17,7 +17,7 @@ const MultiSelectLabel: FunctionComponent<MultiSelectLabelProps> = ({
     );
   }
 
-  return <div className="font-medium text-[#A0A0A0]">{children}</div>;
+  return <div className="font-medium text-u-300">{children}</div>;
 };
 
 export default MultiSelectLabel;
