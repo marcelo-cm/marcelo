@@ -14,11 +14,13 @@ interface ResumeSectionProps {
 
 const ResumeSection = ({ date, description, ...props }: ResumeSectionProps) => {
   return (
-    <div className="mb-4 leading-tight">
-      <div className="mb-1 flex flex-row items-center">
+    <div className="mb-4 h-fit leading-tight">
+      <div className="flex flex-col xl:flex-row xl:items-center">
         <PositionOrg {...props} />
-        <hr className="invisible mx-4 h-px border-0 bg-neutral-800 sm:visible sm:flex-1" />
-        <p className="whitespace-nowrap break-keep text-neutral-400">{date}</p>
+        <hr className="mx-4 hidden h-px border-0 bg-neutral-800 sm:block sm:flex-1" />
+        <p className="mb-1 whitespace-nowrap break-keep text-neutral-400">
+          {date}
+        </p>
       </div>
       <p className="text-neutral-400">{description}</p>
     </div>
@@ -35,12 +37,14 @@ const PositionOrg = ({
   website: string;
 }) => {
   return (
-    <div className="flex flex-row">
-      <p className="whitespace-nowrap">
+    <div className="flex flex-col md:flex-row md:items-center">
+      <div className="flex flex-row whitespace-nowrap">
         {title} {' '}
-      </p>
-      <h3 className="text-neutral-400">
-        — {' '}
+        <hr className="mx-4 my-auto flex h-px flex-1 border-0 bg-neutral-800 md:hidden" />
+      </div>
+
+      <h3 className="flex-row flex-nowrap text-neutral-400 md:flex">
+        <p className="hidden md:inline">— {' '}</p>
         {website ? (
           <Link
             href={website}
@@ -52,6 +56,7 @@ const PositionOrg = ({
           organization
         )}
       </h3>
+      <hr className="mx-4 my-auto hidden h-px flex-1 border-0 bg-neutral-800 md:flex xl:hidden" />
     </div>
   );
 };

@@ -5,9 +5,9 @@ import Projects from '@/components/new/work/projects/Projects';
 
 const page = () => {
   return (
-    <div className="flex h-dvh flex-col-reverse md:flex-row md:overflow-scroll">
-      <Projects />
+    <div className="flex h-dvh flex-col overflow-scroll md:flex-row-reverse">
       <Work />
+      <Projects />
     </div>
   );
 };
