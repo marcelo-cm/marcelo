@@ -40,11 +40,11 @@ const PositionOrg = ({
         {title} {' '}
       </p>
       <h3 className="text-neutral-400">
-        —
+        — {' '}
         {website ? (
           <Link
             href={website}
-            className="ml-2 w-fit whitespace-nowrap text-neutral-400 underline underline-offset-2 hover:text-neutral-50"
+            className="w-fit whitespace-nowrap text-neutral-400 underline underline-offset-2 hover:text-neutral-50"
           >
             {organization}
           </Link>
