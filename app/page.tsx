@@ -1,11 +1,15 @@
-import Projects from '@/components/Projects';
-import Resume from '@/components/Resume';
+import React from 'react';
 
-export default function Home() {
+import Work from '@/components/new/work/Work';
+import Projects from '@/components/new/work/projects/Projects';
+
+const page = () => {
   return (
-    <main className="flex h-fit w-dvw flex-col items-center gap-8 overflow-y-auto p-2 md:h-full lg:flex-row-reverse lg:gap-0 lg:overflow-hidden">
-      <Resume />
+    <div className="flex h-dvh flex-col-reverse md:flex-row md:overflow-scroll">
       <Projects />
-    </main>
+      <Work />
+    </div>
   );
-}
+};
+
+export default page;

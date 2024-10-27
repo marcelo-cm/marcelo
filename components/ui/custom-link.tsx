@@ -17,7 +17,7 @@ const CustomLink = ({
 }: CustomLinkProps) => {
   return (
     <a
-      className="inline-flex flex-wrap items-center gap-[6px] fill-u-300 text-u-300 underline underline-offset-2 hover:fill-white hover:text-white"
+      className="inline-flex flex-wrap items-center gap-[6px] fill-neutral-400 text-neutral-400 underline underline-offset-2 hover:fill-white hover:text-white"
       href={to}
       target="_blank"
     >

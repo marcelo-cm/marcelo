@@ -2,7 +2,7 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import Markdown from 'markdown-to-jsx';
 
-import getPostMetadata from '../../../lib/hooks/getPostMetadata';
+import getPostMetadata from '@/lib/hooks/getPostMetadata';
 
 const getPostContent = (slug: string) => {
   const folder = 'blogposts/';

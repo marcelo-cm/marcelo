@@ -26,46 +26,17 @@
   }
 }
 
-@keyframes scrollUpwards {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-25%); /* Move the content up by its full height */
-  }
-}
-
-.animate-scroll-upwards {
-  animation: scrollUpwards 60s linear infinite;
-}
-
 :root {
-  background-color: #161616;
+  background-color: #171717;
   /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255; */
-  color: white;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    background-color: #161616;
-    /* --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0; */
-  }
+  color: #fafafa;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  @apply !font-light;
   font-size: 15px;
-  @apply font-light;
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 pre code {

@@ -9,7 +9,7 @@ const PhotoCard = ({ image_url, alt }: { image_url: string; alt: string }) => {
       alt={alt}
       quality={50}
       className="h-full rounded-md object-contain"
-      placeholder="blur" // Optional blur-up while loading
+      placeholder="blur"
     />
   );
 };

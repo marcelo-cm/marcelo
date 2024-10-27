@@ -1,9 +1,7 @@
-import Link from 'next/link';
+import BlogLink from '@/components/molecules/BlogLink';
+import IconBar from '@/components/molecules/IconBar';
 
-import BlogLink from '../../components/molecules/BlogLink';
-import IconBar from '../../components/molecules/IconBar';
-
-import getPostMetadata, { PostMetadata } from '../../lib/hooks/getPostMetadata';
+import getPostMetadata, { PostMetadata } from '@/lib/hooks/getPostMetadata';
 
 const HomePage = () => {
   const postMetadata = getPostMetadata();
