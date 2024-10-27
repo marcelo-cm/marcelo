@@ -19,12 +19,12 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className="w-dvw md:max-w-[50dvw] md:overflow-scroll">
-      <Masonry columnsCount={isMobile ? 1 : 2} gutter="8px">
+    <section className="no-scrollbar flex w-full flex-row gap-2 lg:h-[100dvh] lg:w-[50dvw] lg:overflow-y-scroll">
+      <div className="no-scrollbar h-fit w-full columns-1 gap-2 space-y-2 overflow-y-scroll pt-2 md:columns-2 lg:columns-1 xl:columns-2">
         {PROJECTS.map((project, idx) => (
           <ProjectCard {...project} key={idx} />
         ))}
-      </Masonry>
+      </div>
     </section>
   );
 };
