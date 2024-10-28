@@ -33,10 +33,9 @@ const page = () => {
 
   return (
     <section className="h-dvh w-dvw overflow-hidden p-2">
-      <div
+      <button
         className="z-50 h-full w-full overflow-hidden rounded-lg border-2 border-neutral-800"
         onClick={handleArtClick}
-        onTouchStart={handleArtClick}
       >
         <Image
           src={artURL}
@@ -46,7 +45,7 @@ const page = () => {
           className="fill h-full w-full select-none object-cover object-center"
           unoptimized
         />
-      </div>
+      </button>
       <Image
         src={logoURL}
         alt="REGuLAR PEOPLE DO COOL SH*T"
