@@ -2,6 +2,7 @@
 
 import React, { useEffect } from 'react';
 
+import { fetchInternalImage } from 'next/dist/server/image-optimizer';
 import Image from 'next/image';
 
 const page = () => {
@@ -27,6 +28,9 @@ const page = () => {
   const handleArtClick = () => {
     fetch('/api/random-photo', {
       cache: 'no-store',
+      next: {
+        revalidate: 0,
+      },
     }).then(async (res) => {
       const url = await res.json();
       setArtURL(url);

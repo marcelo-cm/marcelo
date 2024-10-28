@@ -11,5 +11,12 @@ export async function GET(req: NextRequest) {
   // Return the file path
   return new NextResponse(JSON.stringify(`/about-images/art/${randomFile}`), {
     status: 200,
+    headers: {
+      'Content-Type': 'application/json',
+      'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+      Expires: '0',
+      Pragma: 'no-cache',
+      'Surrogate-Control': 'no-store',
+    },
   });
 }
