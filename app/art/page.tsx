@@ -4,6 +4,8 @@ import React, { useEffect } from 'react';
 
 import Image from 'next/image';
 
+import { getRandomPhoto } from '@/lib/utils/getRandomPhoto';
+
 const page = () => {
   const [logoURL, setLogoURL] = React.useState('regular-ppl-filled.svg');
   const [artURL, setArtURL] = React.useState('/peru.jpg');
@@ -24,15 +26,9 @@ const page = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const handleArtClick = () => {
-    fetch('/api/random-photo', {
-      cache: 'no-store',
-      next: {
-        revalidate: 0,
-      },
-    }).then(async (res) => {
-      const url = await res.json();
-      setArtURL(url);
+  const handleArtClick = async () => {
+    await getRandomPhoto().then(async (res) => {
+      setArtURL(res);
     });
   };
 
@@ -45,6 +41,7 @@ const page = () => {
           width={300}
           height={300}
           className="fill h-full w-full select-none object-cover object-center"
+          unoptimized
           onClick={handleArtClick}
         />
       </div>
