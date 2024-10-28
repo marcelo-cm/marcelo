@@ -25,7 +25,9 @@ const page = () => {
   }, []);
 
   const handleArtClick = () => {
-    fetch('/api/random-photo').then(async (res) => {
+    fetch('/api/random-photo', {
+      cache: 'no-store',
+    }).then(async (res) => {
       const url = await res.json();
       setArtURL(url);
     });
@@ -33,25 +35,23 @@ const page = () => {
 
   return (
     <section className="h-dvh w-dvw overflow-hidden p-2">
-      <button
-        className="z-50 h-full w-full overflow-hidden rounded-lg border-2 border-neutral-800"
-        onClick={handleArtClick}
-      >
+      <div className="z-50 h-full w-full overflow-hidden rounded-lg border-2 border-neutral-800">
         <Image
           src={artURL}
           alt="art"
           width={300}
           height={300}
-          className="fill pointer-events-none h-full w-full select-none object-cover object-center"
+          className="fill h-full w-full select-none object-cover object-center"
           unoptimized
+          onClick={handleArtClick}
         />
-      </button>
+      </div>
       <Image
         src={logoURL}
         alt="REGuLAR PEOPLE DO COOL SH*T"
         width={50}
         height={50}
-        className="pointer-events-none absolute left-1/2 top-1/2 size-3/4 -translate-x-1/2 -translate-y-1/2 transform mix-blend-difference md:size-1/3"
+        className="pointer-events-none absolute left-1/2 top-1/2 z-0 h-fit w-3/4 -translate-x-1/2 -translate-y-1/2 transform mix-blend-difference md:size-1/3"
         objectPosition="center"
       />
     </section>
