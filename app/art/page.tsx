@@ -36,6 +36,7 @@ const page = () => {
       <div
         className="h-full w-full overflow-hidden rounded-lg border-2 border-neutral-800"
         onClick={handleArtClick}
+        onTouchEndCapture={handleArtClick}
       >
         <Image
           src={artURL}
