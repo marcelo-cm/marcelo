@@ -42,7 +42,7 @@ const page = () => {
           alt="art"
           width={300}
           height={300}
-          className="fill h-full w-full select-none object-cover object-center"
+          className="fill pointer-events-none h-full w-full select-none object-cover object-center"
           unoptimized
         />
       </button>
