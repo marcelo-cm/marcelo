@@ -1,15 +1,19 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useTransition } from 'react';
 
 import Image from 'next/image';
 
 const page = () => {
   const [logoURL, setLogoURL] = React.useState('regular-ppl-filled.svg');
   const [artURL, setArtURL] = React.useState('/peru.jpg');
+  const [artURLQueue, setArtURLQueue] = React.useState<string[]>([]);
+  const [isLoadingArt, setIsLoadingArt] = React.useState(false);
 
   useEffect(() => {
-    handleArtClick();
+    if (!artURLQueue.length) {
+      handleArtClick();
+    }
   }, []);
 
   useEffect(() => {
@@ -25,25 +29,38 @@ const page = () => {
   }, []);
 
   const handleArtClick = async () => {
-    await fetch('/api/random-photo', {
-      cache: 'no-store',
-    }).then(async (res) => {
-      const url = await res.json();
-      setArtURL(url);
-    });
+    setIsLoadingArt(true);
+    if (artURLQueue.length <= 5) {
+      const fileURLsResponse = await fetch('/api/random-photo', {
+        cache: 'no-store',
+      });
+
+      const fileURLs: string[] = await fileURLsResponse.json();
+
+      setArtURLQueue((prev) => [...fileURLs, ...prev]);
+    }
+
+    const nextArtURL = artURLQueue.pop();
+    if (!nextArtURL) return;
+
+    setArtURL(nextArtURL);
   };
 
   return (
     <section className="h-dvh w-dvw overflow-hidden p-2">
-      <div className="z-50 h-full w-full overflow-hidden rounded-lg border-2 border-neutral-800">
+      <div
+        className={`z-50 h-full w-full overflow-hidden rounded-lg border-2 border-neutral-800`}
+      >
         <Image
           src={artURL}
           alt="art"
           width={1080}
           height={1080}
-          className="fill h-full w-full select-none object-cover object-center"
+          className={`fill h-full w-full select-none object-cover object-center ${isLoadingArt ? 'blur-xl' : ''} transition-all duration-500`}
           onClick={handleArtClick}
+          onLoad={() => setIsLoadingArt(false)}
           priority
+          quality={50}
           loading="eager"
         />
       </div>
