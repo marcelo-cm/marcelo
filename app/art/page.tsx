@@ -5,12 +5,13 @@ import React, { useEffect } from 'react';
 import Image from 'next/image';
 
 const page = () => {
-  const isMobile = window.innerWidth < 768;
+  const [isMobile, setIsMobile] = React.useState(false);
   const [logoURL, setLogoURL] = React.useState('regular-ppl-filled.svg');
   const [artURL, setArtURL] = React.useState('/peru.jpg');
 
   useEffect(() => {
     handleArtClick();
+    setIsMobile(window.innerWidth <= 768);
   }, []);
 
   useEffect(() => {
