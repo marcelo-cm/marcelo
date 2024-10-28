@@ -5,6 +5,7 @@ import React, { useEffect } from 'react';
 import Image from 'next/image';
 
 const page = () => {
+  const isMobile = window.innerWidth < 768;
   const [logoURL, setLogoURL] = React.useState('regular-ppl-filled.svg');
   const [artURL, setArtURL] = React.useState('/peru.jpg');
 
@@ -34,7 +35,7 @@ const page = () => {
   return (
     <section className="h-dvh w-dvw overflow-hidden p-2">
       <div
-        className="h-full w-full overflow-hidden rounded-lg border-2 border-neutral-800"
+        className="z-50 h-full w-full overflow-hidden rounded-lg border-2 border-neutral-800"
         onClick={handleArtClick}
         onTouchEndCapture={handleArtClick}
       >
@@ -43,9 +44,8 @@ const page = () => {
           alt="art"
           width={300}
           height={300}
-          className="fill h-full w-full object-cover object-center"
-          unselectable="on"
-          unoptimized
+          className="fill h-full w-full select-none object-cover object-center"
+          unoptimized={!isMobile}
         />
       </div>
       <Image
