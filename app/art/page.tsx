@@ -39,11 +39,12 @@ const page = () => {
         <Image
           src={artURL}
           alt="art"
-          width={300}
-          height={300}
+          width={1080}
+          height={1080}
           className="fill h-full w-full select-none object-cover object-center"
-          unoptimized
           onClick={handleArtClick}
+          priority
+          loading="eager"
         />
       </div>
       <Image
