@@ -45,7 +45,6 @@ const page = () => {
           width={300}
           height={300}
           className="fill h-full w-full select-none object-cover object-center"
-          unoptimized
           onClick={handleArtClick}
         />
       </div>
