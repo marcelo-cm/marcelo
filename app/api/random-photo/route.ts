@@ -2,6 +2,8 @@ import fs from 'fs';
 import { NextRequest, NextResponse } from 'next/server';
 import path from 'path';
 
+export const runtime = 'edge';
+
 export async function GET(req: NextRequest) {
   const photosDir = path.join(process.cwd(), 'public', 'about-images', 'art');
   const files = fs.readdirSync(photosDir);

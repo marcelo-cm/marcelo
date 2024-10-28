@@ -2,7 +2,6 @@
 
 import React, { useEffect } from 'react';
 
-import { fetchInternalImage } from 'next/dist/server/image-optimizer';
 import Image from 'next/image';
 
 const page = () => {
