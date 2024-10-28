@@ -5,13 +5,11 @@ import React, { useEffect } from 'react';
 import Image from 'next/image';
 
 const page = () => {
-  const [isMobile, setIsMobile] = React.useState(false);
   const [logoURL, setLogoURL] = React.useState('regular-ppl-filled.svg');
   const [artURL, setArtURL] = React.useState('/peru.jpg');
 
   useEffect(() => {
     handleArtClick();
-    setIsMobile(window.innerWidth <= 768);
   }, []);
 
   useEffect(() => {
@@ -38,7 +36,7 @@ const page = () => {
       <div
         className="z-50 h-full w-full overflow-hidden rounded-lg border-2 border-neutral-800"
         onClick={handleArtClick}
-        onTouchEndCapture={handleArtClick}
+        onTouchStart={handleArtClick}
       >
         <Image
           src={artURL}
@@ -46,7 +44,7 @@ const page = () => {
           width={300}
           height={300}
           className="fill h-full w-full select-none object-cover object-center"
-          unoptimized={!isMobile}
+          unoptimized
         />
       </div>
       <Image

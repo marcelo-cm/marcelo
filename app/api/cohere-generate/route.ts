@@ -2,8 +2,6 @@ import { NextResponse } from 'next/server';
 
 import cohere from '@/lib/cohere';
 
-export const runtime = 'edge';
-
 export async function POST(req: Request) {
   const { message, conversation } = await req.json();
 
