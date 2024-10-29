@@ -1,7 +1,6 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import Markdown from 'markdown-to-jsx';
-import { Metadata } from 'next';
 
 import getPostMetadata from '@/lib/hooks/getPostMetadata';
 

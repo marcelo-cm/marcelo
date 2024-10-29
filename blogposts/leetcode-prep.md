@@ -41,7 +41,7 @@ Document these questions and answers as comments in your IDE.
 
 (**IMPLEMENT**) When you have a clear plan, begin coding, narrating each step — talk though your thinking but don't talk just to talk. Be sure to think about potential edge cases. Be prepared to answer any questions the interviewer may have throughout the programming process.
 
-(**TEST & OPTIMIZE**) After coding, test your solution with a variety of cases, including edge and invalid cases. You can debug using print statements if debuggers are not allowed. If you see optimizations that are possible, describe them to the interview; if you have enough time, then go for it!
+(**TEST & OPTIMIZE**) After coding, test your solution with a variety of cases, including edge and invalid cases. Walk through a very simply test case using comments to follow your logic — this shows the interviewer you actually understand your solution well, and may help you find bugs! You can debug using print statements if debuggers are not allowed. If you see optimizations that are possible, describe them to the interview; if you have enough time, then go for it!
 
 (**ANSWER**) Finally, prepare to discuss the time and space complexity of your approach. Note what tradeoffs you made (ie. You sped up the time complexity by using extra space), and what you'd do if you had more time.
 

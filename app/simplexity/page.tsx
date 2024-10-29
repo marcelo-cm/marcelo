@@ -1,7 +1,21 @@
+import { Metadata } from 'next';
+
 import BlogLink from '@/components/molecules/BlogLink';
 import IconBar from '@/components/molecules/IconBar';
 
 import getPostMetadata, { PostMetadata } from '@/lib/hooks/getPostMetadata';
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://www.marcelochaman.ca'),
+  title: 'Simplexity by Marcelo Chaman Mallqui',
+  description: 'Research & Thought Pieces.',
+  openGraph: {
+    images: '/opengraph-image.png',
+  },
+  twitter: {
+    images: '/twitter-image.png',
+  },
+};
 
 const HomePage = () => {
   const postMetadata = getPostMetadata();
