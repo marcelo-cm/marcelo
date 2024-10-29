@@ -43,7 +43,7 @@ For Big O notation, you must also read articles or watch youtube videos to under
 
 # Practicing LeetCode effectively, with help
 
-This part is very straight forward. Do 3 questions a day, following either the [Neetcode](neetcode.io) 150, or the Leetcode 150 study plan.
+This part is very straight forward. Do 3 questions a day, following either the [Neetcode](https://neetcode.io/) 150, or the Leetcode 150 study plan.
 
 Run into a problem? YouTube the question by name, prefer Neetcode videos.
 
