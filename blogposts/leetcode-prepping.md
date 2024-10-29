@@ -10,7 +10,7 @@ I am a self-taught developer, so this guide would be geared towards people start
 
 Why am I qualified to give you advice? I'm not. Though, I have been able to get myself through live technical interviews at a few big tech companies, and dozens of startups.
 
-STILL A WORK IN PROGRESS.
+Please email me if you have any questions: [marcechaman@gmail.com](mailto:marcechaman@gmail.com)
 
 ---
 
@@ -47,6 +47,10 @@ This part is very straight forward. Do 3 questions a day, following either the [
 
 Run into a problem? YouTube the question by name, prefer Neetcode videos.
 
-For every single question you do, copy and paste the solution, and describe your logical approach to the question — you should NEVER memorize the code to a solution, but instead you should become very comfortable with the approach (especially with explaining the approach). The idea is that you will solve the question, optimize it, then iron our the train of thought that helped you arrive at this solution.
+For every single question you do, copy and paste the solution, and describe your logical approach to the question — you should NEVER memorize the code to a solution, but instead you should become very comfortable with the approach (especially with explaining the approach). The idea is that you will solve the question, optimize it, then iron out the train of thought that helped you arrive at this solution. You should rate every question in difficult from 1-10 — after 1-2 weeks, revisit all the questions marked 6 or higher. I used Notion to help me track this.
 
 The goal is to be extremely good at pattern recognition. Some questions are incredibly difficult to solve without first seeing a question similar to it.
+
+# Next steps
+
+As mentioned in the beginning, this is simply a game of repetition. How many repetitions? It depends on who you are. I know people who did 30 problems and ace interviews like it's nothing; personally, I have done over a hundreds problems in the three months leading up to my interviews — clearly, I didn't have a natural intuition. I would recommend starting your prep 3 months before you expect to do technical interviews.

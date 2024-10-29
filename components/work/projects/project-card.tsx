@@ -23,6 +23,7 @@ const ProjectCard = ({ image_url, to, title, type }: ProjectCardProps) => {
           width={400}
           height={300}
           alt={title}
+          quality={50}
           className="h-full w-full rounded-md object-fill transition-all duration-300 hover:brightness-[0.8]"
         />
         <div className="overflow-none absolute bottom-0 left-0 flex w-full items-center justify-between rounded-md p-3 pt-4 text-[15px]">
