@@ -8,8 +8,7 @@ const HomePage = () => {
 
   return (
     <div className="flex w-full flex-col items-center py-16">
-      {/* TITLE & PAGE DESCRIPTION */}
-      <div className="flex w-full flex-col items-center gap-4 p-4 md:p-0 md:pt-4">
+      <div className="flex w-full flex-col gap-4 p-4 md:items-center md:p-0 md:pt-4">
         <h1 className="w-full max-w-[700px] text-4xl">
           Simplexity
           <p className="inline font-light text-u-300">

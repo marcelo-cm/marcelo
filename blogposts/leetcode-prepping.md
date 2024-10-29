@@ -18,28 +18,40 @@ Please email me if you have any questions: [marcechaman@gmail.com](mailto:marcec
 
 To approach your prep effectively, know what the interview will actually look like, so you know what to simulate when practicing:
 
+First, you will exchange introductions. Nail yours. It can help set the tone for the interview. It should be up to 60 seconds long, covering a bit about yourself personally and focusing on why you like software and what you've been up to in regards to getting better at software. For me, I note where I worked last summer & what I worked on there, as well as what I'm building now and why — I also touch on being a self-taught engineer, and my early days in the creative industry.
+
+---
+
+The following is what I've found works for me through experimentation and talking to others, but it is very similar to the [UMPIRE](https://guides.codepath.com/compsci/UMPIRE-Interview-Strategy) method (If you're a frameworks person, please read the linked blog).
+
+---
+
 When the interviewer presents you with a question, **avoid jumping into coding right away.** Instead, take notes as they explain.
 
-Your first step should be to restate the question in your own words and confirm your understanding. This is also your opportunity to ask clarifying questions if any part is unclear. Here are key areas to inquire about:
+(**UNDERSTAND**) Your first step should be to restate the question in your own words and confirm your understanding. This is also your opportunity to ask clarifying questions if any part is unclear. Here are key areas to inquire about:
 
-1. **Inputs:** For example, if an input is an `int`, will it always be positive?
+1. **Inputs:** For example, if an input is an `int`, will it always be positive? If it's an array, should it be modified in-place (if applicable)?
 2. **Expected return value:** For example, should the program return `True` in certain cases and `False` in others? Should the output be a `tuple`, `int`, or `str`?
 
 If the question involves Object-Oriented Programming (OOP), it may help to ask which method will be called most frequently. This can guide you toward optimizing the right method and finding the most efficient solution.
 
 Document these questions and answers as comments in your IDE.
 
-Once you clearly understand the question, pause to outline your approach and explain it to the interviewer: _"My initial thought is to iterate through the string using a `Two Pointers` technique, where I would [insert algorithm logic here]."_ Next, sketch the algorithm in pseudocode—writing out the logic in comments can be helpful. Take additional time, if needed, to find the best solution.
+(**DESCRIBE**) Once you clearly understand the question, pause to outline your approach and explain it to the interviewer: _"My initial thought is to iterate through the string using a `Two Pointers` technique, where I would [insert algorithm logic here]."_ Next, sketch the algorithm in pseudocode—writing out the logic in comments can be helpful. Take additional time, if needed, to find the best solution. It's totally okay for your first instinct to be a brute force approach, but try to optimize so the interviewer can see your thought process — if you can't come up with anything, it's not the end of the world.
 
-When you have a clear plan, begin coding, narrating each step. Be sure to think about potential edge cases. Be prepared to answer any questions the interviewer may have throughout the programming process.
+(**IMPLEMENT**) When you have a clear plan, begin coding, narrating each step — talk though your thinking but don't talk just to talk. Be sure to think about potential edge cases. Be prepared to answer any questions the interviewer may have throughout the programming process.
 
-After coding, test your solution with a variety of cases, including edge and invalid cases. Finally, prepare to discuss the time complexity of your approach.
+(**TEST & OPTIMIZE**) After coding, test your solution with a variety of cases, including edge and invalid cases. You can debug using print statements if debuggers are not allowed. If you see optimizations that are possible, describe them to the interview; if you have enough time, then go for it!
+
+(**ANSWER**) Finally, prepare to discuss the time and space complexity of your approach. Note what tradeoffs you made (ie. You sped up the time complexity by using extra space), and what you'd do if you had more time.
+
+(**ASK**) Hopefully you'll have enough time after your technical implementation to ask questions; good questions can leave good impressions. For startups, I like to ask about their engineering organizational structure, their tech stack, and engineering culture ('Move Fast Break Things.' vs 'To move fast you must first move slow.'). It's a chance to also know if you'd enjoy working there.
 
 # Learning DSA's from scratch, including Big O complexity
 
 I personally took Intro to CS, and Discrete Math classes at my school, and also read old school books that dive deep into the fundamental algorithms (ie. sorts, tree traversals, etc.). You can quite literally ChatGPT "Good books for learning about Data Structure and Algorithms", **DO NOT** hunt online for the pirated PDFs (wink).
 
-For Big O notation, you must also read articles or watch youtube videos to understand the theory. You get better at this as you continue to prepare. Every NeetCode solution tells you the space and time complexity of the problem.
+For Big O notation, you must also read articles or watch youtube videos to understand the theory. You get better at this as you continue to prepare. Every NeetCode solution tells you the space and time complexity of the problem. It's often helpful to simply know the time complexities of common techniques used during solutions (ie. sorts are `O(n*logn)`, BFS/DFS is `O(n+m)` where `n = # nodes` and `m = # edges`)
 
 # Practicing LeetCode effectively, with help
 
@@ -51,6 +63,24 @@ For every single question you do, copy and paste the solution, and describe your
 
 The goal is to be extremely good at pattern recognition. Some questions are incredibly difficult to solve without first seeing a question similar to it.
 
-# Next steps
+It's very common for interview questions to be on one of these [14 patterns](https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed), which is what most prepping material focuses on. However, at higher levels (and depending on the company), you will get things that are much different.
+
+# Next steps (STRONGLY SUGGESTED)
 
 As mentioned in the beginning, this is simply a game of repetition. How many repetitions? It depends on who you are. I know people who did 30 problems and ace interviews like it's nothing; personally, I have done over a hundreds problems in the three months leading up to my interviews — clearly, I didn't have a natural intuition. I would recommend starting your prep 3 months before you expect to do technical interviews.
+
+![Notion table for tracking LeetCode questions](/blog-assets/leetcode-prep/tracking-table.png 'Table on Notion I use')
+
+![Documentation template for LeetCode solutions](/blog-assets/leetcode-prep/documentation-template.png 'Documentation Template')
+
+The best way to prepare for the real thing is to do mock interviews — I hate them too, but they really did help. If you don't know where to turn for mock interviews, consider joining communities like [ColorStack](https://www.colorstack.org/), [HeadStart Fellowship](https://www.headstartfellowship.com/), or something on campus. Some people find that the best way to learn is with others!
+
+Some resources that may be helpful to you can be found on [Adam Gluck's website](https://glucknotes.com/notes/6qqrjio7nnkje405a1s8jr3/) — who helped me write this guide.
+
+---
+
+Special thank you to friends at [Neo](https://neo.com/), and [ColorStack](https://www.colorstack.org/) for helping me edit this.
+
+Credit to [Adam Gluck](https://www.linkedin.com/in/adam-gluck/) For some awesome resources and sharing some tips of his own!
+
+If you have any edits, suggestions, or tips to share, please message me and share.
