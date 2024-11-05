@@ -39,6 +39,8 @@ Document these questions and answers as comments in your IDE.
 
 (**DESCRIBE**) Once you clearly understand the question, pause to outline your approach and explain it to the interviewer: _"My initial thought is to iterate through the string using a `Two Pointers` technique, where I would [insert algorithm logic here]."_ Next, sketch the algorithm in pseudocode—writing out the logic in comments can be helpful. Take additional time, if needed, to find the best solution. It's totally okay for your first instinct to be a brute force approach, but try to optimize so the interviewer can see your thought process — if you can't come up with anything, it's not the end of the world.
 
+This part is arguably the most important portion of your entire interview — the key question you want to demonstrate is: "Do I know how to problem solve, and make others understand my decisions?"
+
 (**IMPLEMENT**) When you have a clear plan, begin coding, narrating each step — talk though your thinking but don't talk just to talk. Be sure to think about potential edge cases. Be prepared to answer any questions the interviewer may have throughout the programming process.
 
 (**TEST & OPTIMIZE**) After coding, test your solution with a variety of cases, including edge and invalid cases. Walk through a very simply test case using comments to follow your logic — this shows the interviewer you actually understand your solution well, and may help you find bugs! You can debug using print statements if debuggers are not allowed. If you see optimizations that are possible, describe them to the interview; if you have enough time, then go for it!
@@ -61,6 +63,8 @@ Run into a problem? YouTube the question by name, prefer Neetcode videos.
 
 For every single question you do, copy and paste the solution, and describe your logical approach to the question — you should NEVER memorize the code to a solution, but instead you should become very comfortable with the approach (especially with explaining the approach). The idea is that you will solve the question, optimize it, then iron out the train of thought that helped you arrive at this solution. You should rate every question in difficult from 1-10 — after 1-2 weeks, revisit all the questions marked 6 or higher. I used Notion to help me track this.
 
+If you have an upcoming interview, it's a good idea to do questions on LeetCode that are tagged with that specific Company. You may need to ask a friend with LeetCode premium, or get it yourself.
+
 The goal is to be extremely good at pattern recognition. Some questions are incredibly difficult to solve without first seeing a question similar to it.
 
 It's very common for interview questions to be on one of these [14 patterns](https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed), which is what most prepping material focuses on. However, at higher levels (and depending on the company), you will get things that are much different.
@@ -75,7 +79,7 @@ As mentioned in the beginning, this is simply a game of repetition. How many rep
 
 The best way to prepare for the real thing is to do mock interviews — I hate them too, but they really did help. If you don't know where to turn for mock interviews, consider joining communities like [ColorStack](https://www.colorstack.org/), [HeadStart Fellowship](https://www.headstartfellowship.com/), or something on campus. Some people find that the best way to learn is with others!
 
-Some resources that may be helpful to you can be found on [Adam Gluck's website](https://glucknotes.com/notes/6qqrjio7nnkje405a1s8jr3/) — who helped me write this guide.
+Some resources that may be helpful to you can be found on [Adam Gluck's website](https://adamgluck.com/posts/leetcode) — who helped me write this guide.
 
 ---
 
