@@ -10,7 +10,9 @@ I consume a lot of music — genres from 90's neo-soul, rnb and hip-hop to japan
 
 # Nov 2024
 
-[1 Thing — Amerie](https://open.spotify.com/track/1mnqraQ8oV8MX92rdOFLWW?si=cadbfcc6d8c84dfc) — Went to a hip-hop club. Got me in the grove of mid 2000s female rap & r&b.
+[Hello goodbye](https://open.spotify.com/track/7KA5C1c2byqgzCCgdo0nZR) — Simply just a good vibe.
+
+[1 Thing — Amerie](https://open.spotify.com/track/1mnqraQ8oV8MX92rdOFLWW) — Went to a hip-hop club. Got me in the grove of mid 2000s female rap & r&b.
 
 [Red Wine Supernova — Chappell Roan](https://open.spotify.com/track/7FOgcfdz9Nx5V9lCNXdBYv?si=d8a8c26f2c624b08) — A song that reminds me of my friend who showed me Chappell Roan before anyone really knew about her.
 
