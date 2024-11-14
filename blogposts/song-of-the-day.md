@@ -10,7 +10,9 @@ I consume a lot of music — genres from 90's neo-soul, rnb and hip-hop to japan
 
 # Nov 2024
 
-[Hello goodbye](https://open.spotify.com/track/7KA5C1c2byqgzCCgdo0nZR) — Simply just a good vibe.
+[Anti-glory — horsegirl](https://open.spotify.com/track/7xxeSJJ25Gu6dRBv8v7tKK) — Nice post-punk/indie vibe with great chords.
+
+[Hello goodbye — Charlie XCX](https://open.spotify.com/track/7KA5C1c2byqgzCCgdo0nZR) — Simply just a good vibe.
 
 [1 Thing — Amerie](https://open.spotify.com/track/1mnqraQ8oV8MX92rdOFLWW) — Went to a hip-hop club. Got me in the grove of mid 2000s female rap & r&b.
 
