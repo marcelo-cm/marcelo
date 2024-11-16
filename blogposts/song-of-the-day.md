@@ -10,6 +10,10 @@ I consume a lot of music — genres from 90's neo-soul, rnb and hip-hop to japan
 
 # Nov 2024
 
+[Cry for you — September](https://open.spotify.com/track/1mvZErZBp7WZT3HfGBykao) – My mom loved this song. Amazing dance/techno-pop song.
+
+[So[Rt] — Knxwledge](https://open.spotify.com/track/5njl9itJnzGvbJQp0T6gh1) — My introduction to instrumental hiphop that could be in your rotation daily.
+
 [Anti-glory — horsegirl](https://open.spotify.com/track/7xxeSJJ25Gu6dRBv8v7tKK) — Nice post-punk/indie vibe with great chords.
 
 [Hello goodbye — Charlie XCX](https://open.spotify.com/track/7KA5C1c2byqgzCCgdo0nZR) — Simply just a good vibe.
