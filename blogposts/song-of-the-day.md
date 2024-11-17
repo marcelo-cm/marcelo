@@ -10,6 +10,8 @@ I consume a lot of music — genres from 90's neo-soul, rnb and hip-hop to japan
 
 # Nov 2024
 
+[Shotput — Still Woozy](https://open.spotify.com/track/4nUIq4IuoIiHKYdov9A4Yg) — Groovy, beautiful track. Still Woozy was one of the first indie artists I got super into.
+
 [Cry for you — September](https://open.spotify.com/track/1mvZErZBp7WZT3HfGBykao) – My mom loved this song. Amazing dance/techno-pop song.
 
 [So[Rt] — Knxwledge](https://open.spotify.com/track/5njl9itJnzGvbJQp0T6gh1) — My introduction to instrumental hiphop that could be in your rotation daily.
