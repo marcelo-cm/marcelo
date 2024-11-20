@@ -33,7 +33,7 @@ If you dedicate your time to this, you can learn the basics to all of these with
 To start your project, you need a few tools in your toolbox.
 
 - **VSCode (or Cursor, AI-powered)** — Your [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) for full-stack development.
-  - VSCode extensions can make your life a LOT easier. [Here](https://marcelochamanca/simplexity/devx-practices) are my favourites.
+  - VSCode extensions can make your life a LOT easier. [Here](https://marcelochaman.ca/simplexity/devx-practices) are my favourites.
 - **Git** — As mentioned before, Git is important to know. You only have to know basic operations such as: _checkout_, _pull_, _push_, _commit_, _branch_, _merge_.
 - **Python** — You can find your version [here](https://www.python.org/downloads/).
 - **Homebrew** — Package manager for your Mac, [here](https://brew.sh/). Sometimes you need stuff that isn't natively installed on your computer.
@@ -55,7 +55,7 @@ Below is my suggested tech stack for your first project:
 - [Supabase (PostgreSQL)](https://supabase.com/) — Relationship database that is really easy to set up, has great documentation, built in authentication workflow, etc.
 - [Node.js](https://nodejs.org/docs/latest/api/) — The best way to build a backend with Javascript. There are frameworks for Node as well, but I don't know them very well.
 - [GoDaddy](https://www.godaddy.com/) — If you want a domain, this is a good place. Anywhere works though.
-- [Figma](https://www.figma.com/) - Design software that I'm obsessed with.
+- [Figma](https://www.figma.com/) — Design software that I'm obsessed with.
 
 Your [DevOps](https://aws.amazon.com/devops/what-is-devops/#:~:text=DevOps%20is%20the%20combination%20of,development%20and%20infrastructure%20management%20processes.) toolstack should be:
 
