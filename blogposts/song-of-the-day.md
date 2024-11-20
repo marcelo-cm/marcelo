@@ -10,6 +10,8 @@ I consume a lot of music — genres from 90's neo-soul, rnb and hip-hop to japan
 
 # Nov 2024
 
+[Tú Con El](https://open.spotify.com/track/4SQQXTfDQQzqMYt9Ems7A1) — The first spanish song I fell in love with in my 20s. It's an incredible story.
+
 [Alrighty Aphrodite — Peach Pit](https://open.spotify.com/track/6OiRh4kttAs1YWglvTcYkB) — A song that reminds me of an old friend, and my first week at university. A local band played their first gig at a restaurant on the main street of Kingston, ON, and I photographed it. It's an incredible track.
 
 [Shotput — Still Woozy](https://open.spotify.com/track/4nUIq4IuoIiHKYdov9A4Yg) — Groovy, beautiful track. Still Woozy was one of the first indie artists I got super into.
