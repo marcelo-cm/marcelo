@@ -1,8 +1,10 @@
 import React from 'react';
 
-const IconBar = () => {
+const IconBar = ({ className }: { className?: string }) => {
   return (
-    <div className="mb-8 flex w-[90%] max-w-[700px] flex-row flex-wrap gap-3">
+    <div
+      className={`mb-8 flex w-[90%] max-w-[700px] flex-row flex-wrap gap-3 ${className}`}
+    >
       <a target="_blank" href="https://www.linkedin.com/in/marc-cham/">
         <svg
           width="18"
