@@ -19,10 +19,24 @@ const getPostMetadata = (): PostMetadata[] => {
     const matterResult = matter(fileContents);
     return {
       title: matterResult.data.title,
-      date: matterResult.data.date,
+      date: matterResult.data.date, // Assuming valid date or non-date string
       subtitle: matterResult.data.subtitle,
       slug: fileName.replace('.md', ''),
     };
+  });
+
+  // Sort posts by date, treating invalid dates as the oldest.
+  posts.sort((a, b) => {
+    const dateA = new Date(a.date).getTime();
+    const dateB = new Date(b.date).getTime();
+
+    // If either date is invalid, move it to the end.
+    if (isNaN(dateA) && isNaN(dateB)) return 0; // Both invalid
+    if (isNaN(dateA)) return 1; // `a` is invalid, `b` comes first
+    if (isNaN(dateB)) return -1; // `b` is invalid, `a` comes first
+
+    // Compare valid dates
+    return dateA - dateB; // Newest first
   });
 
   return posts;
