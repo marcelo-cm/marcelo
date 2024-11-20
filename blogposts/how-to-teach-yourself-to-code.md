@@ -33,7 +33,7 @@ If you dedicate your time to this, you can learn the basics to all of these with
 To start your project, you need a few tools in your toolbox.
 
 - **VSCode (or Cursor, AI-powered)** — Your [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) for full-stack development.
-  - VSCode extensions can make your life a LOT easier. [Here](https://marcelochamanca/simplexity/vscode-extensions) are my favourites.
+  - VSCode extensions can make your life a LOT easier. [Here](https://marcelochamanca/simplexity/devx-practices) are my favourites.
 - **Git** — As mentioned before, Git is important to know. You only have to know basic operations such as: _checkout_, _pull_, _push_, _commit_, _branch_, _merge_.
 - **Python** — You can find your version [here](https://www.python.org/downloads/).
 - **Homebrew** — Package manager for your Mac, [here](https://brew.sh/). Sometimes you need stuff that isn't natively installed on your computer.
