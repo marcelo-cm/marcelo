@@ -24,11 +24,11 @@ I consume a lot of music — genres from 90's neo-soul, rnb and hip-hop to japan
 
 [1 Thing — Amerie](https://open.spotify.com/track/1mnqraQ8oV8MX92rdOFLWW) — Went to a hip-hop club. Got me in the grove of mid 2000s female rap & r&b.
 
-[Red Wine Supernova — Chappell Roan](https://open.spotify.com/track/7FOgcfdz9Nx5V9lCNXdBYv?si=d8a8c26f2c624b08) — A song that reminds me of my friend who showed me Chappell Roan before anyone really knew about her.
+[Red Wine Supernova — Chappell Roan](https://open.spotify.com/track/7FOgcfdz9Nx5V9lCNXdBYv) — A song that reminds me of my friend who showed me Chappell Roan before anyone really knew about her.
 
 [トーキョーレギー — Masayoshi Takanaka](https://open.spotify.com/track/5floNyItopWZyB4IzKrJtW) — Japanese city pop from 1976. Making colours feel brighter and the sun shine harder.
 
-[Something Cool (Mono) — June Christy](https://open.spotify.com/track/2mqjKGlSdJHdjCQHtOx6PD?si=31f3fc080e4348f5) — Stolen from the [North Hollywood](https://www.google.com/search?gs_ssp=eJzj4tVP1zc0zLJIzzUpKzQxYPSSzssvKslQyMjPyaksz89PUcjMyUlNT8xRSM4sAwA-8Q8i&q=north+hollywood+illegal+civ&oq=north+hollywood,+illegal&sourceid=chrome&ie=UTF-8) soundtrack. A beautiful song.
+[Something Cool (Mono) — June Christy](https://open.spotify.com/track/2mqjKGlSdJHdjCQHtOx6PD) — Stolen from the [North Hollywood](https://www.google.com/search?gs_ssp=eJzj4tVP1zc0zLJIzzUpKzQxYPSSzssvKslQyMjPyaksz89PUcjMyUlNT8xRSM4sAwA-8Q8i&q=north+hollywood+illegal+civ) soundtrack. A beautiful song.
 
 [Lemon Grass — MF DOOM](https://open.spotify.com/track/14hca4SHRBbKZkzPI0xXDL) — A Metal Fingers track that the world under appreciates, but every fan loves. Makes you feel like a kid playing outside as summer is ending, realizing you are growing up.
 
