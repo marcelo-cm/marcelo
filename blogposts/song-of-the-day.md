@@ -2,6 +2,7 @@
 title: Song of the Day — What's in my headphones?
 subtitle: A collection of songs from all genres. I selected one song a day.
 date: Living Document
+visibility: unlisted
 ---
 
 # Context

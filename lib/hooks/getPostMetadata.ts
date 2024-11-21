@@ -6,6 +6,7 @@ export type PostMetadata = {
   date: string;
   subtitle: string;
   slug: string;
+  visibility: 'public' | 'private' | 'unlisted';
 };
 
 const getPostMetadata = (): PostMetadata[] => {
@@ -14,18 +15,18 @@ const getPostMetadata = (): PostMetadata[] => {
   const markdownPosts = files.filter((file) => file.endsWith('.md'));
 
   // Get gray-matter data from each file.
-  const posts = markdownPosts.map((fileName) => {
+  const posts: PostMetadata[] = markdownPosts.map((fileName) => {
     const fileContents = fs.readFileSync(`blogposts/${fileName}`, 'utf8');
     const matterResult = matter(fileContents);
     return {
       title: matterResult.data.title,
-      date: matterResult.data.date, // Assuming valid date or non-date string
+      date: matterResult.data.date,
       subtitle: matterResult.data.subtitle,
       slug: fileName.replace('.md', ''),
+      visibility: matterResult.data.visibility,
     };
   });
 
-  // Sort posts by date, treating invalid dates as the oldest.
   posts.sort((a, b) => {
     const dateA = new Date(a.date).getTime();
     const dateB = new Date(b.date).getTime();
@@ -35,8 +36,7 @@ const getPostMetadata = (): PostMetadata[] => {
     if (isNaN(dateA)) return 1; // `a` is invalid, `b` comes first
     if (isNaN(dateB)) return -1; // `b` is invalid, `a` comes first
 
-    // Compare valid dates
-    return dateA - dateB; // Newest first
+    return dateA - dateB;
   });
 
   return posts;

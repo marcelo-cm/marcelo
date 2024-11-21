@@ -1,10 +1,11 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import Markdown from 'markdown-to-jsx';
+import { Metadata, ResolvingMetadata } from 'next';
 
 import IconBar from '@/components/molecules/IconBar';
 
-import getPostMetadata from '@/lib/hooks/getPostMetadata';
+import { MetadataProps } from '../page';
 
 const getPostContent = (slug: string) => {
   const folder = 'blogposts/';
@@ -14,16 +15,72 @@ const getPostContent = (slug: string) => {
   return matterResult;
 };
 
-export const generateStaticParams = async () => {
-  const posts = getPostMetadata();
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+export async function generateMetadata(
+  { params, searchParams }: MetadataProps,
+  parent: ResolvingMetadata,
+): Promise<Metadata> {
+  const slug = params.slug;
+
+  const fileContents = fs.readFileSync(`blogposts/${slug}.md`, 'utf8');
+  const matterResult = matter(fileContents);
+
+  const { title, date, subtitle, visibility } = {
+    title: matterResult.data.title,
+    date: matterResult.data.date,
+    subtitle: matterResult.data.subtitle,
+    visibility: matterResult.data.visibility,
+  };
+
+  return {
+    metadataBase: new URL('https://www.marcelochaman.ca'),
+    title: `${title} | Simplexity by Marcelo`,
+    description: subtitle,
+    openGraph: {
+      images: [
+        {
+          url: `/api/og?title=${title}&date=${date}&visibility=${visibility}`,
+          width: 2160,
+          height: 1080,
+          alt: `${title} | ${subtitle}`,
+        },
+      ],
+    },
+    twitter: {
+      images: [
+        {
+          url: `/api/og?title=${title}&date=${date}&visibility=${visibility}`,
+          width: 2160,
+          height: 1080,
+          alt: `${title} | ${subtitle}`,
+        },
+      ],
+    },
+  };
+}
+
+const validatePassword = (password: string | string[] | undefined) => {
+  if (!password) return false;
+  return password === process.env.BLOG_PASSWORD;
 };
 
-const PostPage = (props: any) => {
-  const slug = props.params.slug;
+const PostPage = ({
+  params,
+  searchParams,
+}: {
+  params: { slug: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+}) => {
+  const slug = params.slug;
+  const password = searchParams?.magic;
   const post = getPostContent(slug);
+
+  if (post.data.visibility == 'private' && !validatePassword(password)) {
+    return (
+      <div className="no-scrollbar flex h-screen w-screen items-center justify-center font-light">
+        This post is private. Shoot me a text, and I'll give you the password.
+      </div>
+    );
+  }
 
   return (
     <div className="no-scrollbar flex w-full justify-center overflow-scroll p-4 py-16 font-light">

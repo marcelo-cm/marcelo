@@ -2,6 +2,7 @@
 title: My favourite VSCode Extensions, linting rules, and scripts
 subtitle: How I make my life easier when programming!
 date: Nov 2024
+visibility: public
 ---
 
 # My VSCode Extension Toolkit
