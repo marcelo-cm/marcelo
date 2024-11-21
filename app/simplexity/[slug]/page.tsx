@@ -17,47 +17,47 @@ const getPostContent = (slug: string) => {
   return matterResult;
 };
 
-export async function generateMetadata(
-  { params, searchParams }: MetadataProps,
-  parent: ResolvingMetadata,
-): Promise<Metadata> {
-  const slug = params.slug;
+// export async function generateMetadata(
+//   { params, searchParams }: MetadataProps,
+//   parent: ResolvingMetadata,
+// ): Promise<Metadata> {
+//   const slug = params.slug;
 
-  const fileContents = getPostContent(slug);
+//   const fileContents = getPostContent(slug);
 
-  const { title, date, subtitle, visibility } = {
-    title: fileContents.data.title,
-    date: fileContents.data.date,
-    subtitle: fileContents.data.subtitle,
-    visibility: fileContents.data.visibility,
-  };
+//   const { title, date, subtitle, visibility } = {
+//     title: fileContents.data.title,
+//     date: fileContents.data.date,
+//     subtitle: fileContents.data.subtitle,
+//     visibility: fileContents.data.visibility,
+//   };
 
-  return {
-    metadataBase: new URL('https://www.marcelochaman.ca'),
-    title: `${title} | Simplexity by Marcelo`,
-    description: subtitle,
-    openGraph: {
-      images: [
-        {
-          url: `/api/og?title=${title}&date=${date}&visibility=${visibility}`,
-          width: 2160,
-          height: 1080,
-          alt: `${title} | ${subtitle}`,
-        },
-      ],
-    },
-    twitter: {
-      images: [
-        {
-          url: `/api/og?title=${title}&date=${date}&visibility=${visibility}`,
-          width: 2160,
-          height: 1080,
-          alt: `${title} | ${subtitle}`,
-        },
-      ],
-    },
-  };
-}
+//   return {
+//     metadataBase: new URL('https://www.marcelochaman.ca'),
+//     title: `${title} | Simplexity by Marcelo`,
+//     description: subtitle,
+//     openGraph: {
+//       images: [
+//         {
+//           url: `/api/og?title=${title}&date=${date}&visibility=${visibility}`,
+//           width: 2160,
+//           height: 1080,
+//           alt: `${title} | ${subtitle}`,
+//         },
+//       ],
+//     },
+//     twitter: {
+//       images: [
+//         {
+//           url: `/api/og?title=${title}&date=${date}&visibility=${visibility}`,
+//           width: 2160,
+//           height: 1080,
+//           alt: `${title} | ${subtitle}`,
+//         },
+//       ],
+//     },
+//   };
+// }
 
 export const generateStaticParams = async () => {
   const posts = getPostMetadata();
