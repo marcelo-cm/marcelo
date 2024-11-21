@@ -2,7 +2,6 @@
 title: LeetCode Interviews — How to Prepare
 subtitle: A guide on how I approached my data structure & algorithm practice
 date: Oct 2024
-visibility: public
 ---
 
 # Context
