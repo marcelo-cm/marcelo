@@ -1,20 +1,30 @@
-import { Metadata } from 'next';
+import { Metadata, ResolvingMetadata } from 'next';
 
 import BlogLink from '@/components/molecules/BlogLink';
 import IconBar from '@/components/molecules/IconBar';
 
 import getPostMetadata, { PostMetadata } from '@/lib/hooks/getPostMetadata';
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://www.marcelochaman.ca'),
-  title: 'Simplexity by Marcelo Chaman Mallqui',
-  description: 'Research & Thought Pieces.',
-  openGraph: {
-    images: '/opengraph-image.png',
-  },
-  twitter: {
-    images: '/twitter-image.png',
-  },
+export async function generateMetadata(
+  { params, searchParams }: MetadataProps,
+  parent: ResolvingMetadata,
+): Promise<Metadata> {
+  return {
+    metadataBase: new URL('https://www.marcelochaman.ca'),
+    title: 'Simplexity by Marcelo Chaman Mallqui',
+    description: 'Personal Research & Thoughts',
+    openGraph: {
+      images: '/blog-assets/opengraph-image.png',
+    },
+    twitter: {
+      images: '/blog-assets/twitter-image.png',
+    },
+  };
+}
+
+export type MetadataProps = {
+  params: { slug: string };
+  searchParams: { [key: string]: string | string[] | undefined };
 };
 
 const HomePage = () => {
