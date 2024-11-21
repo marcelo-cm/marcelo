@@ -74,15 +74,6 @@ const PostPage = (props: any) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
 
-  // const password = props?.searchParams?.magic;
-  // if (post.data.visibility == 'private' && !validatePassword(password)) {
-  //   return (
-  //     <div className="no-scrollbar flex h-screen w-screen items-center justify-center font-light">
-  //       This post is private. Shoot me a text, and I'll give you the password.
-  //     </div>
-  //   );
-  // }
-
   return (
     <div className="no-scrollbar flex w-full justify-center overflow-scroll p-4 py-16 font-light">
       <div className="flex w-full max-w-[700px] flex-col gap-2">

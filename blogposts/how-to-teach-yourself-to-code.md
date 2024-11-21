@@ -15,7 +15,7 @@ Did I mention I'm self-taught? It seems to be all I talk about. Fortunately, it 
 
 In this guide are a lot of terms you may not know, so I've linked basic descriptions of it for you to dive into.
 
-Below are the basic steps of the journey — This is an **EXTREMELY** condensed timeline, so I wouldn't recommend skipping steps because we're already skipping a ton. I've kept it very concise on purpose; I am happy to answer questions, provide clarity, or give advice if you're ever stuck. Email me at [marcechmaman@gmail.com](mailto:marcechaman@gmail.com).
+Below are the basic steps of the journey — This is an **EXTREMELY** condensed timeline, so I wouldn't recommend skipping steps because we're already skipping a ton. I've kept it very concise on purpose; I am happy to answer questions, provide clarity, or give advice if you're ever stuck. Email me at [marcechaman@gmail.com](mailto:marcechaman@gmail.com).
 
 # STEP 1 — Learn Syntax
 
@@ -154,4 +154,4 @@ The world is now open for you to build anything you want.
 
 Thank you to [Jamyson Gouveros](https://www.linkedin.com/in/jamysongouveros/) for his curiosity, to [Leonardo Montes-Quiliche](https://www.linkedin.com/in/leo-mont/) for shamelessly asking me questions, and to the 150+ engineers I've forced into meetings while I was going through this process.
 
-If you have any advice or suggestions for this guide, or any questions, please contact me at [marcechmaman@gmail.com](mailto:marcechaman@gmail.com).
+If you have any advice or suggestions for this guide, or any questions, please contact me at [marcechaman@gmail.com](mailto:marcechaman@gmail.com).
