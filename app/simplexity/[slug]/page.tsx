@@ -23,14 +23,13 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const slug = params.slug;
 
-  const fileContents = fs.readFileSync(`blogposts/${slug}.md`, 'utf8');
-  const matterResult = matter(fileContents);
+  const fileContents = getPostContent(slug);
 
   const { title, date, subtitle, visibility } = {
-    title: matterResult.data.title,
-    date: matterResult.data.date,
-    subtitle: matterResult.data.subtitle,
-    visibility: matterResult.data.visibility,
+    title: fileContents.data.title,
+    date: fileContents.data.date,
+    subtitle: fileContents.data.subtitle,
+    visibility: fileContents.data.visibility,
   };
 
   return {
