@@ -84,7 +84,8 @@ export async function GET(req: NextRequest) {
     const title = searchParams.get('title');
     const date = searchParams.get('date');
     const visibility = searchParams.get('visibility');
-    const willOverflow = title && title.length > 50;
+    const willOverflow = title && title.length > 45;
+
     return new ImageResponse(
       (
         <div
@@ -143,8 +144,8 @@ export async function GET(req: NextRequest) {
         </div>
       ),
       {
-        width: 2160,
-        height: 1080,
+        width: 1620,
+        height: 810,
         fonts: [
           {
             name: 'Inter',
@@ -156,7 +157,7 @@ export async function GET(req: NextRequest) {
       },
     );
   } catch (e) {
-    // console.log(e);
+    console.log(e);
     return new Response('Internal Server Error', { status: 500 });
   }
 }

@@ -31,12 +31,13 @@ export async function generateMetadata(
   const slug = params.slug;
   const fileContents = fs.readFileSync(`blogposts/${slug}.md`, 'utf8');
   const matterResult = matter(fileContents);
-  const { title, date, subtitle, visibility } = {
-    title: matterResult.data.title,
-    date: matterResult.data.date,
-    subtitle: matterResult.data.subtitle,
-    visibility: matterResult.data.visibility,
-  };
+  const {
+    title = 'Personal Research & Thoughts',
+    date = 'Living Document',
+    subtitle = '',
+    visibility = 'public',
+  } = matterResult.data;
+
   return {
     metadataBase: new URL('https://www.marcelochaman.ca'),
     title: `${title} | Simplexity by Marcelo`,
@@ -71,9 +72,9 @@ const validatePassword = (password: string | string[] | undefined) => {
 
 const PostPage = (props: any) => {
   const slug = props.params.slug;
-  // const password = props?.searchParams?.magic;
   const post = getPostContent(slug);
 
+  // const password = props?.searchParams?.magic;
   // if (post.data.visibility == 'private' && !validatePassword(password)) {
   //   return (
   //     <div className="no-scrollbar flex h-screen w-screen items-center justify-center font-light">
