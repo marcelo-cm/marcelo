@@ -11,9 +11,7 @@ I consume a lot of music — genres from 90's neo-soul, rnb and hip-hop to japan
 
 # Nov 2024
 
-[MM..FOOD (20th Anniversary Edition) — MF DOOM](https://open.spotify.com/album/4osUXHB3fDXwyrtRKvBE2m) — One of my favourite albums ever. My brother showed me this in highschool, and it introduced me to older rap of this style. All caps when you spell the mans name.
-
-[Tú Con El – Frankie Ruiz](https://open.spotify.com/track/4SQQXTfDQQzqMYt9Ems7A1) — The first spanish song I fell in love with in my 20s. It's an incredible story.
+[Tú Con El](https://open.spotify.com/track/4SQQXTfDQQzqMYt9Ems7A1) — The first spanish song I fell in love with in my 20s. It's an incredible story.
 
 [Alrighty Aphrodite — Peach Pit](https://open.spotify.com/track/6OiRh4kttAs1YWglvTcYkB) — A song that reminds me of an old friend, and my first week at university. A local band played their first gig at a restaurant on the main street of Kingston, ON, and I photographed it. It's an incredible track.
 
