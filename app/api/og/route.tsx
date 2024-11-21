@@ -84,7 +84,12 @@ export async function GET(req: NextRequest) {
     const title = searchParams.get('title');
     const date = searchParams.get('date');
     const visibility = searchParams.get('visibility');
-    const willOverflow = title && title.length > 45;
+
+    const averageCharacterWidth = 50; // Approximation for Inter font size 40px
+    const availableWidth = 1550; // Total width minus padding
+
+    const willOverflow =
+      title && title.length * averageCharacterWidth > availableWidth;
 
     return new ImageResponse(
       (
@@ -136,7 +141,6 @@ export async function GET(req: NextRequest) {
               Simplexity
             </p>
             <p style={{ margin: '0 0 0 0' }}>
-              {' '}
               {!willOverflow && '—'}
               {title}
             </p>
@@ -144,8 +148,8 @@ export async function GET(req: NextRequest) {
         </div>
       ),
       {
-        width: 1620,
-        height: 810,
+        width: 2160,
+        height: 1080,
         fonts: [
           {
             name: 'Inter',
