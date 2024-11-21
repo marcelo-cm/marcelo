@@ -5,6 +5,8 @@ import { Metadata, ResolvingMetadata } from 'next';
 
 import IconBar from '@/components/molecules/IconBar';
 
+import getPostMetadata from '@/lib/hooks/getPostMetadata';
+
 import { MetadataProps } from '../page';
 
 const getPostContent = (slug: string) => {
@@ -57,6 +59,13 @@ export async function generateMetadata(
     },
   };
 }
+
+export const generateStaticParams = async () => {
+  const posts = getPostMetadata();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+};
 
 const validatePassword = (password: string | string[] | undefined) => {
   if (!password) return false;
