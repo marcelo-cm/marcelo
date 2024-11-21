@@ -19,6 +19,9 @@ export const metadata: Metadata = {
 
 const HomePage = () => {
   const postMetadata = getPostMetadata();
+  const publicPosts = postMetadata.filter(
+    (post) => post.visibility === 'public',
+  );
 
   return (
     <div className="flex w-full flex-col items-center py-16">
@@ -36,7 +39,7 @@ const HomePage = () => {
         <IconBar />
       </div>
       <div className="flex w-full flex-col-reverse gap-4 p-2">
-        {postMetadata.map((post: PostMetadata) => (
+        {publicPosts.map((post: PostMetadata) => (
           <BlogLink key={post.slug} {...post} />
         ))}
       </div>

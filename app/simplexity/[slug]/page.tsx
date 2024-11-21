@@ -21,9 +21,23 @@ export const generateStaticParams = async () => {
   }));
 };
 
+const validatePassword = (password: string | string[] | undefined) => {
+  if (!password) return false;
+  return password === process.env.BLOG_PASSWORD;
+};
+
 const PostPage = (props: any) => {
   const slug = props.params.slug;
+  const password = props?.searchParams?.magic;
   const post = getPostContent(slug);
+
+  if (post.data.visibility == 'private' && !validatePassword(password)) {
+    return (
+      <div className="no-scrollbar flex h-screen w-screen items-center justify-center font-light">
+        This post is private. Shoot me a text, and I'll give you the password.
+      </div>
+    );
+  }
 
   return (
     <div className="no-scrollbar flex w-full justify-center overflow-scroll p-4 py-16 font-light">

@@ -6,6 +6,7 @@ export type PostMetadata = {
   date: string;
   subtitle: string;
   slug: string;
+  visibility: 'public' | 'private' | 'unlisted';
 };
 
 const getPostMetadata = (): PostMetadata[] => {
