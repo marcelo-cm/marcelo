@@ -2,6 +2,7 @@
 title: How to teach yourself how to code
 subtitle: A roadmap to learn programming to become a full-stack developer
 date: Nov 2024
+visibility: public
 ---
 
 # Context

@@ -2,6 +2,7 @@
 title: A System of Simple Heuristics & Philosophies
 subtitle: How I think about decisions, time, opportunities, relationships, life and more.
 date: Living Document
+visibility: public
 ---
 
 # Context

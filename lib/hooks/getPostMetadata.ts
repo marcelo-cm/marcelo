@@ -14,7 +14,7 @@ const getPostMetadata = (): PostMetadata[] => {
   const markdownPosts = files.filter((file) => file.endsWith('.md'));
 
   // Get gray-matter data from each file.
-  const posts = markdownPosts.map((fileName) => {
+  const posts: PostMetadata[] = markdownPosts.map((fileName) => {
     const fileContents = fs.readFileSync(`blogposts/${fileName}`, 'utf8');
     const matterResult = matter(fileContents);
     return {
@@ -22,6 +22,7 @@ const getPostMetadata = (): PostMetadata[] => {
       date: matterResult.data.date, // Assuming valid date or non-date string
       subtitle: matterResult.data.subtitle,
       slug: fileName.replace('.md', ''),
+      visibility: matterResult.data.visibility,
     };
   });
 
