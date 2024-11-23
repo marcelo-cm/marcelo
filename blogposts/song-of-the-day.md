@@ -11,6 +11,10 @@ I consume a lot of music — genres from 90's neo-soul, rnb and hip-hop to japan
 
 # Nov 2024
 
+[Indeed — Cruza](https://open.spotify.com/track/1jASJWOio1y6HX9noE7FWi?si=1291ad67f48c4441) — Cruza gives me Steve Lacy, Gorillaz, etc. vibes.
+
+[Plastic 100ºC — Sampha](https://open.spotify.com/track/0ah6qyhi2jlBP6D7JLxZrt) — A meaningful Sampha track. Nothing crazy, but felt right given the current things on my mind.
+
 [MM..FOOD (20th Anniversary Edition) — MF DOOM](https://open.spotify.com/album/4osUXHB3fDXwyrtRKvBE2m) — One of my favourite albums ever. My brother showed me this in highschool, and it introduced me to older rap of this style. All caps when you spell the mans name.
 
 [Tú Con El – Frankie Ruiz](https://open.spotify.com/track/4SQQXTfDQQzqMYt9Ems7A1) — The first spanish song I fell in love with in my 20s. It's an incredible story.
