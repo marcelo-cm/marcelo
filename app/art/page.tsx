@@ -4,6 +4,10 @@ import React, { useEffect, useTransition } from 'react';
 
 import Image from 'next/image';
 
+import { createClient } from '@/lib/utils/supabase/client';
+
+const supabase = createClient();
+
 const page = () => {
   const [logoURL, setLogoURL] = React.useState('regular-ppl-filled.svg');
   const [artURL, setArtURL] = React.useState('/peru.jpg');
@@ -29,21 +33,12 @@ const page = () => {
   }, []);
 
   const handleArtClick = async () => {
-    setIsLoadingArt(true);
-    if (artURLQueue.length <= 5) {
-      const fileURLsResponse = await fetch('/api/random-photo', {
-        cache: 'no-store',
-      });
+    const filename = await supabase.rpc('select_random_image');
+    console.log(filename);
+    const fileURL = supabase.storage.from('images').getPublicUrl(filename.data);
+    console.log();
 
-      const fileURLs: string[] = await fileURLsResponse.json();
-
-      setArtURLQueue((prev) => [...fileURLs, ...prev]);
-    }
-
-    const nextArtURL = artURLQueue.pop();
-    if (!nextArtURL) return;
-
-    setArtURL(nextArtURL);
+    setArtURL(fileURL.data.publicUrl);
   };
 
   return (
@@ -70,7 +65,6 @@ const page = () => {
         width={50}
         height={50}
         className="pointer-events-none absolute left-1/2 top-1/2 z-0 h-fit w-3/4 -translate-x-1/2 -translate-y-1/2 transform mix-blend-difference md:size-1/3"
-        objectPosition="center"
       />
     </section>
   );
