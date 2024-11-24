@@ -11,6 +11,8 @@ I consume a lot of music — genres from 90's neo-soul, rnb and hip-hop to japan
 
 # Nov 2024
 
+[Searching – Donnie & Joe Emerson](https://open.spotify.com/track/7GfZglyfN0cBVycLol5cjk) — Insane pull by my friend Micah at 20 000 streams. It's a beautifully raw funk/yachty rock song.
+
 [Indeed — Cruza](https://open.spotify.com/track/1jASJWOio1y6HX9noE7FWi?si=1291ad67f48c4441) — Cruza gives me Steve Lacy, Gorillaz, etc. vibes.
 
 [Plastic 100ºC — Sampha](https://open.spotify.com/track/0ah6qyhi2jlBP6D7JLxZrt) — A meaningful Sampha track. Nothing crazy, but felt right given the current things on my mind.

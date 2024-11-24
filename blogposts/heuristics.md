@@ -85,6 +85,22 @@ Only do things that have 2+ units of output for every unit of effort (input). Ma
 
 If it can be an email, don't make it a meeting. If it is an email, write extremely concisely. If it must be a meeting, prepare an agenda — most meetings can be done in 20 mins.
 
-# How to not be regular
+# How to not be average
 
 Do traditional things, get traditional results. Make sure you get into rooms that people like you haven't been in. For me, this was a becoming a software engineer as a business student, after spending most of my teenage years doing creative work.
+
+# There is an honour in being a regular person.
+
+In a world obsessed with being extraordinary, the truth is: we’re not special. We are what we choose to focus on and obsess over. Sure, some may start with a higher baseline, but at the core, they’re just regular people. When we accept that we’re all just regular, it becomes clear: anything that’s been done before is within our reach.
+
+# Make introductions, always
+
+By selflessly introducing others to the right contacts or helping them find what they need, you establish yourself as an irreplaceable connector. A connector’s value lies in their network, creating a web of goodwill where others feel compelled to return the favor.
+
+Introducing Person A to Person B will take you 10 minutes, and save them hours/days.
+
+# Attention and Favors: The Two Most Powerful Currencies
+
+The phrase "pay attention" is no accident—attention is finite. Every moment and every day comes with a budget, and those who manage it wisely often end up changing the world.
+
+Favors are (usually) easy to give and invaluable to receive. Offer help selflessly, especially to those early in their journey. They’ll repay you in ways that accelerate both of your paths. Make introductions, review essays, debug their code, share advice—15 minutes of your time can go a long way. These must be genuine or they will be tainted. When I started dealing in this form of currency, doors opened up faster.
