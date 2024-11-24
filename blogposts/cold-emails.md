@@ -54,4 +54,42 @@ This isn’t a strict rule—it depends on your judgment of the reader and your 
 
 # An example
 
-Please email me for examples. [marcechaman@gmail.com](mailto:marcechaman@gmail.com)
+Below is an example of a cold email to a startup founder/CEO. Reminder that this is simply ONE form of what a cold email might look like. (not a real email I've sent, but similar)
+
+> Hi [Recipient(s)],
+>
+> I'm [Name](link to LinkedIn), [insert 1 line intro on yourself, including school & personal background]. This past summer I worked at a Series A startup in the construction industry, reporting to their CEO, pushing XX XXX lines of code across the stack. I'm emailing because I admire the work that [Company] has done—As an engineer with a design background, I appreciate how deeply your team cares about delightful user experience— and would love the opportunity to chat about joining the team.
+>
+> In the last year, I've built X platforms generating XX XXX in MRR and reaching XXXXX in monthly active users. These projects include:
+>
+> 1. [Project Name](link to project) — [1 line description] ([tech used])
+> 2. [Project Name](link to project) — [1 line description] ([tech used])
+> 3. [Project Name](link to project) — [1 line description] ([tech used])
+>
+> I'd love to schedule a very quick 15 minute chat sometime next week to see if I'd be a good fit for [Company]. I'm looking for a 12-week Software Engineering internship for Summer 2025, and I"m open to in-person or remote work. I've attached my resume in case it's helpful.
+>
+> Please let me know if you have any questions!
+>
+> Sincerely,
+>
+> [Name]
+
+---
+
+Below is an example of a cold email to someone you just want to chat. (real)
+
+> Hi [Recipient],
+>
+> I'm Marcelo — A 20-year-old business student from Queen's University (Canada) who is pursuing software engineering and product design. I saw your profile on LinkedIn and thought your career is something I can learn a lot from. The role you play at [Company], among other great companies over the years, and the impact you've had is impressive, and I'm sure your experiences are filled with invaluable learnings.
+>
+> I'm reaching out to see if you may have just 15 minutes next week for me to learn from you what it means to be a great engineer, and build beautiful products. As a self-taught developer, conversations with people like you are the best ways for me to learn and improve. I program and design every single day, and I am constantly seeking insight on how to get better, faster.
+>
+> I understand you're very busy, so I appreciate you taking the time to read my email. I look forward to hearing from you!
+>
+> Sincerely,
+>
+> Marcelo
+
+---
+
+Please email me for more examples. [marcechaman@gmail.com](mailto:marcechaman@gmail.com)
