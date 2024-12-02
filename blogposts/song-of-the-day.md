@@ -9,11 +9,23 @@ visibility: public
 
 I consume a lot of music — genres from 90's neo-soul, rnb and hip-hop to japanese city pop, and spanish boleros. Every day is a different vibe, and I share this vibe with my loved ones. I love to chat music, so if you're curious about anything please shoot me an email: [marcechaman@gmail.com](mailto:marcechaman@gmail.com)
 
+# Dec 2024
+
+[PHONICS — Asha Imuno](https://open.spotify.com/track/3CR4lqVVx9F96vkd7QAEmJ) — Incredible bass. Cool vibe.
+
 # Nov 2024
+
+[She Said — Katie Tupper](https://open.spotify.com/track/3CR4lqVVx9F96vkd7QAEmJ) — Canadian artist who is criminally underrated.
+
+[Algun Contexto — Armenia](https://open.spotify.com/track/5QXHKLeR2TO5PAOJCAkz5n) — A good indie rock song in spanish that one of my favourite people showed me.
+
+[hey now — Kendrick Lamar](https://open.spotify.com/track/6uBBABC1IPIjUCHZkzjlls) — I'm all about my Yen.
+
+[Take Me For a Little While — The Royal Jesters](https://open.spotify.com/track/6uBBABC1IPIjUCHZkzjlls) — A favourite of mine because of the Kid Cudi's interpolation on Ghost Town.
 
 [Searching – Donnie & Joe Emerson](https://open.spotify.com/track/7GfZglyfN0cBVycLol5cjk) — Insane pull by my friend Micah at 20 000 streams. It's a beautifully raw funk/yachty rock song.
 
-[Indeed — Cruza](https://open.spotify.com/track/1jASJWOio1y6HX9noE7FWi?si=1291ad67f48c4441) — Cruza gives me Steve Lacy, Gorillaz, etc. vibes.
+[Indeed — Cruza](https://open.spotify.com/track/1jASJWOio1y6HX9noE7FWi) — Cruza gives me Steve Lacy, Gorillaz, etc. vibes.
 
 [Plastic 100ºC — Sampha](https://open.spotify.com/track/0ah6qyhi2jlBP6D7JLxZrt) — A meaningful Sampha track. Nothing crazy, but felt right given the current things on my mind.
 
@@ -26,6 +38,10 @@ I consume a lot of music — genres from 90's neo-soul, rnb and hip-hop to japan
 [Shotput — Still Woozy](https://open.spotify.com/track/4nUIq4IuoIiHKYdov9A4Yg) — Groovy, beautiful track. Still Woozy was one of the first indie artists I got super into.
 
 [Cry for you — September](https://open.spotify.com/track/1mvZErZBp7WZT3HfGBykao) – My mom loved this song. Amazing dance/techno-pop song.
+
+[wyd — Remi Wolf](https://open.spotify.com/track/2W47Qlm2vTrGXWXdf4lxka) — Just a vibe. Reminds me of _oh my love_ by FKA twigs.
+
+[Sexy to Someone — Clairo](https://open.spotify.com/track/3awweDjWIuXNMogMClJnvE) — Clairo vibes today. Madrid's kinda cloudy.
 
 [So[Rt] — Knxwledge](https://open.spotify.com/track/5njl9itJnzGvbJQp0T6gh1) — My introduction to instrumental hiphop that could be in your rotation daily.
 
@@ -43,9 +59,9 @@ I consume a lot of music — genres from 90's neo-soul, rnb and hip-hop to japan
 
 [Lemon Grass — MF DOOM](https://open.spotify.com/track/14hca4SHRBbKZkzPI0xXDL) — A Metal Fingers track that the world under appreciates, but every fan loves. Makes you feel like a kid playing outside as summer is ending, realizing you are growing up.
 
-[High and Dry — Radiohead](https://open.spotify.com/track/2a1iMaoWQ5MnvLFBDv4qkf?si=6fef195fc7b44b9d) — Classic Radiohead.
+[High and Dry — Radiohead](https://open.spotify.com/track/2a1iMaoWQ5MnvLFBDv4qkf) — Classic Radiohead.
 
-[oh my love — FKA twigs](https://open.spotify.com/track/5dEJc0rHuTVxtl1xljDbRv?nd=1&dlsi=24ca26ee7d2242dc) — It's okay the first time you listen to it. It's amazing the 6th time.
+[oh my love — FKA twigs](https://open.spotify.com/track/5dEJc0rHuTVxtl1xljDbRv?nd=1&dl) — It's okay the first time you listen to it. It's amazing the 6th time.
 
 [Thug Till It's Over — Cookin' Soul & Freddie Gibbs](https://open.spotify.com/track/41vSsnP46DpUZC0YoNyk3U) — Freddie Gibbs over soul-inspired samples is everything you could ask for on a long commute day.
 
