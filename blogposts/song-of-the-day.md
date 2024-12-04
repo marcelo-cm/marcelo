@@ -11,6 +11,10 @@ I consume a lot of music — genres from 90's neo-soul, rnb and hip-hop to japan
 
 # Dec 2024
 
+[Don't Matter (feat. Michael Jackson) — Drake](https://open.spotify.com/track/6G8kHiVZ1jW7vHMPVRNZU0) — I thought this song was over-hated when it came out. He bought the vocals from the Jackson Estate, and used them on a good song within the same topic of the original lyrics. I like this song.
+
+[Super Stars — Yves Tumor](https://open.spotify.com/track/4dWltT1kwOojQQyZJMs5tw) — One of my favourite live shows that I showed up to before knowing who they were. Amazing song, even better live.
+
 [PHONICS — Asha Imuno](https://open.spotify.com/track/3CR4lqVVx9F96vkd7QAEmJ) — Incredible bass. Cool vibe.
 
 # Nov 2024
