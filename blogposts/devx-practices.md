@@ -60,3 +60,36 @@ visibility: public
   "clean": "rm -rf .next/ && next build"
 },
 ```
+
+# Github Aliases
+
+```zsh
+alias python=/usr/bin/python3
+
+# Git Aliases
+alias gs='git status'
+alias ga='git add'
+alias gaa='git add .'
+alias gc='git commit -m'
+alias gca='git add . && git commit -m'
+alias gcm='git commit -m'
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias gb='git branch'
+alias gba='git branch -a'
+alias gbd='git branch -d'
+alias gd='git diff'
+alias gds='git diff --stat'
+alias gl='git log --oneline --graph --decorate'
+alias gpl='git pull'
+alias gps='git push'
+alias gm='git merge'
+alias gst='git stash'
+alias gsta='git stash apply'
+
+alias unfuck='git reset --soft HEAD^'
+
+# Ruby Aliases
+alias rdbm='rails db:migrate'
+alias rdam='rake data:migrate'
+```
