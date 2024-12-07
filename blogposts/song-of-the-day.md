@@ -11,6 +11,14 @@ I consume a lot of music — genres from 90's neo-soul, rnb and hip-hop to japan
 
 # Dec 2024
 
+[UOENO — Black Hippy](https://open.spotify.com/track/4wuqlQXpPpEVRhCCyvoe1u) — My favourite song by the short-lived Black Hippy group.
+
+[Poison — Nilo Blues](https://open.spotify.com/track/6YB6L559W9IoLNm2JhRGTd) — Toronto-based artist who I met when I was like 16 (?). Thought he was super cool and got obsessed with his music for a while.
+
+[Silver Lines — IAMDDB](https://open.spotify.com/track/5cAFeRYZDlYNBOQYfEo0NB) — Nice electronic hiphop vibe.
+
+[Agora Hills — Doja Cat](https://open.spotify.com/track/5PyDJG7SQRgWXefgexqIge) — Great 808s. Catchy vibes. Get me in the zone like crazy.
+
 [Don't Matter (feat. Michael Jackson) — Drake](https://open.spotify.com/track/6G8kHiVZ1jW7vHMPVRNZU0) — I thought this song was over-hated when it came out. He bought the vocals from the Jackson Estate, and used them on a good song within the same topic of the original lyrics. I like this song.
 
 [Super Stars — Yves Tumor](https://open.spotify.com/track/4dWltT1kwOojQQyZJMs5tw) — One of my favourite live shows that I showed up to before knowing who they were. Amazing song, even better live.
