@@ -41,10 +41,14 @@ visibility: unlisted
 - Optimal policy is to do that which excites me most at any given moment. However, this only works because my goals, interests and work are closely aligned.
 - I only do what I believe in, even if it's the harder decision
 - Forming an advisory board
+- The only question that matters every Saturday is: _"What did you get done this week"_
+- https://x.com/Tim_Denning/status/1865342028038455717
+- https://x.com/mbrandolph/status/1865470670022516872
 
 # The First Step is Figuring Out Your Story
 
 - The best thing you can do for your personal & professional development is actually figuring out your story
+- How can you figure out your story?
 - This informs who you want to talk to, and allows you to communicate your 'why' way better
 - This informs who on who you are, and what you REALLY want—this makes everything you day far more intentional
 

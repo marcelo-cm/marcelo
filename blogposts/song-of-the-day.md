@@ -11,6 +11,8 @@ I consume a lot of music — genres from 90's neo-soul, rnb and hip-hop to japan
 
 # Dec 2024
 
+[Really good cry — BETWEEN FRIENDS](https://open.spotify.com/track/21wqK6CoGjIY0BEGU6D0RC) — One of my most played songs in 2024.
+
 [UOENO — Black Hippy](https://open.spotify.com/track/4wuqlQXpPpEVRhCCyvoe1u) — My favourite song by the short-lived Black Hippy group.
 
 [Poison — Nilo Blues](https://open.spotify.com/track/6YB6L559W9IoLNm2JhRGTd) — Toronto-based artist who I met when I was like 16 (?). Thought he was super cool and got obsessed with his music for a while.
